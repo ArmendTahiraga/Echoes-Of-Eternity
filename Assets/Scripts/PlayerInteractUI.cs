@@ -8,14 +8,16 @@ public class PlayerInteractUI : MonoBehaviour {
     [SerializeField] private DialogueUI dialogueUI;
 
     private void Update() {
-        if (playerInteract.getInteractable() != null && !dialogueUI.GetHasDialogueStarted()) {
-            Show(playerInteract.getInteractable());
+        Interactable interactable = playerInteract.GetInteractable();
+        
+        if (interactable != null && !dialogueUI.GetHasDialogueStarted()) {
+            Show(interactable);
         } else {
             Hide();
         }
     }
     
-    private void Show(InteractableInterface interactable) {
+    private void Show(Interactable interactable) {
         container.SetActive(true);
         interactionText.text = interactable.GetInteractionText();
     }

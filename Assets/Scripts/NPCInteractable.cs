@@ -1,13 +1,13 @@
 using DS;
 using UnityEngine;
 
-public class NPCInteractable : MonoBehaviour, InteractableInterface {
+public class NPCInteractable : MonoBehaviour, Interactable {
     [SerializeField] private string interactionText;
     [SerializeField] private string characterName;
-    [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private DialogueUI dialogueUI;
 
     public void Interact() {
-        dialogueUI.GetComponent<DialogueUI>().StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
+        dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
     }
 
     public string GetInteractionText() {
@@ -16,9 +16,5 @@ public class NPCInteractable : MonoBehaviour, InteractableInterface {
 
     public Transform GetTransform() {
         return transform;
-    }
-
-    public string GetCharacterName() {
-        return characterName;
     }
 }

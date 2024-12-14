@@ -35,11 +35,6 @@ public class PauseMenuController : MonoBehaviour {
         mainMenuConfirmationPanel.SetActive(true);
     }
 
-    public void ExitConfirmation() {
-        mainPausePanel.SetActive(false);
-        exitConfirmationPanel.SetActive(true);
-    }
-
     public void YesMainMenuConfirmation() {
         pauseMenu.SetActive(false);
         mainMenuConfirmationPanel.SetActive(false);
@@ -51,6 +46,11 @@ public class PauseMenuController : MonoBehaviour {
     public void NoMainMenuConfirmation() {
         mainMenuConfirmationPanel.SetActive(false);
         mainPausePanel.SetActive(true);
+    }
+    
+    public void ExitConfirmation() {
+        mainPausePanel.SetActive(false);
+        exitConfirmationPanel.SetActive(true);
     }
 
     public void YesExitConfirmation() {
