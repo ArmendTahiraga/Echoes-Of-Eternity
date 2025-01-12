@@ -16,7 +16,9 @@ MonoBehaviour:
   dialogueText: I know. He mentioned to me earlier that day about a car parked near
     the old oak. Said it gave him an odd feeling.
   choices:
-  - text: Next Dialogue
+  - text: What kind odd feeling?
     nextDialogue: {fileID: 11400000, guid: e8dc6851c73504a69a34c7a7144f6af5, type: 2}
-  dialogueType: 0
+  - text: Why? What was wrong with that car?
+    nextDialogue: {fileID: 11400000, guid: a95e3e77aa03c47e09a3907a8b5c96f0, type: 2}
+  dialogueType: 1
   isStartingDialogue: 0
