@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed;
-    [SerializeField] private float deceleration;
     [SerializeField] private Transform orientation;
     private float horizontalInput;
     private float verticalInput;
@@ -17,19 +16,17 @@ public class PlayerMovement : MonoBehaviour {
     void Update() {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
-    }
+        movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-    private void FixedUpdate() {
-        if (horizontalInput == 0 && verticalInput == 0) {
-            rigidbody.velocity = new Vector3(
-                Mathf.Lerp(rigidbody.velocity.x, 0, deceleration * Time.deltaTime),
-                rigidbody.velocity.y,
-                Mathf.Lerp(rigidbody.velocity.z, 0, deceleration * Time.deltaTime)
-            );
+        if (movementDirection != Vector3.zero) {
+            Quaternion targetRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
         }
-        else {
-            movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
-            rigidbody.AddForce(movementDirection * (speed * 10f), ForceMode.Force);
+
+        if (movementDirection == Vector3.zero) {
+            GetComponent<Rigidbody>().velocity = Vector3.zero;
+        } else {
+            GetComponent<Rigidbody>().velocity = movementDirection * speed;
         }
     }
 }

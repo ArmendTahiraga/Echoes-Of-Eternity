@@ -1,11 +1,11 @@
 using UnityEngine;
 
 public class PlayerCam : MonoBehaviour {
-    public float sensitivityX;
-    public float sensitivityY;
-    public Transform orientation;
-    float xRotation;
-    float yRotation;
+    [SerializeField] private float sensitivityX;
+    [SerializeField] private float sensitivityY;
+    [SerializeField] private Transform orientation;
+    private float xRotation;
+    private float yRotation;
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
@@ -19,8 +19,9 @@ public class PlayerCam : MonoBehaviour {
         } else {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            float mouseX = Input.GetAxis("Mouse X") * sensitivityX;
-            float mouseY = Input.GetAxis("Mouse Y") * sensitivityY;
+            
+            float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
         
             xRotation -= mouseY;
             yRotation += mouseX;

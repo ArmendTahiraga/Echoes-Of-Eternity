@@ -4,37 +4,36 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour {
     public void Update() {
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
-            InteractableInterface interactable = getInteractable();
+            Interactable interactable = GetInteractable();
             if (interactable != null) {
                 interactable.Interact();
             }
         }
     }
 
-    public InteractableInterface getInteractable() {
-        List<InteractableInterface> interactableList = new List<InteractableInterface>();
+    public Interactable GetInteractable() {
+        List<Interactable> interactableList = new List<Interactable>();
         float interactRange = 2f;
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactRange);
 
         foreach (Collider collider in colliders) {
-            if (collider.TryGetComponent(out InteractableInterface interactable)) {
+            if (collider.TryGetComponent(out Interactable interactable)) {
                 interactableList.Add(interactable);
             }
         }
-        
-        InteractableInterface closestInteractable = null;
-        foreach ( InteractableInterface interactable in interactableList) {
+
+        Interactable closestInteractable = null;
+        foreach (Interactable interactable in interactableList) {
             if (closestInteractable == null) {
                 closestInteractable = interactable;
-            }
-            else {
-                if (Vector3.Distance(transform.position, interactable.GetTransform().position) < 
+            } else {
+                if (Vector3.Distance(transform.position, interactable.GetTransform().position) <
                     Vector3.Distance(transform.position, closestInteractable.GetTransform().position)) {
                     closestInteractable = interactable;
                 }
             }
         }
-        
+
         return closestInteractable;
     }
 }
