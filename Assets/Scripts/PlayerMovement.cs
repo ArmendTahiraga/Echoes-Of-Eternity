@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     private float verticalInput;
     private Vector3 movementDirection;
     private Rigidbody rigidbody;
-    public bool isPlayerMoving;
+    public bool isPlayerMoving = true;
 
     void Start() {
         rigidbody = GetComponent<Rigidbody>();
