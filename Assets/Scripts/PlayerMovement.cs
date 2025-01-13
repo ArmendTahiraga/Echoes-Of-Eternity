@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     private float verticalInput;
     private Vector3 movementDirection;
     private Rigidbody rigidbody;
+    public bool isPlayerMoving;
 
     void Start() {
         rigidbody = GetComponent<Rigidbody>();
@@ -14,6 +15,10 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
+        if (!isPlayerMoving) {
+            return;
+        }
+        
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
         movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;

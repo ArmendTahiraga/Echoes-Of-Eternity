@@ -19,6 +19,7 @@ public class DialogueUI : MonoBehaviour {
             Show();
             CheckDialogueInput();
         } else {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving = true;
             Hide();
         }
     }

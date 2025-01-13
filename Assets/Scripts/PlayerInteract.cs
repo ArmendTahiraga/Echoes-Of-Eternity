@@ -7,6 +7,9 @@ public class PlayerInteract : MonoBehaviour {
             Interactable interactable = GetInteractable();
             if (interactable != null) {
                 interactable.Interact();
+                if (interactable.GetType() == typeof(NPCInteractable)) { 
+                    GetComponent<PlayerMovement>().isPlayerMoving = false;
+                }
             }
         }
     }
