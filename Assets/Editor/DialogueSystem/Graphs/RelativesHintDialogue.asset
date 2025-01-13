@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: RelativesHintDialogue
+  m_EditorClassIdentifier: 
+  fileName: RelativesHintDialogue
+  groups:
+  - id: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    name: Relative01
+    position: {x: -49.499756, y: 15.999966}
+  - id: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    name: Relative02
+    position: {x: 612, y: 460.5}
+  nodes:
+  - id: a59ea79d-762b-4cc9-9479-07d13bea4010
+    name: Dialogue1
+    text: "I still can\u2019t believe he\u2019s gone. Samuel wasn\u2019t just family;
+      he was the glue holding us together."
+    choices:
+    - text: Next Dialogue
+      nodeId: 5f5c9238-aecd-44a0-a87b-e8bf55c9ec72
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: -24.5, y: 74.5}
+  - id: 5f5c9238-aecd-44a0-a87b-e8bf55c9ec72
+    name: Dialogue2
+    text: "And look where that got him. Always sticking his neck out for others,
+      always chasing some \u2018higher purpose.\u2019 It killed him, Uncle."
+    choices:
+    - text: Next Dialogue
+      nodeId: f0fa8b08-5cab-40e7-bc4d-a98c106051c7
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 637, y: 519}
+  - id: 8c100941-dc22-47e2-a415-f348c31ccfc3
+    name: Dialogue4
+    text: "Right. And what did he get in return? Lies? Betrayal? A so-called accident
+      that doesn\u2019t add up? I don\u2019t buy it, Uncle. Someone wanted him out
+      of the way."
+    choices:
+    - text: Next Dialogue
+      nodeId: aa5f416d-b22a-43d6-bbb0-17c8c0794e19
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 1921, y: 519}
+  - id: f0fa8b08-5cab-40e7-bc4d-a98c106051c7
+    name: Dialogue3
+    text: "Don\u2019t talk like that. Samuel did what he thought was right. This
+      city needed someone like him, a true detective, even if it cost him everything."
+    choices:
+    - text: Next Dialogue
+      nodeId: 8c100941-dc22-47e2-a415-f348c31ccfc3
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 1279, y: 74.5}
+  - id: aa5f416d-b22a-43d6-bbb0-17c8c0794e19
+    name: Dialogue5
+    text: "You\u2019re not wrong about that. Samuel was digging into something big.
+      He said it was dangerous\u2014didn\u2019t even tell Margaret everything. Maybe
+      he was trying to protect his wife, or maybe he didn\u2019t trust anyone by
+      the end."
+    choices:
+    - text: Next Dialogue
+      nodeId: 61cd7892-bc19-4f5e-8ab9-e0e4aab87c58
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 2563, y: 74.5}
+  - id: 61cd7892-bc19-4f5e-8ab9-e0e4aab87c58
+    name: Dialogue6
+    text: "He trusted Lucas, didn\u2019t he? That informant? Fat lot of good that
+      did him.\u201D"
+    choices:
+    - text: Next Dialogue
+      nodeId: 0de70a25-efd3-4931-85d4-5e6f6e589015
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 3205, y: 519}
+  - id: 0de70a25-efd3-4931-85d4-5e6f6e589015
+    name: Dialogue7
+    text: "Lucas wasn\u2019t the only one, though. Samuel had more enemies than friends
+      by the time it was over. Drake, Crowe, and who knows who else were gunning
+      for him. I just wish\u2026"
+    choices:
+    - text: Next Dialogue
+      nodeId: e4b0a919-82cf-4733-ab63-c39a38bce5b4
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 3847, y: 74.5}
+  - id: 22f9de21-359b-4c30-b04a-641c1026f569
+    name: Dialogue9
+    text: "Maybe he didn\u2019t think he could. Or maybe he thought the fight was
+      worth it, even if he lost."
+    choices:
+    - text: Next Dialogue
+      nodeId: c0fc2867-c4d8-4f3f-8ff0-f74c04a170ca
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 5269.5, y: 519}
+  - id: e4b0a919-82cf-4733-ab63-c39a38bce5b4
+    name: Dialogue8
+    text: "I just wish he\u2019d let someone help him."
+    choices:
+    - text: Next Dialogue
+      nodeId: 22f9de21-359b-4c30-b04a-641c1026f569
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 4627.5, y: 74.5}
+  - id: c0fc2867-c4d8-4f3f-8ff0-f74c04a170ca
+    name: Dialogue10
+    text: "Margaret\u2019s been a wreck since the funeral. She blames herself, you
+      know. Says she should\u2019ve seen it coming."
+    choices:
+    - text: Next Dialogue
+      nodeId: 7327e90e-ef92-435f-8834-ee7bfea2ad96
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 5911.5, y: 74.5}
+  - id: 7327e90e-ef92-435f-8834-ee7bfea2ad96
+    name: Dialogue11
+    text: Seen what coming? The so-called accident? Or the fact that he was working
+      himself into an early grave, chasing people more powerful than he could ever
+      take down alone?
+    choices:
+    - text: Next Dialogue
+      nodeId: c4a1ff01-1059-41d7-80d7-5ba85884469e
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 6553.5, y: 519}
+  - id: c4a1ff01-1059-41d7-80d7-5ba85884469e
+    name: Dialogue12
+    text: "Don\u2019t disrespect him. He believed in justice, even if it cost him
+      everything. But you\u2019re right about one thing\u2014it wasn\u2019t an accident.
+      And if someone doesn\u2019t uncover the truth, Samuel\u2019s death will be
+      just another unsolved tragedy in this city."
+    choices:
+    - text: Next Dialogue
+      nodeId: 0fd723f9-b444-4a9c-9793-a74dedcaa7d0
+    groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
+    dialogueType: 0
+    position: {x: 7195.5, y: 74.5}
+  - id: 0fd723f9-b444-4a9c-9793-a74dedcaa7d0
+    name: Dialogue13
+    text: "I hope you\u2019re right, Uncle. I just wish\u2026 I wish I\u2019d told
+      him that, before it was too late."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
+    dialogueType: 0
+    position: {x: 7837.5, y: 519}
+  oldGroupNames:
+  - Relative01
+  - Relative02
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Relative01
+      Value:
+      - Dialogue1
+      - Dialogue3
+      - Dialogue5
+      - Dialogue7
+      - Dialogue8
+      - Dialogue10
+      - Dialogue12
+    - Key: Relative02
+      Value:
+      - Dialogue2
+      - Dialogue4
+      - Dialogue6
+      - Dialogue9
+      - Dialogue11
+      - Dialogue13

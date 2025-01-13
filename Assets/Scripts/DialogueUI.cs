@@ -34,7 +34,7 @@ public class DialogueUI : MonoBehaviour {
     public void StartDialogue(string characterName, DSDialogue dialogue) {
         dialogueActive = true;
         this.dialogue = dialogue;
-        this.characterName.text = characterName;
+        this.characterName.text = characterName.Replace("0", " ");
         DSDialogueSO currentDialogue = dialogue.GetDialogue();
         dialogueText.text = currentDialogue.dialogueText;
         

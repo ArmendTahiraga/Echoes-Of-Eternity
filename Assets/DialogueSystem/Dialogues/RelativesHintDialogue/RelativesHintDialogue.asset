@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: RelativesHintDialogue
+  m_EditorClassIdentifier: 
+  fileName: RelativesHintDialogue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: ab01744cd81ea4d09b767da8205b9a61, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 50faf61351e844e78aaeeb6a431ab135, type: 2}
+      - {fileID: 11400000, guid: acaf9c0bb02694bbd80773fe4b815834, type: 2}
+      - {fileID: 11400000, guid: 2c5ef5f1877ad45da9f09407fca0f355, type: 2}
+      - {fileID: 11400000, guid: dbde413ccb2e5482cb960c13cd02bcef, type: 2}
+      - {fileID: 11400000, guid: 5d83cf3408d664b0fa545621a885912f, type: 2}
+      - {fileID: 11400000, guid: cce794606075447e68b70968737c6c1c, type: 2}
+      - {fileID: 11400000, guid: 58a140f4ca2eb4cca8587cde61f53523, type: 2}
+    - Key: {fileID: 11400000, guid: 23d654b4c06064211854ca007f0dfb77, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 08c0e9cd8ec794cff99455003c49f385, type: 2}
+      - {fileID: 11400000, guid: 2af71c253f44c4c86b999f69f55eda52, type: 2}
+      - {fileID: 11400000, guid: 62c4a726c3c6747e380a2318a3383324, type: 2}
+      - {fileID: 11400000, guid: 0ca99247334a9426aa0b9c523f8ea92a, type: 2}
+      - {fileID: 11400000, guid: a2666d3edc5ae4a45ac916550e0ebd61, type: 2}
+      - {fileID: 11400000, guid: 913eb46790be34b909ee42e552dbe887, type: 2}
+  ungroupedDialogues: []

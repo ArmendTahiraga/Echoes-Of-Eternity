@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class AsyncLoader : MonoBehaviour {
     [SerializeField] private GameObject loadingScreen;
-    [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject gameUI;
     [SerializeField] private Slider loadingSlider;
 
     public void LoadLevel(string levelToLoad) {
-        mainMenu.SetActive(false);
+        gameUI.SetActive(false);
         loadingScreen.SetActive(true);
         StartCoroutine(LoadLevelAsync(levelToLoad));
     }
