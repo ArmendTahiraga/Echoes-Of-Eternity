@@ -27,7 +27,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: {x: -120.767, y: -50.265015, z: -79.26898}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -38,75 +38,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: 13.645, y: 97.428, z: -5.242}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.75
-        value: {x: 41.443, y: 94.153, z: -6.802}
-        inSlope: {x: 57.8544, y: -10.023605, z: -6.7284}
-        outSlope: {x: 57.8544, y: -10.023605, z: -6.7284}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.8333333
-        value: {x: 61.857, y: 89.075, z: -10.849}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: {x: 9.466, y: 97.323, z: 3.644}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.75
-        value: {x: 30.6, y: 98.852, z: 4.176}
-        inSlope: {x: 56.8008, y: 5.889606, z: 2.5536003}
-        outSlope: {x: 56.8008, y: 5.889606, z: 2.5536003}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.8333333
-        value: {x: 56.8, y: 102.231, z: 6.573}
-        inSlope: {x: 0, y: 0, z: 0}
-        outSlope: {x: 0, y: 0, z: 0}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -120,7 +52,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: {x: 25.496, y: 98.677, z: -26.536}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -131,7 +63,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -145,7 +77,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: {x: -0.037, y: -9.7, z: 4.137}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -156,7 +88,75 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 13.645, y: 97.428, z: -5.242}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.41666666
+        value: {x: 41.443, y: 94.153, z: -6.802}
+        inSlope: {x: 96.423996, y: -16.706009, z: -11.214}
+        outSlope: {x: 96.423996, y: -16.706009, z: -11.214}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 61.857, y: 89.075, z: -10.849}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: {x: 9.466, y: 97.323, z: 3.644}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.41666666
+        value: {x: 30.6, y: 98.852, z: 4.176}
+        inSlope: {x: 94.668, y: 9.8160095, z: 4.2560005}
+        outSlope: {x: 94.668, y: 9.8160095, z: 4.2560005}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      - serializedVersion: 3
+        time: 0.5
+        value: {x: 56.8, y: 102.231, z: 6.573}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
   m_PositionCurves: []
   m_ScaleCurves: []
   m_FloatCurves: []
@@ -169,7 +169,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 92920997
+      path: 3211536564
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -178,7 +178,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3033772924
+      path: 4503071
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -187,7 +187,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3815649850
+      path: 3013991921
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -196,7 +196,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1091342140
+      path: 4001426050
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -205,7 +205,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2371466302
+      path: 3107044984
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -219,7 +219,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.8333333
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -249,7 +249,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -120.767
         inSlope: 0
         outSlope: 0
@@ -261,10 +261,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -279,7 +279,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -50.265015
         inSlope: 0
         outSlope: 0
@@ -291,10 +291,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -309,7 +309,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -79.26898
         inSlope: 0
         outSlope: 0
@@ -321,244 +321,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 13.645
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: 41.443
-        inSlope: 57.8544
-        outSlope: 57.8544
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: 61.857
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 97.428
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: 94.153
-        inSlope: -10.023605
-        outSlope: -10.023605
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: 89.075
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: -5.242
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: -6.802
-        inSlope: -6.7284
-        outSlope: -6.7284
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: -10.849
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 9.466
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: 30.6
-        inSlope: 56.8008
-        outSlope: 56.8008
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: 56.8
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 97.323
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: 98.852
-        inSlope: 5.889606
-        outSlope: 5.889606
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: 102.231
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 3.644
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.75
-        value: 4.176
-        inSlope: 2.5536003
-        outSlope: 2.5536003
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.8333333
-        value: 6.573
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -573,7 +339,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: 25.496
         inSlope: 0
         outSlope: 0
@@ -585,10 +351,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -603,7 +369,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: 98.677
         inSlope: 0
         outSlope: 0
@@ -615,10 +381,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -633,7 +399,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -26.536
         inSlope: 0
         outSlope: 0
@@ -645,10 +411,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -663,7 +429,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -0.037
         inSlope: 0
         outSlope: 0
@@ -675,10 +441,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -693,7 +459,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: -9.7
         inSlope: 0
         outSlope: 0
@@ -705,10 +471,10 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -723,7 +489,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.75
+        time: 0.41666666
         value: 4.137
         inSlope: 0
         outSlope: 0
@@ -735,10 +501,244 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
-    flags: 16
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 13.645
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: 41.443
+        inSlope: 96.423996
+        outSlope: 96.423996
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 61.857
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 97.428
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: 94.153
+        inSlope: -16.706009
+        outSlope: -16.706009
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 89.075
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: -5.242
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: -6.802
+        inSlope: -11.214
+        outSlope: -11.214
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: -10.849
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 9.466
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: 30.6
+        inSlope: 94.668
+        outSlope: 94.668
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 56.8
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.x
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 97.323
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: 98.852
+        inSlope: 9.8160095
+        outSlope: 9.8160095
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 102.231
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.y
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 3.644
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.41666666
+        value: 4.176
+        inSlope: 4.2560005
+        outSlope: 4.2560005
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.5
+        value: 6.573
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: localEulerAnglesRaw.z
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    classID: 4
+    script: {fileID: 0}
+    flags: 0
   m_EulerEditorCurves:
   - serializedVersion: 2
     curve:
@@ -748,7 +748,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -760,7 +760,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -772,7 +772,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -784,7 +784,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -796,7 +796,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -808,7 +808,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerleft.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -820,7 +820,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -832,7 +832,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -844,7 +844,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -856,7 +856,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -868,7 +868,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -880,7 +880,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -892,7 +892,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -904,7 +904,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -916,7 +916,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: SK_Char_Professional_Male_02/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
+    path: PlayerObject/Characters/spine/spine.01/spine.02/spine.03/shoulder.R/upperarm.R/forearm.R/hand.R/fingerright.01.R
     classID: 4
     script: {fileID: 0}
     flags: 0
