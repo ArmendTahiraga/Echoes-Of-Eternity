@@ -9958,7 +9958,7 @@ GameObject:
   - component: {fileID: 1133126693}
   - component: {fileID: 1133126692}
   - component: {fileID: 1133126696}
-  - component: {fileID: 1133126697}
+  - component: {fileID: 1133126698}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -10074,7 +10074,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1133126697
+--- !u!114 &1133126698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10083,11 +10083,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1133126691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef56ed801a779470889a211e78930dab, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c968167e54db4fc396838757d126457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 1133126696}
-  playerAnimator: {fileID: 233327294}
+  interactionText: Open Door
+  animationTrigger:
+  - OpenDoorTrigger
+  - PlayerOpenDoorTrigger
+  animator:
+  - {fileID: 1133126696}
+  - {fileID: 233327294}
 --- !u!1001 &1139890494
 PrefabInstance:
   m_ObjectHideFlags: 0
