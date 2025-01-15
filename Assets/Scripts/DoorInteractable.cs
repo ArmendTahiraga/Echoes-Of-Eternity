@@ -9,11 +9,11 @@ public class DoorInteractable : MonoBehaviour, Interactable {
     public void Interact() {
         if (doorOpen) {
             doorAnimator.Play("DoorClose");
-            playerAnimator.Play("PlayerOpenDoor");
+            playerAnimator.SetTrigger("OpenDoorTrigger");
             doorOpen = false;
         } else {
             doorAnimator.Play("DoorOpen");
-            playerAnimator.Play("PlayerOpenDoor");
+            playerAnimator.SetTrigger("OpenDoorTrigger");
             doorOpen = true;
         }
     }

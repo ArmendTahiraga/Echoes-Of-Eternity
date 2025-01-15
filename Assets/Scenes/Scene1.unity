@@ -1980,7 +1980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2987989824181919132, guid: 85a72836b21b25b4fa36289abd88790e, type: 3}
       propertyPath: m_Name
-      value: SK_Char_Professional_Male_02
+      value: PlayerObject
       objectReference: {fileID: 0}
     - target: {fileID: 5443649426613309167, guid: 85a72836b21b25b4fa36289abd88790e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3825,6 +3825,7 @@ MonoBehaviour:
   sensitivityX: 400
   sensitivityY: 400
   orientation: {fileID: 1696555170}
+  playerObjectOrientation: {fileID: 139921950}
 --- !u!81 &334244367
 AudioListener:
   m_ObjectHideFlags: 0
