@@ -9,6 +9,7 @@ public class PlayerInteract : MonoBehaviour {
                 interactable.Interact();
                 if (interactable.GetType() == typeof(NPCInteractable)) { 
                     GetComponent<PlayerMovement>().isPlayerMoving = false;
+                    GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
                 }
             }
         }

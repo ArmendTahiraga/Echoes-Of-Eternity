@@ -7,19 +7,18 @@ public class NPCInteractable : MonoBehaviour, Interactable {
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private string[] animationTriggers;
     [SerializeField] private Animator[] animators;
-
+    [SerializeField] private TeleportPlayer teleportPlayer;
+    
     public void Interact() {
         dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
-
-        if (animationTriggers.Length > 0) {
+        
+        if (animationTriggers?.Length > 0) {
             for (int i = 0; i < animationTriggers.Length; i++) {
                 if (animationTriggers[i] == "PlayerSitTrigger") {
-                    GameObject.Find("Player").GetComponent<Transform>().position = new Vector3(-3.632f, 45.872f, 190.45f);
-                    GameObject.Find("PlayerObject").GetComponent<Transform>().localPosition = new Vector3(0, -1.971f, 0.019f);
-                    GameObject.Find("CameraPosition").GetComponent<Transform>().localPosition = new Vector3(0, -0.738f, -0.683f);
-                    GameObject.Find("PlayerCam").GetComponent<Transform>().rotation = Quaternion.Euler(0, -175f, 0);
-                    GameObject.Find("Orientation").GetComponent<Transform>().rotation = Quaternion.Euler(0, 0, 0);
+                    teleportPlayer.MovePlayer(new Vector3(-3.632f, 45.9f, 190.45f), Quaternion.Euler(0, 90, 0) , new Vector3(0, -1.971f, 0.019f),
+                        new Vector3(0, -0.738f, -0.683f), Quaternion.Euler(0, -275f, 0), Quaternion.Euler(0, 0, 0));
                 }
+
                 animators[i].SetTrigger(animationTriggers[i]);
             }
         }

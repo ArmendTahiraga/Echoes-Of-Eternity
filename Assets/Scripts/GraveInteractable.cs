@@ -5,7 +5,7 @@ public class GraveInteractable : MonoBehaviour, Interactable {
     [SerializeField] private AsyncLoader loader;
     
     public void Interact() {
-        loader.LoadLevel("Graveyard");
+        loader.LoadLevel("Scene1");
     }
 
     public string GetInteractionText() {

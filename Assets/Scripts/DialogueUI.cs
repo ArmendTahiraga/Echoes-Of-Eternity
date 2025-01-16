@@ -20,6 +20,7 @@ public class DialogueUI : MonoBehaviour {
             CheckDialogueInput();
         } else {
             GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving = true;
+            GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = false;
             Hide();
         }
     }

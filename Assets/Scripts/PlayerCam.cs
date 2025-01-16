@@ -7,6 +7,7 @@ public class PlayerCam : MonoBehaviour {
     [SerializeField] private Transform playerObjectOrientation;
     private float xRotation;
     private float yRotation;
+    public bool lockCamera;
 
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
@@ -14,23 +15,26 @@ public class PlayerCam : MonoBehaviour {
     }
 
     void Update() {
+        Debug.Log(lockCamera);
         if (PauseMenuController.isGamePaused) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         } else {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-            
-            float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
+
+            if (!lockCamera) {
+                float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
+                float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
         
-            xRotation -= mouseY;
-            yRotation += mouseX;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+                xRotation -= mouseY;
+                yRotation += mouseX;
+                xRotation = Mathf.Clamp(xRotation, -90f, 45f);
         
-            transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
-            orientation.rotation = Quaternion.Euler(0, yRotation, 0);
-            playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
+                transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+                orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+                playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
+            }
         }
     }
 }

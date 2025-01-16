@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Imported Assets/Sky/ExampleScenes/DarkStorm.unity
     guid: 952ead6250bb92747a18eeb7e40334cc
+  - enabled: 1
+    path: Assets/Scenes/Scene1.unity
+    guid: 44952cfc692d6004c83997a56038b344
   m_configObjects: {}
