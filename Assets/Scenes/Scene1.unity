@@ -4747,6 +4747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341764048}
   - component: {fileID: 341764049}
+  - component: {fileID: 341764050}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -4831,6 +4832,19 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &341764050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341764047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac33a406707138c4da3b058da776a949, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeDelay: 4
 --- !u!4 &342413561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a7ef6464741e4254bb872b147c75b33e, type: 3}
@@ -7342,7 +7356,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 70}
+  m_SizeDelta: {x: 800, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629845220
 MonoBehaviour:
@@ -8382,7 +8396,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 120}
+  m_SizeDelta: {x: 800, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &718510012
 MonoBehaviour:
@@ -9289,7 +9303,7 @@ GameObject:
   - component: {fileID: 783864510}
   - component: {fileID: 783864514}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: ConversationStarter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9371,9 +9385,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: 282a0ee8d973444eaa9bd32ac8a58006, type: 2}
-  dialogueGroup: {fileID: 11400000, guid: ab01744cd81ea4d09b767da8205b9a61, type: 2}
-  dialogue: {fileID: 11400000, guid: 50faf61351e844e78aaeeb6a431ab135, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: fbab279f4faea49a4ae740257bf1419f, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: afe62b7511b3f493bbc3e8e39ac21ba5, type: 2}
+  dialogue: {fileID: 11400000, guid: 411eb1eaa01cd4a27966e698753f289b, type: 2}
   groupedDialogues: 1
   startingDialoguesOnly: 0
   selectedDialogueGroupIndex: 0
@@ -11485,7 +11499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -313, y: -564.11743}
+  m_AnchoredPosition: {x: -363, y: -564.11743}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &993207562
@@ -12929,7 +12943,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 70}
+  m_SizeDelta: {x: 800, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166877624
 MonoBehaviour:
@@ -14322,10 +14336,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 341764048}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2093853374}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
 --- !u!1001 &1249052608
 PrefabInstance:
@@ -14872,7 +14883,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 40}
+  m_SizeDelta: {x: 800, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1288769272
 MonoBehaviour:
@@ -15766,7 +15777,7 @@ Transform:
   m_GameObject: {fileID: 1365459567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.627, z: 0.043}
+  m_LocalPosition: {x: 0, y: 0.563, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17335,7 +17346,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 700, y: 70}
+  m_SizeDelta: {x: 800, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1512544384
 MonoBehaviour:
@@ -24025,24 +24036,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2090658706}
   m_CullTransparentMesh: 1
---- !u!1 &2093853373 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
-  m_PrefabInstance: {fileID: 1240134183}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2093853374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2093853373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac33a406707138c4da3b058da776a949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeDelay: 0
 --- !u!1001 &2103134252
 PrefabInstance:
   m_ObjectHideFlags: 0

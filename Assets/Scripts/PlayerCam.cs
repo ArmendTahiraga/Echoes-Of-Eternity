@@ -15,7 +15,6 @@ public class PlayerCam : MonoBehaviour {
     }
 
     void Update() {
-        Debug.Log(lockCamera);
         if (PauseMenuController.isGamePaused) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

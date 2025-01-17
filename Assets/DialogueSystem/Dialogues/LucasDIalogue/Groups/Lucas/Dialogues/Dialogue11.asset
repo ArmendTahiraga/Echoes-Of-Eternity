@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue11
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue11
+  dialogueText: (sigh)
+  choices:
+  - text: "You\u2019ve got no choice, Lucas. Tell me what is going on!"
+    nextDialogue: {fileID: 11400000, guid: 7f72afb43b1b74b338a621d863500948, type: 2}
+  - text: "Relax, Lucas. You\u2019re safe here. Just talk to me."
+    nextDialogue: {fileID: 11400000, guid: 356a0d165551d4677ab6d2e95af5352d, type: 2}
+  - text: Stop stalling, Lucas. Just give me what I need.
+    nextDialogue: {fileID: 11400000, guid: ec267b973c0964dd9b5b4ceb5ec968b8, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
