@@ -8,6 +8,11 @@ public class ObjectiveManager : MonoBehaviour {
     private Objective currentObjective;    
 
     private void Start() {
+        if (objectives.Count == 0) {
+            objectiveText.gameObject.SetActive(false);
+            return;
+        }
+        
         foreach (Objective objective in objectives) {
             objective.onObjectiveComplete.AddListener(() => OnObjectiveComplete(objective));
         }
