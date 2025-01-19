@@ -8,9 +8,14 @@ public class NPCInteractable : MonoBehaviour, Interactable {
     [SerializeField] private string[] animationTriggers;
     [SerializeField] private Animator[] animators;
     [SerializeField] private TeleportPlayer teleportPlayer;
+    [SerializeField] private Objective objective;
     
     public void Interact() {
         dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
+
+        if (objective != null) {
+            objective.CompleteObjective();
+        }
         
         if (animationTriggers?.Length > 0) {
             for (int i = 0; i < animationTriggers.Length; i++) {
