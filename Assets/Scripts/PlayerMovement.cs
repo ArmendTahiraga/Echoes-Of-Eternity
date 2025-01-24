@@ -34,4 +34,12 @@ public class PlayerMovement : MonoBehaviour {
             GetComponent<Rigidbody>().velocity = movementDirection * speed;
         }
     }
+
+    public void Save(ref PlayerSaveData playerSaveData) {
+        playerSaveData.position = gameObject.transform.position;
+    }
+
+    public void Load(PlayerSaveData playerSaveData) {
+        gameObject.transform.position = playerSaveData.position;
+    }
 }
