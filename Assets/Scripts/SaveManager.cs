@@ -9,7 +9,7 @@ public class SaveManager : MonoBehaviour {
     public void SaveGame() {
         string saveFile = Application.persistentDataPath + "/saveData.json";
         HandleSaveData();
-        File.WriteAllText(saveFile, JsonUtility.ToJson(saveData));
+        File.WriteAllText(saveFile, JsonUtility.ToJson(saveData, true));
     }
 
     private void HandleSaveData() {
