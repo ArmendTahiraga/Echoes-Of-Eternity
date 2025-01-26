@@ -42,6 +42,7 @@ public class ObjectiveManager : MonoBehaviour {
 
     private void CompletedObjectives() {
         objectiveText.gameObject.SetActive(false);
+        currentObjective = null;
     }
 
     public void Save(ref ObjectivesSaveData objectivesSaveData) {
@@ -53,8 +54,13 @@ public class ObjectiveManager : MonoBehaviour {
             currentObjective.isActive = false;
         }
 
-        currentObjective = objectivesSaveData.currentObjective;
-        currentObjective.isActive = true;
-        UpdateObjectiveUI();
+        if (objectivesSaveData.currentObjective != null) {
+            objectiveText.gameObject.SetActive(true);
+            currentObjective = objectivesSaveData.currentObjective;
+            currentObjective.isActive = true;
+            UpdateObjectiveUI();
+        } else {
+            objectiveText.gameObject.SetActive(false);
+        }
     }
 }

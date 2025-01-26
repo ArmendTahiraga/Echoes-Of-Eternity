@@ -89,21 +89,23 @@ public class DialogueUI : MonoBehaviour {
 
     public void Save(ref DialogueSaveData dialogueSaveData) {
         dialogueSaveData.dialogueActive = dialogueActive;
-        dialogueSaveData.dialogue = dialogue;
-        dialogueSaveData.dialogueSO = dialogue.GetDialogue();
-        dialogueSaveData.dialogueGroupSO = dialogue.GetDialogueGroup();
+        dialogueSaveData.dialogue = dialogue ? dialogue : null;
+        dialogueSaveData.dialogueSO = dialogue ? dialogue.GetDialogue() : null;
+        dialogueSaveData.dialogueGroupSO = dialogue ? dialogue.GetDialogueGroup() : null;
         dialogueSaveData.characterName = characterName.text;
         dialogueSaveData.dialogueText = dialogueText.text;
     }
 
     public void Load(DialogueSaveData dialogueSaveData) {
         dialogueActive = dialogueSaveData.dialogueActive;
-        dialogue = dialogueSaveData.dialogue;
-        dialogue.SetDSDialogueSO(dialogueSaveData.dialogueSO);
-        dialogue.SetDSDialogueGroupSO(dialogueSaveData.dialogueGroupSO);
+        if (dialogueSaveData.dialogue != null) {
+            dialogue = dialogueSaveData.dialogue;
+            dialogue.SetDSDialogueSO(dialogueSaveData.dialogueSO);
+            dialogue.SetDSDialogueGroupSO(dialogueSaveData.dialogueGroupSO);
+            DisplayChoices(dialogueSaveData.dialogue.GetDialogue());
+        }
         characterName.text = dialogueSaveData.characterName;
         dialogueText.text = dialogueSaveData.dialogueText;
-        DisplayChoices(dialogueSaveData.dialogue.GetDialogue());
     }
 
     private void DisplayChoices(DSDialogueSO dialogue) {
