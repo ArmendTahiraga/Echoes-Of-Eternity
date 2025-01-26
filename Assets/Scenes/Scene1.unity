@@ -12672,7 +12672,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerMovement: {fileID: 233327292}
-  pauseMenuController: {fileID: 729081085}
+  objectiveManager: {fileID: 828200809}
+  dialogueUI: {fileID: 921278109}
+  playerCam: {fileID: 334244366}
 --- !u!4 &1063208949
 Transform:
   m_ObjectHideFlags: 0

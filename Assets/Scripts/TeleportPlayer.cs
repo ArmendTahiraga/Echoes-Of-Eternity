@@ -16,8 +16,8 @@ public class TeleportPlayer : MonoBehaviour {
     private Quaternion previousPlayerCamRotation;
     private Quaternion previousOrientationRotation;
 
-    private void Update() {
-        if (GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving && previousPlayerPosition != new Vector3(0 ,0, 0)) {
+    private void LateUpdate() {
+        if (GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving && !previousPlayerPosition.Equals(Vector3.zero)) {
             MovePlayerBack();
             if (animationTrigger == "PlayerNotSitTrigger") {
                 animator.SetTrigger(animationTrigger);
@@ -41,14 +41,7 @@ public class TeleportPlayer : MonoBehaviour {
         cameraPosition.localPosition = cameraPositionPosition;
         playerCam.rotation = playerCamRotation;
         orientation.rotation = orientationRotation;
-        // playerCamScript.lockCamera = true;
-        // StartCoroutine(UnlockCam());
     }
-
-    // private IEnumerator UnlockCam() {
-    //     yield return new WaitForSeconds(1f);
-    //     playerCamScript.lockCamera = false;
-    // }
 
     private void MovePlayerBack() {
         player.position = previousPlayerPosition;

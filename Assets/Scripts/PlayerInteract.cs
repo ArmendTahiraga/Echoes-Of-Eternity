@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
-    public void Update() {
+    public void LateUpdate() { // Made it late update to see if it fixes the animation teleport glitch
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
             Interactable interactable = GetInteractable();
             if (interactable != null) {

@@ -39,16 +39,7 @@ public class DialogueUI : MonoBehaviour {
         this.characterName.text = characterName.Replace("0", " ");
         DSDialogueSO currentDialogue = dialogue.GetDialogue();
         dialogueText.text = currentDialogue.dialogueText;
-        
-        for (int i = 0; i < choicesButtons.Count; i++) {
-            if (i < currentDialogue.choices.Count) {
-                choicesButtons[i].gameObject.SetActive(true);
-                TextMeshProUGUI choiceText = choicesButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-                choiceText.text = (i + 1) + ".  " + currentDialogue.choices[i].text;
-            } else {
-                choicesButtons[i].gameObject.SetActive(false);
-            }
-        }
+        DisplayChoices(currentDialogue);
     }
 
     public bool GetHasDialogueStarted() {
@@ -92,6 +83,37 @@ public class DialogueUI : MonoBehaviour {
                 dialogue.SetDSDialogueGroupSO(group);
                 StartDialogue(group.groupName, dialogue);
                 return;
+            }
+        }
+    }
+
+    public void Save(ref DialogueSaveData dialogueSaveData) {
+        dialogueSaveData.dialogueActive = dialogueActive;
+        dialogueSaveData.dialogue = dialogue;
+        dialogueSaveData.dialogueSO = dialogue.GetDialogue();
+        dialogueSaveData.dialogueGroupSO = dialogue.GetDialogueGroup();
+        dialogueSaveData.characterName = characterName.text;
+        dialogueSaveData.dialogueText = dialogueText.text;
+    }
+
+    public void Load(DialogueSaveData dialogueSaveData) {
+        dialogueActive = dialogueSaveData.dialogueActive;
+        dialogue = dialogueSaveData.dialogue;
+        dialogue.SetDSDialogueSO(dialogueSaveData.dialogueSO);
+        dialogue.SetDSDialogueGroupSO(dialogueSaveData.dialogueGroupSO);
+        characterName.text = dialogueSaveData.characterName;
+        dialogueText.text = dialogueSaveData.dialogueText;
+        DisplayChoices(dialogueSaveData.dialogue.GetDialogue());
+    }
+
+    private void DisplayChoices(DSDialogueSO dialogue) {
+        for (int i = 0; i < choicesButtons.Count; i++) {
+            if (i < dialogue.choices.Count) {
+                choicesButtons[i].gameObject.SetActive(true);
+                TextMeshProUGUI choiceText = choicesButtons[i].GetComponentInChildren<TextMeshProUGUI>();
+                choiceText.text = (i + 1) + ".  " + dialogue.choices[i].text;
+            } else {
+                choicesButtons[i].gameObject.SetActive(false);
             }
         }
     }

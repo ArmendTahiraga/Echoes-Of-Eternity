@@ -37,9 +37,11 @@ public class PlayerMovement : MonoBehaviour {
 
     public void Save(ref PlayerSaveData playerSaveData) {
         playerSaveData.position = gameObject.transform.position;
+        playerSaveData.isPlayerMoving = isPlayerMoving;
     }
 
     public void Load(PlayerSaveData playerSaveData) {
         gameObject.transform.position = playerSaveData.position;
+        isPlayerMoving = playerSaveData.isPlayerMoving;
     }
 }

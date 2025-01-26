@@ -3,7 +3,9 @@ using UnityEngine;
 
 public class SaveManager : MonoBehaviour {
     [SerializeField] private PlayerMovement playerMovement;
-    [SerializeField] private PauseMenuController pauseMenuController;
+    [SerializeField] private ObjectiveManager objectiveManager;
+    [SerializeField] private DialogueUI dialogueUI;
+    [SerializeField] private PlayerCam playerCam;
     private SaveData saveData = new SaveData();
     
     public void SaveGame() {
@@ -14,6 +16,9 @@ public class SaveManager : MonoBehaviour {
 
     private void HandleSaveData() {
         playerMovement.Save(ref saveData.playerSaveData);
+        objectiveManager.Save(ref saveData.objectivesSaveData);
+        dialogueUI.Save(ref saveData.dialogueSaveData);
+        playerCam.Save(ref saveData.playerCamSaveData);
     }
 
     public void LoadGame() {
@@ -25,5 +30,8 @@ public class SaveManager : MonoBehaviour {
 
     private void HandleLoadData() {
         playerMovement.Load(saveData.playerSaveData);
-    }
+        objectiveManager.Load(saveData.objectivesSaveData);
+        dialogueUI.Load(saveData.dialogueSaveData);
+        playerCam.Load(saveData.playerCamSaveData);
+    }       
 }

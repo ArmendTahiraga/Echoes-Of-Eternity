@@ -36,4 +36,12 @@ public class PlayerCam : MonoBehaviour {
             }
         }
     }
+
+    public void Save(ref PlayerCamSaveData playerCamSaveData) {
+        playerCamSaveData.lockCamera = lockCamera;
+    }
+    
+    public void Load(PlayerCamSaveData playerCamSaveData) {
+        lockCamera = playerCamSaveData.lockCamera;
+    }
 }
