@@ -6,8 +6,23 @@ public class SaveManager : MonoBehaviour {
     [SerializeField] private ObjectiveManager objectiveManager;
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private PlayerCam playerCam;
+    [SerializeField] private GameObject continueGameButton;
+    [SerializeField] private GameObject loadGameButton;
+    [SerializeField] private AsyncLoader saveGameButton;
     private SaveData saveData = new SaveData();
-    
+
+    private void Update() {
+        if (continueGameButton) {
+            string saveFile = Application.persistentDataPath + "/saveData.json";
+            continueGameButton.SetActive(File.Exists(saveFile));
+        }
+        
+        if (loadGameButton) {
+            string saveFile = Application.persistentDataPath + "/saveData.json";
+            loadGameButton.SetActive(File.Exists(saveFile));
+        }
+    }
+
     public void SaveGame() {
         string saveFile = Application.persistentDataPath + "/saveData.json";
         HandleSaveData();
@@ -33,5 +48,12 @@ public class SaveManager : MonoBehaviour {
         objectiveManager.Load(saveData.objectivesSaveData);
         dialogueUI.Load(saveData.dialogueSaveData);
         playerCam.Load(saveData.playerCamSaveData);
-    }       
+    }
+
+    public void DeleteSaveData() {
+        string saveFile = Application.persistentDataPath + "/saveData.json";
+        if (File.Exists(saveFile)) {
+            File.Delete(saveFile);
+        } 
+    }
 }
