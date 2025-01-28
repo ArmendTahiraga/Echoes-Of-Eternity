@@ -2,6 +2,7 @@ using DS.ScriptableObjects;
 using UnityEngine;
 
 namespace DS {
+    [RequireComponent(typeof(UniqueID))]
     public class DSDialogue : MonoBehaviour {
         [SerializeField] private DSDialogueContainerSO dialogueContainer;
         [SerializeField] private DSDialogueGroupSO dialogueGroup;

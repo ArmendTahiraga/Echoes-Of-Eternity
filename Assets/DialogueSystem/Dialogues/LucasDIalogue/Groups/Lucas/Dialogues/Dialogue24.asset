@@ -19,3 +19,4 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: 0499ea81c05254a4fbe36e4c5c2d7c66, type: 2}
   dialogueType: 0
   isStartingDialogue: 0
+  uniqueID: 572f4af9-538a-45fa-bb40-14095e08d2c6

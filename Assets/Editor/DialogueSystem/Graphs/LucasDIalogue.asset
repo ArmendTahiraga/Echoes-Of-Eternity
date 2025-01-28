@@ -16,7 +16,7 @@ MonoBehaviour:
   groups:
   - id: cf1ee93f-a044-47fd-8bc0-32facd85f72e
     name: Lucas
-    position: {x: -56.00086, y: 106.99994}
+    position: {x: -56, y: 107}
   - id: d6844840-27ec-4c49-ad5e-5f02b792be13
     name: Samuel
     position: {x: 582, y: -826.5}

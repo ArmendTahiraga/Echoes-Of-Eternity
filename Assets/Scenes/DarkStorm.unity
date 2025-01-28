@@ -16946,6 +16946,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4289522659313389365, guid: d3f7b8f6ed5fa144fbc62072ce2b5f4d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1226985266}
+    - targetCorrespondingSourceObject: {fileID: 4289522659313389365, guid: d3f7b8f6ed5fa144fbc62072ce2b5f4d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1226985267}
   m_SourcePrefab: {fileID: 100100000, guid: d3f7b8f6ed5fa144fbc62072ce2b5f4d, type: 3}
 --- !u!1 &1226985261 stripped
 GameObject:
@@ -17028,6 +17031,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
+--- !u!114 &1226985267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226985261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c3c5c65f1ff4325a97db493a34e599, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uniqueID: 
 --- !u!1001 &1235200445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24631,7 +24647,7 @@ MonoBehaviour:
   playerCam: {fileID: 16113369}
   continueGameButton: {fileID: 0}
   loadGameButton: {fileID: 481976441}
-  asyncLoader: {fileID: 1613306599}
+  saveGameButton: {fileID: 0}
 --- !u!4 &1810779426
 Transform:
   m_ObjectHideFlags: 0

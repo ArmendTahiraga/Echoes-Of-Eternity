@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+[RequireComponent(typeof(UniqueID))]
 public class Objective : MonoBehaviour {
     [SerializeField] private string objective;
     public UnityEvent onObjectiveComplete;

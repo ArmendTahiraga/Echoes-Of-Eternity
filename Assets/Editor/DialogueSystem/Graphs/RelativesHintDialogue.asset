@@ -16,7 +16,7 @@ MonoBehaviour:
   groups:
   - id: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
     name: Relative01
-    position: {x: -49.499756, y: 15.999966}
+    position: {x: -49.5, y: 16}
   - id: 687c128e-1b3b-49a0-b1d1-59494235d6cf
     name: Relative02
     position: {x: 612, y: 460.5}

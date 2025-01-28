@@ -21,3 +21,4 @@ MonoBehaviour:
     nextDialogue: {fileID: 11400000, guid: 58a140f4ca2eb4cca8587cde61f53523, type: 2}
   dialogueType: 0
   isStartingDialogue: 0
+  uniqueID: fb2edb3a-126f-414f-93c0-ae36fb1ac6a3
