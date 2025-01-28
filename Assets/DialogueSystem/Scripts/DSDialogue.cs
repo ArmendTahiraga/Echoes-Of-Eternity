@@ -1,8 +1,8 @@
+using System;
 using DS.ScriptableObjects;
 using UnityEngine;
 
 namespace DS {
-    [RequireComponent(typeof(UniqueID))]
     public class DSDialogue : MonoBehaviour {
         [SerializeField] private DSDialogueContainerSO dialogueContainer;
         [SerializeField] private DSDialogueGroupSO dialogueGroup;
@@ -11,7 +11,8 @@ namespace DS {
         [SerializeField] private bool startingDialoguesOnly;
         [SerializeField] private int selectedDialogueGroupIndex;
         [SerializeField] private int selectedDialogueIndex;
-
+        public string uniqueID;
+        
         public DSDialogueContainerSO GetDialogueContainer() {
             return dialogueContainer;
         }

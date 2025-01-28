@@ -46,7 +46,7 @@ public class ObjectiveManager : MonoBehaviour {
     }
 
     public void Save(ref ObjectivesSaveData objectivesSaveData) {
-        objectivesSaveData.currentObjective = currentObjective;
+        objectivesSaveData.currentObjectiveID = currentObjective != null ? currentObjective.uniqueID : "";
     }
 
     public void Load(ObjectivesSaveData objectivesSaveData) {
@@ -54,9 +54,16 @@ public class ObjectiveManager : MonoBehaviour {
             currentObjective.isActive = false;
         }
 
-        if (objectivesSaveData.currentObjective != null) {
+        if (objectivesSaveData.currentObjectiveID != "") {
             objectiveText.gameObject.SetActive(true);
-            currentObjective = objectivesSaveData.currentObjective;
+            
+            Objective[] objectives = FindObjectsOfType<Objective>();
+            foreach (Objective objective in objectives) {
+                if (objective.uniqueID == objectivesSaveData.currentObjectiveID) {
+                    currentObjective = objective;
+                }
+            }
+            
             currentObjective.isActive = true;
             UpdateObjectiveUI();
         } else {

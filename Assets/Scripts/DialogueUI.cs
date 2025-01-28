@@ -89,21 +89,43 @@ public class DialogueUI : MonoBehaviour {
 
     public void Save(ref DialogueSaveData dialogueSaveData) {
         dialogueSaveData.dialogueActive = dialogueActive;
-        dialogueSaveData.dialogue = dialogue ? dialogue : null;
-        dialogueSaveData.dialogueSO = dialogue ? dialogue.GetDialogue() : null;
-        dialogueSaveData.dialogueGroupSO = dialogue ? dialogue.GetDialogueGroup() : null;
+        dialogueSaveData.dialogueID = dialogue ? dialogue.uniqueID: null;
+        dialogueSaveData.dialogueSOID = dialogue ? dialogue.GetDialogue().uniqueID : null;
+        dialogueSaveData.dialogueGroupSOID = dialogue ? dialogue.GetDialogueGroup().uniqueID : null;
         dialogueSaveData.characterName = characterName.text;
         dialogueSaveData.dialogueText = dialogueText.text;
     }
 
     public void Load(DialogueSaveData dialogueSaveData) {
         dialogueActive = dialogueSaveData.dialogueActive;
-        if (dialogueSaveData.dialogue != null) {
-            dialogue = dialogueSaveData.dialogue;
-            dialogue.SetDSDialogueSO(dialogueSaveData.dialogueSO);
-            dialogue.SetDSDialogueGroupSO(dialogueSaveData.dialogueGroupSO);
-            DisplayChoices(dialogueSaveData.dialogue.GetDialogue());
+        DSDialogueGroupSO dialogueGroup = null;
+        
+        if (!string.IsNullOrEmpty(dialogueSaveData.dialogueID)) {
+            DSDialogue[] dialogues = FindObjectsOfType<DSDialogue>();
+            foreach (DSDialogue dialogue in dialogues) {
+                if (dialogue.uniqueID== dialogueSaveData.dialogueID) {
+                    this.dialogue = dialogue;
+                }
+            }
+
+            List<DSDialogueGroupSO> dialogueGroupSos = this.dialogue.GetDialogueContainer().GetGroups();
+            foreach (DSDialogueGroupSO dialogueGroupSo in dialogueGroupSos) {
+                if (dialogueGroupSo.uniqueID == dialogueSaveData.dialogueGroupSOID) {
+                    dialogue.SetDSDialogueGroupSO(dialogueGroupSo);
+                    dialogueGroup = dialogueGroupSo;
+                }
+            }
+            
+            List<DSDialogueSO> dialogueSos = dialogue.GetDialogueContainer().GetGroupDialogues(dialogueGroup);
+            foreach (DSDialogueSO dialogueSo in dialogueSos) {
+                if (dialogueSo.uniqueID == dialogueSaveData.dialogueSOID) {
+                    dialogue.SetDSDialogueSO(dialogueSo);
+                }
+            }
+            
+            DisplayChoices(this.dialogue.GetDialogue());
         }
+        
         characterName.text = dialogueSaveData.characterName;
         dialogueText.text = dialogueSaveData.dialogueText;
     }

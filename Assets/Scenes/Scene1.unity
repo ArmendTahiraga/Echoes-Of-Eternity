@@ -10172,6 +10172,7 @@ MonoBehaviour:
   startingDialoguesOnly: 0
   selectedDialogueGroupIndex: 0
   selectedDialogueIndex: 0
+  uniqueID: 6afb0baa-bf52-4483-940d-8f8ebb5e1742
 --- !u!114 &783864515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10189,6 +10190,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
+  uniqueID: 2e46fc43-3e96-4287-83e5-1257fe76681a
 --- !u!1001 &784371520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13095,7 +13097,7 @@ MonoBehaviour:
   playerCam: {fileID: 334244366}
   continueGameButton: {fileID: 0}
   loadGameButton: {fileID: 1889888883}
-  asyncLoader: {fileID: 197255144}
+  saveGameButton: {fileID: 0}
 --- !u!4 &1063208949
 Transform:
   m_ObjectHideFlags: 0
@@ -14903,6 +14905,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
+  uniqueID: 61e9691a-cd2f-4d50-b62d-db3eacfde439
 --- !u!65 &1198158306
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25712,6 +25715,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   isActive: 0
+  uniqueID: 096a0dc7-1ac3-412d-a158-6a12aece74f5
 --- !u!1001 &2064809146
 PrefabInstance:
   m_ObjectHideFlags: 0

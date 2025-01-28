@@ -14,6 +14,7 @@ namespace DS.Inspectors {
         private SerializedProperty startingDialoguesOnlyProperty;
         private SerializedProperty selectedDialogueGroupIndexProperty;
         private SerializedProperty selectedDialogueIndexProperty;
+        private SerializedProperty uniqueIDProperty;
 
         private void OnEnable() {
             dialogueContainerProperty = serializedObject.FindProperty("dialogueContainer");
@@ -23,6 +24,7 @@ namespace DS.Inspectors {
             startingDialoguesOnlyProperty = serializedObject.FindProperty("startingDialoguesOnly");
             selectedDialogueGroupIndexProperty = serializedObject.FindProperty("selectedDialogueGroupIndex");
             selectedDialogueIndexProperty = serializedObject.FindProperty("selectedDialogueIndex");
+            uniqueIDProperty = serializedObject.FindProperty("uniqueID");
         }
 
         public override void OnInspectorGUI() {
@@ -70,6 +72,9 @@ namespace DS.Inspectors {
             }
             
             DrawDialogueArea(dialogueNames, dialogueFolderPath);
+            
+            uniqueIDProperty.DrawPropertyField();
+            
             serializedObject.ApplyModifiedProperties();
         }
 
