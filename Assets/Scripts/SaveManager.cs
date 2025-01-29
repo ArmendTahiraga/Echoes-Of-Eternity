@@ -1,5 +1,6 @@
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour {
     [SerializeField] private PlayerMovement playerMovement;
@@ -8,7 +9,8 @@ public class SaveManager : MonoBehaviour {
     [SerializeField] private PlayerCam playerCam;
     [SerializeField] private GameObject continueGameButton;
     [SerializeField] private GameObject loadGameButton;
-    [SerializeField] private AsyncLoader saveGameButton;
+    [SerializeField] private AsyncLoader asyncLoader;
+    [SerializeField] private PauseMenuController pauseMenuController;
     private SaveData saveData = new SaveData();
 
     private void Update() {
@@ -30,6 +32,7 @@ public class SaveManager : MonoBehaviour {
     }
 
     private void HandleSaveData() {
+        saveData.scene = SceneManager.GetActiveScene().name;
         playerMovement.Save(ref saveData.playerSaveData);
         objectiveManager.Save(ref saveData.objectivesSaveData);
         dialogueUI.Save(ref saveData.dialogueSaveData);
@@ -40,6 +43,27 @@ public class SaveManager : MonoBehaviour {
         string saveFile = Application.persistentDataPath + "/saveData.json";
         string saveDataContents = File.ReadAllText(saveFile);
         saveData = JsonUtility.FromJson<SaveData>(saveDataContents);
+        
+        if (SceneManager.GetActiveScene().name != saveData.scene) {
+            asyncLoader.LoadLevel(saveData.scene);
+            SceneManager.sceneLoaded += OnSceneLoaded;
+        } else {
+            HandleLoadData();
+        }
+
+        if (pauseMenuController != null) {
+            pauseMenuController.ResumeGame();
+        }
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1) {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+        
+        playerMovement = FindObjectOfType<PlayerMovement>();
+        objectiveManager = FindObjectOfType<ObjectiveManager>();
+        dialogueUI = FindObjectOfType<DialogueUI>();
+        playerCam = FindObjectOfType<PlayerCam>();
+        
         HandleLoadData();
     }
 

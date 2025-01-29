@@ -24634,7 +24634,8 @@ MonoBehaviour:
   playerCam: {fileID: 16113369}
   continueGameButton: {fileID: 0}
   loadGameButton: {fileID: 481976441}
-  saveGameButton: {fileID: 0}
+  asyncLoader: {fileID: 1613306599}
+  pauseMenuController: {fileID: 542890046}
 --- !u!4 &1810779426
 Transform:
   m_ObjectHideFlags: 0
