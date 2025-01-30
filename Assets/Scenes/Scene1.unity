@@ -10109,6 +10109,7 @@ MonoBehaviour:
   - {fileID: 233327294}
   teleportPlayer: {fileID: 233327295}
   objective: {fileID: 783864515}
+  hasAnimationTriggered: 0
 --- !u!65 &783864511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10713,6 +10714,7 @@ MonoBehaviour:
   - {fileID: 1198158305}
   - {fileID: 783864515}
   objectiveText: {fileID: 1966924706}
+  loadGameChanges: 0
 --- !u!4 &828200810
 Transform:
   m_ObjectHideFlags: 0
@@ -11698,6 +11700,7 @@ MonoBehaviour:
   dialogueText: {fileID: 718510012}
   characterName: {fileID: 1288769272}
   panel: {fileID: 11644784}
+  dialogueActive: 0
 --- !u!4 &923392039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0309c95257c747e419a85aff1c45d1ca, type: 3}
@@ -13099,6 +13102,7 @@ MonoBehaviour:
   loadGameButton: {fileID: 1889888883}
   asyncLoader: {fileID: 197255144}
   pauseMenuController: {fileID: 729081085}
+  npcInteractable: {fileID: 783864510}
 --- !u!4 &1063208949
 Transform:
   m_ObjectHideFlags: 0

@@ -69,6 +69,7 @@ public class SaveManager : MonoBehaviour {
 
     private void HandleLoadData() {
         playerMovement.Load(saveData.playerSaveData);
+        objectiveManager.loadGameChanges = true;
         objectiveManager.Load(saveData.objectivesSaveData);
         dialogueUI.Load(saveData.dialogueSaveData);
         playerCam.Load(saveData.playerCamSaveData);

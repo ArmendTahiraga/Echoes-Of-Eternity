@@ -5,9 +5,14 @@ using UnityEngine;
 public class ObjectiveManager : MonoBehaviour {
     [SerializeField] private List<Objective> objectives;
     [SerializeField] private TextMeshProUGUI objectiveText;
-    private Objective currentObjective;    
+    private Objective currentObjective;
+    public bool loadGameChanges;
 
     private void Start() {
+        if (loadGameChanges) {
+            return;
+        }
+        
         if (objectives.Count == 0) {
             objectiveText.gameObject.SetActive(false);
             return;
@@ -20,6 +25,12 @@ public class ObjectiveManager : MonoBehaviour {
         currentObjective = objectives[0];
         currentObjective.isActive = true;
         UpdateObjectiveUI();
+    }
+
+    private void Update() {
+        if (loadGameChanges) {
+            loadGameChanges = false;
+        }
     }
 
     private void OnObjectiveComplete(Objective objective) {

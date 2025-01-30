@@ -41,7 +41,10 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Load(PlayerSaveData playerSaveData) {
+        Debug.Log("Save" + playerSaveData.position);
+        Debug.Log("Transform 1 " + gameObject.transform.position);
         gameObject.transform.position = playerSaveData.position;
+        Debug.Log("Transform 2 " + gameObject.transform.position);
         isPlayerMoving = playerSaveData.isPlayerMoving;
     }
 }
