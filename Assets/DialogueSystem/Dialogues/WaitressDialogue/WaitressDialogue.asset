@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: WaitressDialogue
+  m_EditorClassIdentifier: 
+  fileName: WaitressDialogue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: f6f2ef0f42e9c4d448e4a79e32a26a07, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f6dc29e5dfd934a7ebf3bafe76e7d7e4, type: 2}
+      - {fileID: 11400000, guid: 41bec45ca14234c7a9f628c7d37bccba, type: 2}
+      - {fileID: 11400000, guid: 65470c213ffae47a5842dc87a54e4dcc, type: 2}
+      - {fileID: 11400000, guid: 029799126959f4f20a6bc4ba57529687, type: 2}
+      - {fileID: 11400000, guid: ea10b5936161e4e3eaa100f2dadf3020, type: 2}
+      - {fileID: 11400000, guid: dc7a04de4ac1f4bf3b1ac38646e20729, type: 2}
+      - {fileID: 11400000, guid: 8438e40b74ee542589679a9ce4adf1cb, type: 2}
+    - Key: {fileID: 11400000, guid: 1c4a417ac06754bbb9b28b0bd76d8c4b, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 3801cd143d2f846848aa69976c3213ba, type: 2}
+      - {fileID: 11400000, guid: 1b87d9faf9bad45d58041d03aba68c4b, type: 2}
+      - {fileID: 11400000, guid: c68085fd91da74c45a2195e8302fd4bb, type: 2}
+  ungroupedDialogues: []

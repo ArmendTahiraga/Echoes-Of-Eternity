@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue6
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue6
+  dialogueText: Be careful with that one, hon. He looks like a man on the edge.
+  choices:
+  - text: You notice anything off about him? More than usual, I mean.
+    nextDialogue: {fileID: 11400000, guid: 029799126959f4f20a6bc4ba57529687, type: 2}
+  - text: Anyone else come looking for him?
+    nextDialogue: {fileID: 11400000, guid: dc7a04de4ac1f4bf3b1ac38646e20729, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: ffba9f17-97e4-461c-9290-0235d4ea1595

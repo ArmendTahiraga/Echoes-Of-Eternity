@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: WaitressDialogue
+  m_EditorClassIdentifier: 
+  fileName: WaitressDialogue
+  groups:
+  - id: 07bb4f61-0500-440f-8b65-47fd8230b633
+    name: Waitress
+    position: {x: 8.000002, y: 337.5}
+  - id: 0c373628-ff12-434d-84d2-403e772130a8
+    name: Samuel
+    position: {x: 650, y: -19.5}
+  nodes:
+  - id: 4336de79-8e2d-4c33-abed-af42cd860f67
+    name: Dialogue1
+    text: Rough night, detective?
+    choices:
+    - text: Next Dialogue
+      nodeId: 5797f023-4bec-4fa6-ae01-c8d7a4630644
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 33, y: 396}
+  - id: ba1ce88d-9fa9-4c42-a81c-de0b32e0fc8e
+    name: Dialogue3
+    text: Has that guy been sitting there long?
+    choices:
+    - text: Next Dialogue
+      nodeId: 2410e349-065f-4ced-90c9-c9ab438bef50
+    groupId: 0c373628-ff12-434d-84d2-403e772130a8
+    dialogueType: 0
+    position: {x: 1239, y: 39}
+  - id: 5797f023-4bec-4fa6-ae01-c8d7a4630644
+    name: Dialogue2
+    text: Something like that.
+    choices:
+    - text: Next Dialogue
+      nodeId: ba1ce88d-9fa9-4c42-a81c-de0b32e0fc8e
+    groupId: 0c373628-ff12-434d-84d2-403e772130a8
+    dialogueType: 0
+    position: {x: 675, y: 39}
+  - id: 2410e349-065f-4ced-90c9-c9ab438bef50
+    name: Dialogue4
+    text: "Long enough to run through three cups of coffee and at least five nervous
+      glances at the door. Looks like he\u2019s expecting trouble."
+    choices:
+    - text: Next Dialogue
+      nodeId: ce1ef4d8-4e82-4665-b86c-de7cfd62c347
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 1881, y: 396}
+  - id: ce1ef4d8-4e82-4665-b86c-de7cfd62c347
+    name: Dialogue5
+    text: That makes two of us.
+    choices:
+    - text: Next Dialogue
+      nodeId: 58388b33-3383-45ba-b8cb-5a315e35ee29
+    groupId: 0c373628-ff12-434d-84d2-403e772130a8
+    dialogueType: 0
+    position: {x: 2523, y: 39}
+  - id: 58388b33-3383-45ba-b8cb-5a315e35ee29
+    name: Dialogue6
+    text: Be careful with that one, hon. He looks like a man on the edge.
+    choices:
+    - text: You notice anything off about him? More than usual, I mean.
+      nodeId: f0160e59-54e1-456b-8bb1-c500f8ee43f0
+    - text: Anyone else come looking for him?
+      nodeId: ad7856d6-c24d-4cae-ae3a-751305763e0c
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 1
+    position: {x: 2778, y: 396}
+  - id: f0160e59-54e1-456b-8bb1-c500f8ee43f0
+    name: Dialogue7
+    text: "I\u2019ve seen plenty of jittery men in this place, but he\u2019s different.
+      Won\u2019t stop checking over his shoulder, like someone\u2019s gonna walk
+      in and put a bullet in him."
+    choices:
+    - text: Next Dialogue
+      nodeId: 443b65c1-8242-4066-b297-3d54daead4ff
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 3730, y: 396}
+  - id: 443b65c1-8242-4066-b297-3d54daead4ff
+    name: Dialogue8
+    text: "Whatever he\u2019s mixed up in, it\u2019s eating him alive."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 4700.5, y: 396}
+  - id: ad7856d6-c24d-4cae-ae3a-751305763e0c
+    name: Dialogue9
+    text: "Yeah. Some guy in a cheap suit came by earlier. Didn\u2019t stay long\u2014just
+      stood by the door, saw him, and left."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 3730, y: 632.5}
+  - id: 14c0e3a6-d2e6-4bd1-9f06-544076b2a56e
+    name: Dialogue10
+    text: But this guy? He looked like he saw a damn ghost.
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 07bb4f61-0500-440f-8b65-47fd8230b633
+    dialogueType: 0
+    position: {x: 4700.5, y: 632.5}
+  oldGroupNames:
+  - Waitress
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Waitress
+      Value:
+      - Dialogue1
+      - Dialogue4
+      - Dialogue6
+      - Dialogue7
+      - Dialogue8
+      - Dialogue9
+      - Dialogue10
+    - Key: Samuel
+      Value:
+      - Dialogue3
+      - Dialogue2
+      - Dialogue5

@@ -10109,7 +10109,6 @@ MonoBehaviour:
   - {fileID: 233327294}
   teleportPlayer: {fileID: 233327295}
   objective: {fileID: 783864515}
-  hasAnimationTriggered: 0
 --- !u!65 &783864511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11700,7 +11699,6 @@ MonoBehaviour:
   dialogueText: {fileID: 718510012}
   characterName: {fileID: 1288769272}
   panel: {fileID: 11644784}
-  dialogueActive: 0
 --- !u!4 &923392039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0309c95257c747e419a85aff1c45d1ca, type: 3}
@@ -13102,7 +13100,6 @@ MonoBehaviour:
   loadGameButton: {fileID: 1889888883}
   asyncLoader: {fileID: 197255144}
   pauseMenuController: {fileID: 729081085}
-  npcInteractable: {fileID: 783864510}
 --- !u!4 &1063208949
 Transform:
   m_ObjectHideFlags: 0
@@ -15859,7 +15856,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1137232163464364584, guid: 954c37f2e140209429d336ae1f662632, type: 3}
       propertyPath: m_Name
-      value: SK_Char_Farmer_Female
+      value: Waitress
       objectReference: {fileID: 0}
     - target: {fileID: 1676159544687166703, guid: 954c37f2e140209429d336ae1f662632, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16004,13 +16001,87 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1137232163464364584, guid: 954c37f2e140209429d336ae1f662632, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238694383}
+    - targetCorrespondingSourceObject: {fileID: 1137232163464364584, guid: 954c37f2e140209429d336ae1f662632, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238694384}
+    - targetCorrespondingSourceObject: {fileID: 1137232163464364584, guid: 954c37f2e140209429d336ae1f662632, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1238694385}
   m_SourcePrefab: {fileID: 100100000, guid: 954c37f2e140209429d336ae1f662632, type: 3}
 --- !u!4 &1238694381 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 325264178350725266, guid: 954c37f2e140209429d336ae1f662632, type: 3}
   m_PrefabInstance: {fileID: 1238694380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1238694382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1137232163464364584, guid: 954c37f2e140209429d336ae1f662632, type: 3}
+  m_PrefabInstance: {fileID: 1238694380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1238694383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238694382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a340e889da9f4083ba5ff806348b7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Talk to the waitress
+  characterName: Waitress
+  dialogueUI: {fileID: 921278109}
+  animationTriggers: []
+  animators: []
+  teleportPlayer: {fileID: 0}
+  objective: {fileID: 0}
+--- !u!114 &1238694384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238694382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: f02ef491778ee46f1ac5decea68e3cc6, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: f6f2ef0f42e9c4d448e4a79e32a26a07, type: 2}
+  dialogue: {fileID: 11400000, guid: f6dc29e5dfd934a7ebf3bafe76e7d7e4, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: 7aaea47a-f847-41dc-be20-9c279bc7550f
+--- !u!65 &1238694385
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1238694382}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1.5625999, z: 0.23400444}
+  m_Center: {x: -2.4644793e-11, y: 0.77968323, z: 0.02521451}
 --- !u!4 &1239326354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 405966, guid: c7bcf19bbfa57ed4ea9147dff66d5542, type: 3}
