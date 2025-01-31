@@ -3828,8 +3828,8 @@ GameObject:
   - component: {fileID: 233327292}
   - component: {fileID: 233327291}
   - component: {fileID: 233327290}
-  - component: {fileID: 233327294}
   - component: {fileID: 233327295}
+  - component: {fileID: 233327296}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3905,6 +3905,7 @@ MonoBehaviour:
   speed: 4
   orientation: {fileID: 1696555170}
   isPlayerMoving: 1
+  loadPositionToChange: {x: 0, y: 0, z: 0}
 --- !u!54 &233327293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3932,7 +3933,27 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!95 &233327294
+--- !u!114 &233327295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233327288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c40a44a3e09c944b5aa5392fbc09b9f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 233327289}
+  playerObject: {fileID: 139921950}
+  cameraPosition: {fileID: 1365459568}
+  playerCam: {fileID: 334244365}
+  orientation: {fileID: 1696555170}
+  playerCamScript: {fileID: 334244366}
+  animationTrigger: PlayerNotSitTrigger
+  animator: {fileID: 233327296}
+--- !u!95 &233327296
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -3953,26 +3974,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &233327295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233327288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40a44a3e09c944b5aa5392fbc09b9f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 233327289}
-  playerObject: {fileID: 139921950}
-  cameraPosition: {fileID: 1365459568}
-  playerCam: {fileID: 334244365}
-  orientation: {fileID: 1696555170}
-  playerCamScript: {fileID: 334244366}
-  animationTrigger: PlayerNotSitTrigger
-  animator: {fileID: 233327294}
 --- !u!1001 &235287239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10106,7 +10107,7 @@ MonoBehaviour:
   animationTriggers:
   - PlayerSitTrigger
   animators:
-  - {fileID: 233327294}
+  - {fileID: 233327296}
   teleportPlayer: {fileID: 233327295}
   objective: {fileID: 783864515}
 --- !u!65 &783864511
@@ -14066,7 +14067,7 @@ MonoBehaviour:
   - PlayerOpenDoorTrigger
   animators:
   - {fileID: 1133126696}
-  - {fileID: 233327294}
+  - {fileID: 233327296}
 --- !u!4 &1136300338 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}

@@ -6,8 +6,9 @@ public class PlayerMovement : MonoBehaviour {
     private float horizontalInput;
     private float verticalInput;
     private Vector3 movementDirection;
-    private Rigidbody rigidbody;
+    private new Rigidbody rigidbody;
     public bool isPlayerMoving = true;
+    private Vector3 loadPositionToChange = Vector3.zero;
 
     void Start() {
         rigidbody = GetComponent<Rigidbody>();
@@ -15,6 +16,12 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
+        if (loadPositionToChange != Vector3.zero) {
+            transform.position = loadPositionToChange;
+            loadPositionToChange = Vector3.zero;
+            return;
+        }
+        
         if (!isPlayerMoving) {
             return;
         }
@@ -29,9 +36,9 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (movementDirection == Vector3.zero) {
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            rigidbody.velocity = Vector3.zero;
         } else {
-            GetComponent<Rigidbody>().velocity = movementDirection * speed;
+            rigidbody.velocity = movementDirection * speed;
         }
     }
 
@@ -41,10 +48,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     public void Load(PlayerSaveData playerSaveData) {
-        Debug.Log("Save" + playerSaveData.position);
-        Debug.Log("Transform 1 " + gameObject.transform.position);
-        gameObject.transform.position = playerSaveData.position;
-        Debug.Log("Transform 2 " + gameObject.transform.position);
+        loadPositionToChange = playerSaveData.position;
         isPlayerMoving = playerSaveData.isPlayerMoving;
     }
 }
