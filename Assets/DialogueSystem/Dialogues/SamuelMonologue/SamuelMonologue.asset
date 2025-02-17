@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: SamuelMonologue
+  m_EditorClassIdentifier: 
+  fileName: SamuelMonologue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 97fae3c818afb43f09258f3136604f6a, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 410a7a2356d3d4b2188495cc14277345, type: 2}
+      - {fileID: 11400000, guid: 8a0951d4118e1454ba4abf5f46162a19, type: 2}
+      - {fileID: 11400000, guid: 9bc75c7ed45694fff9d1b991443a47fd, type: 2}
+  ungroupedDialogues: []
