@@ -1,97 +1,76 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using PrimeTween;
 
-public class CardsController : MonoBehaviour
-{
-    [SerializeField] Card cardPrefab;
-    [SerializeField] Transform gridContainer;
-    [SerializeField] Sprite[] sprites;
-
+public class CardsController : MonoBehaviour {
+    [SerializeField] private Card cardPrefab;
+    [SerializeField] private Transform gridContainer;
+    [SerializeField] private Sprite[] sprites;
+    [SerializeField] private TextMeshProUGUI countText;
     private List<Sprite> spritePairs;
-
     private Card firstSelected;
     private Card secondSelected;
-
     private int matchCounts;
-    // Start is called before the first frame update
-    void Start()
-    {
+
+    void Start() {
         PrepareSprites();
         CreateCards();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void PrepareSprites()
-    {
+    private void PrepareSprites() {
         spritePairs = new List<Sprite>();
-        for (int i = 0; i < sprites.Length; i++)
-        {
+        for (int i = 0; i < sprites.Length; i++) {
             spritePairs.Add(sprites[i]);
             spritePairs.Add(sprites[i]);
         }
+
         ShuffleSprites(spritePairs);
     }
 
-    void CreateCards()
-    {
-        for (int i = 0; i < spritePairs.Count; i++)
-        {
+    void CreateCards() {
+        for (int i = 0; i < spritePairs.Count; i++) {
             Card card = Instantiate(cardPrefab, gridContainer);
             card.SetIconSprite(spritePairs[i]);
             card.controller = this;
         }
     }
 
-    public void SetSelected(Card card)
-    {
-        if (card.isSelected == false)
-        {
+    public void SetSelected(Card card) {
+        if (card.isSelected == false) {
             card.Show();
-            if (firstSelected == null)
-            {
+            
+            if (firstSelected == null) {
                 firstSelected = card;
                 return;
             }
 
-            if (secondSelected == null)
-            {
+            if (secondSelected == null) {
                 secondSelected = card;
                 StartCoroutine(CheckMatching(firstSelected, secondSelected));
+                
                 firstSelected = null;
                 secondSelected = null;
             }
         }
     }
 
-    IEnumerator CheckMatching(Card a, Card b)
-    {
+    private IEnumerator CheckMatching(Card firstSelectedCard, Card secondSelectedCard) {
         yield return new WaitForSeconds(0.2f);
-        if (a.iconSprite == b.iconSprite)
-        {
+        
+        if (firstSelectedCard.iconSprite == secondSelectedCard.iconSprite) {
             matchCounts++;
-        }
-        else
-        {
-            a.Hide();
-            b.Hide();
+            countText.text = countText.text.Split(":")[0] + ": " + matchCounts;
+        } else {
+            firstSelectedCard.Hide();
+            secondSelectedCard.Hide();
         }
     }
 
-    void ShuffleSprites(List<Sprite> sprites)
-    {
-        for (int i = sprites.Count - 1; i >= 0; i--)
-        {
-            int randomIndex = Random.Range(0, i+1);
-            Sprite temp = sprites[i];
-            sprites[i] = sprites[randomIndex];
-            sprites[randomIndex] = temp;
+    private void ShuffleSprites(List<Sprite> sprites) {
+        for (int i = sprites.Count - 1; i >= 0; i--) {
+            int randomIndex = Random.Range(0, i + 1);
+            (sprites[i], sprites[randomIndex]) = (sprites[randomIndex], sprites[i]);
         }
     }
-  
 }
