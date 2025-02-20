@@ -16,12 +16,12 @@ MonoBehaviour:
   dialogueText: Alright, Samuel. Three choices. Take a risk and record them, stay
     back and listen, or go all in and confront them. No room for mistakes.
   choices:
-  - text: Get closer and record their conversation
+  - text: Get closer and record their conversation\warf\choice_recordConversation
     nextDialogue: {fileID: 0}
-  - text: Stay here and listen from a distance
+  - text: Stay here and listen from a distance\warf\choice_listenFromDistance
     nextDialogue: {fileID: 0}
-  - text: Confront them
+  - text: Confront them\warf\choice_confrontDrakeAndCrowe
     nextDialogue: {fileID: 0}
   dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 117af5e0-d5b7-4f33-88ad-05f353d5b602
+  uniqueID: 33ff74c7-6e4c-45ee-81ba-262ddc62b548

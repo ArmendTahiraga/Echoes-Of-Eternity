@@ -61,6 +61,16 @@ public class DialogueUI : MonoBehaviour {
         DSDialogueContainerSO dialogueContainer = dialogue.GetDialogueContainer();
         List<DSDialogueGroupSO> groups = dialogueContainer.GetGroups();
 
+        
+        string[] selectedChoiceParts = selectedChoice.text.Split('\\');
+        
+        if (selectedChoiceParts.Length == 3) {
+            nextDialogue = null;
+            if (ChoiceManager.Instance.IsImportantChoice(selectedChoiceParts[1], selectedChoiceParts[2])) {
+                ChoiceManager.Instance.TriggerChoice(selectedChoiceParts[2]);
+            }
+        }
+        
         if (nextDialogue == null) {
             dialogueActive = false;
 
@@ -135,7 +145,7 @@ public class DialogueUI : MonoBehaviour {
             if (i < dialogue.choices.Count) {
                 choicesButtons[i].gameObject.SetActive(true);
                 TextMeshProUGUI choiceText = choicesButtons[i].GetComponentInChildren<TextMeshProUGUI>();
-                choiceText.text = (i + 1) + ".  " + dialogue.choices[i].text;
+                choiceText.text = (i + 1) + ".  " + dialogue.choices[i].text.Split("\\")[0];
             } else {
                 choicesButtons[i].gameObject.SetActive(false);
             }

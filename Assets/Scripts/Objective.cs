@@ -3,6 +3,7 @@ using UnityEngine.Events;
 
 public class Objective : MonoBehaviour {
     [SerializeField] private string objective;
+    public string objectiveChoice;
     public UnityEvent onObjectiveComplete;
     public bool isActive;
     public string uniqueID;

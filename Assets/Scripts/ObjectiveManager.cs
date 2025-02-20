@@ -3,9 +3,9 @@ using TMPro;
 using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour {
-    [SerializeField] private List<Objective> objectives;
     [SerializeField] private TextMeshProUGUI objectiveText;
-    private Objective currentObjective;
+    public List<Objective> objectives;
+    public Objective currentObjective;
     public bool loadGameChanges;
 
     private void Start() {
@@ -47,7 +47,7 @@ public class ObjectiveManager : MonoBehaviour {
         
     }
 
-    private void UpdateObjectiveUI() {
+    public void UpdateObjectiveUI() {
         objectiveText.text = currentObjective.GetObjective();
     }
 
