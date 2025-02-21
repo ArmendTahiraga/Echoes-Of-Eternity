@@ -8,19 +8,32 @@ public class PlayerCam : MonoBehaviour {
     private float xRotation;
     private float yRotation;
     public bool lockCamera;
+    public bool enableCursor;
 
     void Start() {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        ConfigureShowCursor(false);
     }
 
     void Update() {
-        if (PauseMenuController.isGamePaused) {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+        if (enableCursor) {
+            ConfigureShowCursor(true);
+            
+            if (!lockCamera) {
+                float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
+                float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
+        
+                xRotation -= mouseY;
+                yRotation += mouseX;
+                xRotation = Mathf.Clamp(xRotation, -90f, 45f);
+        
+                transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
+                orientation.rotation = Quaternion.Euler(0, yRotation, 0);
+                playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
+            }
+        } else if (PauseMenuController.isGamePaused) {
+            ConfigureShowCursor(true);
         } else {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            ConfigureShowCursor(false);
 
             if (!lockCamera) {
                 float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
@@ -34,6 +47,16 @@ public class PlayerCam : MonoBehaviour {
                 orientation.rotation = Quaternion.Euler(0, yRotation, 0);
                 playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
             }
+        }
+    }
+
+    public void ConfigureShowCursor(bool showCursor) {
+        if (showCursor) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        } else {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 

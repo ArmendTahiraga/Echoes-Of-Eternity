@@ -5056,6 +5056,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1513415809}
   characterName: {fileID: 466290365}
   panel: {fileID: 1594748619}
+  miniGame: {fileID: 1457623338}
 --- !u!224 &997872933
 RectTransform:
   m_ObjectHideFlags: 0

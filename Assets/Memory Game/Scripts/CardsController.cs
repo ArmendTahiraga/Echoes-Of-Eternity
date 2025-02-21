@@ -111,6 +111,7 @@ public class CardsController : MonoBehaviour, MiniGame {
         hasMiniGameStarted = false;
         gameOverPanel.SetActive(true);
         memoryGameCanvas.SetActive(false);
+        GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enableCursor = false;
 
         if (matchCounts >= 6) {
             gameOverText.text = "You matched " + matchCounts + " pairs!\nYou get all the needed documents!";

@@ -11,6 +11,7 @@ public class MiniGameInteractable : MonoBehaviour, Interactable {
         }
         
         miniGame.GetComponent<MiniGame>().StartGame();
+        GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enableCursor = true;
     }
 
     public string GetInteractionText() {
