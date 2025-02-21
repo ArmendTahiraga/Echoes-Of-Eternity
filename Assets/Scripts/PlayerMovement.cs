@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     }
 
     void Update() {
+        Debug.Log(isPlayerMoving);
         if (loadPositionToChange != Vector3.zero) {
             transform.position = loadPositionToChange;
             loadPositionToChange = Vector3.zero;

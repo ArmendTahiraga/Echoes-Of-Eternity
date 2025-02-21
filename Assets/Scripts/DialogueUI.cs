@@ -11,6 +11,7 @@ public class DialogueUI : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI dialogueText;
     [SerializeField] private TextMeshProUGUI characterName;
     [SerializeField] private GameObject panel;
+    [SerializeField] private GameObject miniGame;
     private DSDialogue dialogue;
     private bool dialogueActive;
     
@@ -19,6 +20,11 @@ public class DialogueUI : MonoBehaviour {
             Show();
             CheckDialogueInput();
         } else {
+            if (miniGame != null && miniGame.GetComponent<MiniGame>().GetHasMiniGameStarted()) {
+                Hide();
+                return;
+            }
+            
             GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving = true;
             GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = false;
             Hide();

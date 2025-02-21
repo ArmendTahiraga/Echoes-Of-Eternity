@@ -7,9 +7,10 @@ public class PlayerInteract : MonoBehaviour {
             Interactable interactable = GetInteractable();
             if (interactable != null) {
                 interactable.Interact();
-                if (interactable.GetType() == typeof(NPCInteractable)) { 
+                if (interactable.GetType() == typeof(NPCInteractable) || interactable.GetType() == typeof(MiniGameInteractable)) { 
                     GetComponent<PlayerMovement>().isPlayerMoving = false;
                     GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                    Debug.Log(GetComponent<PlayerMovement>().isPlayerMoving);
                 }
             }
         }

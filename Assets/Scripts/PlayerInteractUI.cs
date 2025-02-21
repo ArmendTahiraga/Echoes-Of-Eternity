@@ -6,6 +6,7 @@ public class PlayerInteractUI : MonoBehaviour {
     [SerializeField] private PlayerInteract playerInteract;
     [SerializeField] private TextMeshProUGUI interactionText;
     [SerializeField] private DialogueUI dialogueUI;
+    [SerializeField] private GameObject miniGame;
 
     private void Update() {
         Interactable interactable = playerInteract.GetInteractable();
@@ -14,6 +15,14 @@ public class PlayerInteractUI : MonoBehaviour {
             Show(interactable);
         } else {
             Hide();
+        }
+
+        if (interactable != null && miniGame != null) {
+            if (!miniGame.GetComponent<MiniGame>().GetHasMiniGameStarted()) {
+                Show(interactable);
+            } else {
+                Hide();
+            }
         }
     }
     

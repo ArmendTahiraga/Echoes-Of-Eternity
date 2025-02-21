@@ -1,18 +1,16 @@
 using UnityEngine;
 
-public class DrawerInteractable : MonoBehaviour, Interactable {
+public class MiniGameInteractable : MonoBehaviour, Interactable {
     [SerializeField] private string interactionText;
-    [SerializeField] private GameObject memoryGameCanvas; // Reference to Memory Game UI
     [SerializeField] private Objective objective;
+    [SerializeField] private GameObject miniGame;
     
     public void Interact() {
         if (objective != null) {
             objective.CompleteObjective();
         }
-
-        if (memoryGameCanvas != null) {
-            memoryGameCanvas.SetActive(true); // Show the memory game UI
-        }
+        
+        miniGame.GetComponent<MiniGame>().StartGame();
     }
 
     public string GetInteractionText() {
