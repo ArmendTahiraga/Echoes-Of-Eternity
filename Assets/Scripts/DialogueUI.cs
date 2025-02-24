@@ -21,6 +21,10 @@ public class DialogueUI : MonoBehaviour {
             CheckDialogueInput();
         } else {
             if (miniGame != null && miniGame.GetComponent<MiniGame>().GetHasMiniGameStarted()) {
+                if (!miniGame.GetComponent<MiniGame>().GetIsCursorNeeded()){
+                    GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving = false;
+                    GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                }
                 Hide();
                 return;
             }

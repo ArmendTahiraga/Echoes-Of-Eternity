@@ -20,6 +20,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     private float timeRemaining = 60f;
     private int totalPairs;
     public bool hasMiniGameStarted;
+    public bool isCursorNeeded = true;
 
     public void StartGame() {
         hasMiniGameStarted = true;
@@ -33,6 +34,10 @@ public class CardsController : MonoBehaviour, MiniGame {
 
     public bool GetHasMiniGameStarted() {
         return hasMiniGameStarted;
+    }
+
+    public bool GetIsCursorNeeded() {
+        return isCursorNeeded;
     }
     
     private void PrepareSprites() {
