@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: RecordMiniGameHint
+  m_EditorClassIdentifier: 
+  fileName: RecordMiniGameHint
+  groups:
+  - id: b27745b5-613b-4449-9d46-84a896c3d9f8
+    name: Hint
+    position: {x: 179, y: 158.00002}
+  nodes:
+  - id: c13548cc-9a55-491f-8992-863e3b8aa3a1
+    name: Dialogue1
+    text: To record the conversation make sure to keep the E key pressed.
+    choices:
+    - text: Next Dialogue
+      nodeId: ec5eb920-526f-4d67-a761-1fccb0ae4434
+    groupId: b27745b5-613b-4449-9d46-84a896c3d9f8
+    dialogueType: 0
+    position: {x: 204, y: 216.5}
+  - id: ec5eb920-526f-4d67-a761-1fccb0ae4434
+    name: Dialogue2
+    text: While pressing the E key press the key shown in the screen before the time
+      runs out.
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: b27745b5-613b-4449-9d46-84a896c3d9f8
+    dialogueType: 0
+    position: {x: 1007, y: 216.5}
+  oldGroupNames:
+  - Hint
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Hint
+      Value:
+      - Dialogue1
+      - Dialogue2

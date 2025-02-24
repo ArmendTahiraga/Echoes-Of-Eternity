@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class RecordMiniGame : MonoBehaviour, MiniGame {
     [SerializeField] private Image keyImage;
     [SerializeField] private Image timerImage;
-    [SerializeField] private TextMeshProUGUI message;
     [SerializeField] private int keysToPress = 4;
     [SerializeField] private float keyPressTime = 2f;
     [SerializeField] private Sprite[] keySprites;
+    [SerializeField] private NPCInteractable successInteractable;
+    [SerializeField] private NPCInteractable failInteractable;
+    [SerializeField] private GameObject miniGameStarter;
     private List<KeyCode> possibleKeys = new List<KeyCode>();
     private Dictionary<KeyCode, Sprite> keySpriteMap = new Dictionary<KeyCode, Sprite>();
     private KeyCode currentKey;
@@ -22,6 +23,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     private Color timerColor;
     public bool hasMiniGameStarted;
     public bool isCursorNeeded;
+    public string miniGameResult = "";
 
     private void Start() {
         InitializeKeyLists();
@@ -29,9 +31,6 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.E) && !isRecording && !hasMiniGameStarted) {
-            StartGame();
-        }
 
         if (isRecording) {
             if (changeTimerFill) {
@@ -62,7 +61,6 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
         hasMiniGameStarted = true;
         isRecording = true;
         keysPressed = 0;
-        message.gameObject.SetActive(false);
         keyImage.gameObject.SetActive(true);
         timerImage.gameObject.SetActive(true);
         ShowNextKey();
@@ -74,6 +72,18 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
 
     public bool GetIsCursorNeeded() {
         return isCursorNeeded;
+    }
+
+    public string GetMiniGameResult() {
+        return miniGameResult;
+    }
+    
+    public NPCInteractable GetSuccessInteractable() {
+        return successInteractable;
+    }
+    
+    public NPCInteractable GetFailInteractable() {
+        return failInteractable;
     }
     
     private void ShowNextKey() {
@@ -124,9 +134,8 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
         hasMiniGameStarted = false;
         isRecording = false;
         
-        message.text = "You failed!";
-        message.gameObject.SetActive(true);
-        StartCoroutine(RemoveMessage());
+        miniGameResult = "Fail";
+        StartCoroutine(RemoveMiniGameResultAndMiniGameStarter());
         
         keyImage.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
@@ -136,19 +145,19 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
         hasMiniGameStarted = false;
         isRecording = false;
         
-        message.text = "You succeeded!";
-        message.gameObject.SetActive(true);
-        StartCoroutine(RemoveMessage());
+        miniGameResult = "Success";
+        StartCoroutine(RemoveMiniGameResultAndMiniGameStarter());
         
         keyImage.gameObject.SetActive(false);
         timerImage.gameObject.SetActive(false);
     }
 
-    private IEnumerator RemoveMessage() {
+    private IEnumerator RemoveMiniGameResultAndMiniGameStarter() {
         yield return new WaitForSeconds(1f);
-        message.gameObject.SetActive(false);
+        miniGameResult = "";
+        miniGameStarter.SetActive(false);
     }
-
+    
     private void InitializeKeyLists() {
         for (int i = (int) KeyCode.A; i <= (int) KeyCode.Z; i++) {
             KeyCode key = (KeyCode) i;

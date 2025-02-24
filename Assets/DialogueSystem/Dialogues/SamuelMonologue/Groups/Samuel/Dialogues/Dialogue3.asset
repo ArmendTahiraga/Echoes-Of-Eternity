@@ -17,11 +17,11 @@ MonoBehaviour:
     back and listen, or go all in and confront them. No room for mistakes.
   choices:
   - text: Get closer and record their conversation\warf\choice_recordConversation
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: ddf4c684fd6f44e888dbaeeecbf437c5, type: 2}
   - text: Stay here and listen from a distance\warf\choice_listenFromDistance
     nextDialogue: {fileID: 0}
   - text: Confront them\warf\choice_confrontDrakeAndCrowe
     nextDialogue: {fileID: 0}
   dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 33ff74c7-6e4c-45ee-81ba-262ddc62b548
+  uniqueID: 4b188fc5-c216-4905-8dce-d2dfa54d74ac

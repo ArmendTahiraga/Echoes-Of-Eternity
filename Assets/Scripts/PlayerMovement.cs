@@ -10,12 +10,12 @@ public class PlayerMovement : MonoBehaviour {
     public bool isPlayerMoving = true;
     private Vector3 loadPositionToChange = Vector3.zero;
 
-    void Start() {
+    private void Start() {
         rigidbody = GetComponent<Rigidbody>();
         rigidbody.freezeRotation = true;
     }
 
-    void Update() {
+    private void Update() {
         if (loadPositionToChange != Vector3.zero) {
             transform.position = loadPositionToChange;
             loadPositionToChange = Vector3.zero;
@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         
         if (!isPlayerMoving) {
+            rigidbody.velocity = Vector3.zero;
             return;
         }
         

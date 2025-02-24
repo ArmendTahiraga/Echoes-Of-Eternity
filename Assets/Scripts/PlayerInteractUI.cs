@@ -24,6 +24,10 @@ public class PlayerInteractUI : MonoBehaviour {
                 Hide();
             }
         }
+        
+        if (miniGame.GetComponent<MiniGame>().GetMiniGameResult() != "") {
+            Hide();
+        }
     }
     
     private void Show(Interactable interactable) {

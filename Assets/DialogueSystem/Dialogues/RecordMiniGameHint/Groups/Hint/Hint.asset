@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8688b5cd95584dbba22eba238bffddf, type: 3}
-  m_Name: Samuel
+  m_Name: Hint
   m_EditorClassIdentifier: 
-  groupName: Samuel
-  uniqueID: 227d1750-7f9c-49ce-b648-43bcf7b05f4f
+  groupName: Hint
+  uniqueID: a0555e55-48e5-4d08-9092-c38afd89757f

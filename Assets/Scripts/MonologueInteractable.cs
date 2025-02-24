@@ -20,6 +20,7 @@ public class MonologueInteractable : MonoBehaviour {
         playerMovement.isPlayerMoving = false;
         playerCam.lockCamera = true;
         dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
+        hasBeenPlayed = true;
     }
 
     private void OnTriggerEnter(Collider other) {

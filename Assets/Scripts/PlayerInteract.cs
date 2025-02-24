@@ -2,6 +2,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
+    [SerializeField] private GameObject miniGame;
+    
     public void LateUpdate() { // Made it late update to see if it fixes the animation teleport glitch
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
             Interactable interactable = GetInteractable();
@@ -12,6 +14,21 @@ public class PlayerInteract : MonoBehaviour {
                     GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
                 }
             }
+        }
+        
+        switch (miniGame.GetComponent<MiniGame>().GetMiniGameResult()) { 
+            case "Success":
+                Interactable successInteractable = miniGame.GetComponent<MiniGame>().GetSuccessInteractable();
+                successInteractable?.Interact();
+                GetComponent<PlayerMovement>().isPlayerMoving = false;
+                GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                break;
+            case "Fail":
+                Interactable failInteractable = miniGame.GetComponent<MiniGame>().GetFailInteractable();
+                failInteractable?.Interact();
+                GetComponent<PlayerMovement>().isPlayerMoving = false;
+                GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                break;
         }
     }
 

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Dialogue2
   m_EditorClassIdentifier: 
   dialogueName: Dialogue2
-  dialogueText: "The lampposts\u2026 I need to stay in the shadows. If they see me,
-    I\u2019m dead before I can get a word out."
+  dialogueText: While pressing the E key press the key shown in the screen before
+    the time runs out.
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: 9bc75c7ed45694fff9d1b991443a47fd, type: 2}
+    nextDialogue: {fileID: 0}
   dialogueType: 0
   isStartingDialogue: 0
-  uniqueID: 96e8c416-296c-4aff-a2fa-a079a969c059
+  uniqueID: cf1c352c-746b-45da-a2b0-b49782173683

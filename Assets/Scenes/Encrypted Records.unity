@@ -1302,6 +1302,7 @@ MonoBehaviour:
   orientation: {fileID: 1362818801}
   playerObjectOrientation: {fileID: 431040784}
   lockCamera: 0
+  enableCursor: 0
 --- !u!81 &407785837
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1577,6 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d747edf6f45d4eafa9b0fd7d7b1cab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGame: {fileID: 1457623338}
 --- !u!95 &431040787
 Animator:
   serializedVersion: 5
@@ -6354,7 +6356,11 @@ MonoBehaviour:
   gameOverPanel: {fileID: 1579463574}
   gameOverText: {fileID: 1720162686}
   memoryGameCanvas: {fileID: 898487204}
+  successInteractable: {fileID: 0}
+  failInteractable: {fileID: 0}
   hasMiniGameStarted: 0
+  isCursorNeeded: 1
+  miniGameResult: 
 --- !u!1001 &1460426531
 PrefabInstance:
   m_ObjectHideFlags: 0

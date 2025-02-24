@@ -10,14 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
-  m_Name: Dialogue2
+  m_Name: Dialogue1
   m_EditorClassIdentifier: 
-  dialogueName: Dialogue2
-  dialogueText: "The lampposts\u2026 I need to stay in the shadows. If they see me,
-    I\u2019m dead before I can get a word out."
+  dialogueName: Dialogue1
+  dialogueText: To record the conversation make sure to keep the E key pressed.
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: 9bc75c7ed45694fff9d1b991443a47fd, type: 2}
+    nextDialogue: {fileID: 11400000, guid: e8235077080e44f9d91870d4009f7a20, type: 2}
   dialogueType: 0
-  isStartingDialogue: 0
-  uniqueID: 96e8c416-296c-4aff-a2fa-a079a969c059
+  isStartingDialogue: 1
+  uniqueID: d3b59540-c177-4b23-8df4-2e5091497f2e

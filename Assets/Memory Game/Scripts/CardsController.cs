@@ -13,6 +13,8 @@ public class CardsController : MonoBehaviour, MiniGame {
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private GameObject memoryGameCanvas;
+    [SerializeField] private NPCInteractable successInteractable;
+    [SerializeField] private NPCInteractable failInteractable;
     private List<Sprite> spritePairs;
     private Card firstSelected;
     private Card secondSelected;
@@ -21,6 +23,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     private int totalPairs;
     public bool hasMiniGameStarted;
     public bool isCursorNeeded = true;
+    public string miniGameResult = "";
 
     public void StartGame() {
         hasMiniGameStarted = true;
@@ -38,6 +41,18 @@ public class CardsController : MonoBehaviour, MiniGame {
 
     public bool GetIsCursorNeeded() {
         return isCursorNeeded;
+    }
+    
+    public string GetMiniGameResult() {
+        return miniGameResult;
+    }
+
+    public NPCInteractable GetSuccessInteractable() {
+        return successInteractable;
+    }
+    
+    public NPCInteractable GetFailInteractable() {
+        return failInteractable;
     }
     
     private void PrepareSprites() {

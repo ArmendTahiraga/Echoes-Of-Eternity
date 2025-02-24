@@ -16,7 +16,7 @@ MonoBehaviour:
   groups:
   - id: 95e56f34-db48-4902-b99e-79ba947db5c8
     name: Samuel
-    position: {x: -745, y: 193}
+    position: {x: -2217, y: -82}
   nodes:
   - id: 0bbb8269-93cd-4df9-a559-84d2e1bcc64e
     name: Dialogue1
@@ -28,7 +28,7 @@ MonoBehaviour:
       nodeId: 0f2df04c-9660-4728-b2ee-184f334854f2
     groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
     dialogueType: 0
-    position: {x: -720, y: 251.5}
+    position: {x: -2192, y: 119.5}
   - id: 0f2df04c-9660-4728-b2ee-184f334854f2
     name: Dialogue2
     text: "The lampposts\u2026 I need to stay in the shadows. If they see me, I\u2019m
@@ -38,21 +38,41 @@ MonoBehaviour:
       nodeId: 58dc1f4a-5705-4a54-b247-56d88d3205f1
     groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
     dialogueType: 0
-    position: {x: 21, y: 251.5}
+    position: {x: -1451, y: 119.5}
   - id: 58dc1f4a-5705-4a54-b247-56d88d3205f1
     name: Dialogue3
     text: Alright, Samuel. Three choices. Take a risk and record them, stay back
       and listen, or go all in and confront them. No room for mistakes.
     choices:
     - text: Get closer and record their conversation\warf\choice_recordConversation
-      nodeId: 
+      nodeId: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
     - text: Stay here and listen from a distance\warf\choice_listenFromDistance
       nodeId: 
     - text: Confront them\warf\choice_confrontDrakeAndCrowe
       nodeId: 
     groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
     dialogueType: 1
-    position: {x: 831.5, y: 251.5}
+    position: {x: -640.5, y: 119.5}
+  - id: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
+    name: Dialogue4
+    text: "If I get close enough, I can capture every word. It\u2019s risky, but
+      if I pull it off, I\u2019ll have undeniable proof."
+    choices:
+    - text: Next Dialogue
+      nodeId: 57cc06c7-e0cd-47d6-8696-4f54a35f5ea2
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 232, y: -23.5}
+  - id: 57cc06c7-e0cd-47d6-8696-4f54a35f5ea2
+    name: Dialogue5
+    text: "One wrong step, one creaky board, and it\u2019s over. I have to time this
+      right."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 1026.5, y: -23.5}
   oldGroupNames:
   - Samuel
   oldUngroupedNames: []
@@ -63,3 +83,5 @@ MonoBehaviour:
       - Dialogue1
       - Dialogue2
       - Dialogue3
+      - Dialogue4
+      - Dialogue5
