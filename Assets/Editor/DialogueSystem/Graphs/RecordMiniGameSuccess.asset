@@ -1,0 +1,148 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: RecordMiniGameSuccess
+  m_EditorClassIdentifier: 
+  fileName: RecordMiniGameSuccess
+  groups:
+  - id: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    name: Victor0Crowe
+    position: {x: -870.50006, y: -169.5}
+  - id: 6b7dc0fd-9c2c-4db0-a8a8-b6306f239600
+    name: Chief0Darke
+    position: {x: -606.99994, y: 121.00001}
+  - id: 80fe20e2-d91b-4a87-a86f-1bd67536e9ce
+    name: Samuel
+    position: {x: 1461, y: 357}
+  nodes:
+  - id: bee8073a-b267-438f-ab5a-28d3ae84264e
+    name: Dialogue1
+    text: "As agreed. The next shipment comes in next week, but I need assurance\u2014our
+      boys don\u2019t like surprises."
+    choices:
+    - text: Next Dialogue
+      nodeId: 6b0a7a4b-79b8-40e9-952b-2dd5abbb3c06
+    groupId: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    dialogueType: 0
+    position: {x: -845.5, y: -111}
+  - id: 6b0a7a4b-79b8-40e9-952b-2dd5abbb3c06
+    name: Dialogue2
+    text: No surprises. Your cargo moves through undisturbed, and the department
+      stays blind. But that means no loose ends, Crowe. No messes.
+    choices:
+    - text: Next Dialogue
+      nodeId: 01cec6dc-6aa7-4ed4-8f85-6a90cc8bb140
+    groupId: 6b7dc0fd-9c2c-4db0-a8a8-b6306f239600
+    dialogueType: 0
+    position: {x: -582, y: 179.5}
+  - id: 01cec6dc-6aa7-4ed4-8f85-6a90cc8bb140
+    name: Dialogue3
+    text: "You worry too much, Drake. Everything\u2019s under control. We\u2019ve
+      got the warehouse secured. No one\u2019s getting in."
+    choices:
+    - text: Next Dialogue
+      nodeId: f2b059d4-79b4-43d8-b511-3af86cc3b5d2
+    groupId: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    dialogueType: 0
+    position: {x: -327, y: -111}
+  - id: f2b059d4-79b4-43d8-b511-3af86cc3b5d2
+    name: Dialogue4
+    text: "You better hope so. If anyone gets a whiff of this, I won\u2019t be the
+      one taking the fall."
+    choices:
+    - text: Next Dialogue
+      nodeId: 9c774522-51ab-4a41-8b47-98a0f891ad1b
+    groupId: 6b7dc0fd-9c2c-4db0-a8a8-b6306f239600
+    dialogueType: 0
+    position: {x: -72, y: 179.5}
+  - id: acd8092e-1cc5-4d41-8b6a-dae0b9a95916
+    name: Dialogue6
+    text: "Rowe? He\u2019s not a problem. We made sure of that."
+    choices:
+    - text: Next Dialogue
+      nodeId: 2e08bdc1-5230-4437-b0c6-ac01c2a8920e
+    groupId: 6b7dc0fd-9c2c-4db0-a8a8-b6306f239600
+    dialogueType: 0
+    position: {x: 438, y: 179.5}
+  - id: 9c774522-51ab-4a41-8b47-98a0f891ad1b
+    name: Dialogue5
+    text: "And what about the docks? Word is some nosy detective has been sniffing
+      around. You sure he\u2019s out of the picture?"
+    choices:
+    - text: Next Dialogue
+      nodeId: acd8092e-1cc5-4d41-8b6a-dae0b9a95916
+    groupId: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    dialogueType: 0
+    position: {x: 183, y: -111}
+  - id: 2e08bdc1-5230-4437-b0c6-ac01c2a8920e
+    name: Dialogue7
+    text: "Made sure, huh? I\u2019ve heard that before. Yet here we are, still talking
+      about him."
+    choices:
+    - text: Next Dialogue
+      nodeId: af7049e6-6c7a-43c6-9361-21d0a1b0ce17
+    groupId: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    dialogueType: 0
+    position: {x: 693, y: -111}
+  - id: af7049e6-6c7a-43c6-9361-21d0a1b0ce17
+    name: Dialogue8
+    text: "Don\u2019t question my methods, Crowe. You just focus on your end of the
+      deal."
+    choices:
+    - text: Next Dialogue
+      nodeId: 2d17f1c0-a9e9-4f19-8abb-b34711e3cf59
+    groupId: 6b7dc0fd-9c2c-4db0-a8a8-b6306f239600
+    dialogueType: 0
+    position: {x: 948, y: 179.5}
+  - id: 2d17f1c0-a9e9-4f19-8abb-b34711e3cf59
+    name: Dialogue9
+    text: "Relax, Drake. I\u2019m just saying\u2014if this goes south, I won\u2019t
+      be the only one to take the fall. You better remember that."
+    choices:
+    - text: Next Dialogue
+      nodeId: ee3d3390-b0da-42cf-9c0c-1e0208c06b15
+    groupId: e835500c-2c52-49a9-9c4e-282aa93c6e21
+    dialogueType: 0
+    position: {x: 1203, y: -111}
+  - id: ee3d3390-b0da-42cf-9c0c-1e0208c06b15
+    name: Dialogue10
+    text: "That\u2019s it. I\u2019ve got what I need. Now I just have to get out
+      of here before they realize they\u2019re not alone."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 80fe20e2-d91b-4a87-a86f-1bd67536e9ce
+    dialogueType: 0
+    position: {x: 1486, y: 415.5}
+  oldGroupNames:
+  - Victor0Crowe
+  - Chief0Darke
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Victor0Crowe
+      Value:
+      - Dialogue1
+      - Dialogue3
+      - Dialogue5
+      - Dialogue7
+      - Dialogue9
+    - Key: Chief0Darke
+      Value:
+      - Dialogue2
+      - Dialogue4
+      - Dialogue6
+      - Dialogue8
+    - Key: Samuel
+      Value:
+      - Dialogue10

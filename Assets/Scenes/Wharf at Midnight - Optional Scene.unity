@@ -3196,7 +3196,7 @@ GameObject:
   - component: {fileID: 419639115}
   - component: {fileID: 419639117}
   m_Layer: 0
-  m_Name: MIniGameSuccessDialogue
+  m_Name: MiniGameSuccessDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3214,9 +3214,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: f02ef491778ee46f1ac5decea68e3cc6, type: 2}
-  dialogueGroup: {fileID: 11400000, guid: f6f2ef0f42e9c4d448e4a79e32a26a07, type: 2}
-  dialogue: {fileID: 11400000, guid: f6dc29e5dfd934a7ebf3bafe76e7d7e4, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: e57b12f9527fe4f368b027c991143e6a, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 3b93da61e57ca4e57b8c4be8df31bffe, type: 2}
+  dialogue: {fileID: 11400000, guid: e10d15bc2375643b1945c032ffb06b75, type: 2}
   groupedDialogues: 1
   startingDialoguesOnly: 0
   selectedDialogueGroupIndex: 0
@@ -3250,7 +3250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: 
-  characterName: Lucas
+  characterName: Victor Crowe
   dialogueUI: {fileID: 188116495}
   animationTriggers: []
   animators: []
@@ -4495,7 +4495,7 @@ GameObject:
   - component: {fileID: 617510020}
   - component: {fileID: 617510022}
   m_Layer: 0
-  m_Name: MIniGameFailDialogue
+  m_Name: MiniGameFailDialogue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4513,9 +4513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 11400000, guid: fbab279f4faea49a4ae740257bf1419f, type: 2}
-  dialogueGroup: {fileID: 11400000, guid: afe62b7511b3f493bbc3e8e39ac21ba5, type: 2}
-  dialogue: {fileID: 11400000, guid: 411eb1eaa01cd4a27966e698753f289b, type: 2}
+  dialogueContainer: {fileID: 11400000, guid: ead14a1912fbb4b0e8a9c6c484fcb16a, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e46752726c0724bfa8412b0f69bc120e, type: 2}
+  dialogue: {fileID: 11400000, guid: e4ebec82e3dcc40a6830ec2e4421c855, type: 2}
   groupedDialogues: 1
   startingDialoguesOnly: 0
   selectedDialogueGroupIndex: 0
@@ -4549,7 +4549,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionText: 
-  characterName: Sami
+  characterName: Samuel
   dialogueUI: {fileID: 188116495}
   animationTriggers: []
   animators: []

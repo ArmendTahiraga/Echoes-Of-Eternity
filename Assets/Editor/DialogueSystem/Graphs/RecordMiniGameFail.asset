@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: RecordMiniGameFail
+  m_EditorClassIdentifier: 
+  fileName: RecordMiniGameFail
+  groups:
+  - id: 6703450c-2bdd-4109-997d-53bb48be968d
+    name: Samuel
+    position: {x: 339.99997, y: 113.000046}
+  - id: 99be21f3-ebad-4c51-a5d0-296ebb61cf35
+    name: Victor0Crowe
+    position: {x: 937.49994, y: 448.50006}
+  - id: 30bb01e5-7c68-4180-8ce6-abfcf6db6d68
+    name: Chief0Drake
+    position: {x: 1240.0001, y: 791.50006}
+  nodes:
+  - id: 5c5e8b53-e4de-40c1-8cfa-0dffd930ebb2
+    name: Dialogue1
+    text: "Alright, steady hands\u2026 just place the recorder and\u2014"
+    choices:
+    - text: Next Dialogue
+      nodeId: 18520bf6-2a46-4381-8317-c46dd291d9ec
+    groupId: 6703450c-2bdd-4109-997d-53bb48be968d
+    dialogueType: 0
+    position: {x: 365, y: 171.5}
+  - id: e2edde9f-4c53-42fd-a5bd-5c317b4a7ff5
+    name: Dialogue3
+    text: What was that?
+    choices:
+    - text: Next Dialogue
+      nodeId: 1f081bfe-5c5d-4f81-b638-cbbf54ac3e72
+    groupId: 99be21f3-ebad-4c51-a5d0-296ebb61cf35
+    dialogueType: 0
+    position: {x: 962.5, y: 507}
+  - id: 18520bf6-2a46-4381-8317-c46dd291d9ec
+    name: Dialogue2
+    text: "Oh, shit\u2014!"
+    choices:
+    - text: Next Dialogue
+      nodeId: e2edde9f-4c53-42fd-a5bd-5c317b4a7ff5
+    groupId: 6703450c-2bdd-4109-997d-53bb48be968d
+    dialogueType: 0
+    position: {x: 688.5, y: 171.5}
+  - id: 1f081bfe-5c5d-4f81-b638-cbbf54ac3e72
+    name: Dialogue4
+    text: "Someone\u2019s here. Check the crates."
+    choices:
+    - text: Next Dialogue
+      nodeId: 74ad0a75-e7a5-4e27-a151-471354244006
+    groupId: 30bb01e5-7c68-4180-8ce6-abfcf6db6d68
+    dialogueType: 0
+    position: {x: 1265, y: 850}
+  - id: 74ad0a75-e7a5-4e27-a151-471354244006
+    name: Dialogue5
+    text: "No time\u2014if I stay, I\u2019m dead. I have to escape now before they
+      catch me."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 6703450c-2bdd-4109-997d-53bb48be968d
+    dialogueType: 0
+    position: {x: 1541.5, y: 171.5}
+  oldGroupNames:
+  - Samuel
+  - Victor0Crowe
+  - Chief0Drake
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue1
+      - Dialogue2
+      - Dialogue5
+    - Key: Victor0Crowe
+      Value:
+      - Dialogue3
+    - Key: Chief0Drake
+      Value:
+      - Dialogue4

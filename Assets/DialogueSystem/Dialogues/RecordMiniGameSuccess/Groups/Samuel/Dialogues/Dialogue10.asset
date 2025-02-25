@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue10
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue10
+  dialogueText: "That\u2019s it. I\u2019ve got what I need. Now I just have to get
+    out of here before they realize they\u2019re not alone."
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 0}
+  dialogueType: 0
+  isStartingDialogue: 0
+  uniqueID: 93a8625f-3a58-4a22-9658-4b8e4d36ff25

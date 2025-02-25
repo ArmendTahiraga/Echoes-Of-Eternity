@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: RecordMiniGameFail
+  m_EditorClassIdentifier: 
+  fileName: RecordMiniGameFail
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: e46752726c0724bfa8412b0f69bc120e, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e4ebec82e3dcc40a6830ec2e4421c855, type: 2}
+      - {fileID: 11400000, guid: ce9fac4a5dca14c39948d3fc22df7d69, type: 2}
+      - {fileID: 11400000, guid: 096bedbc4e3bd42908302db665d65f26, type: 2}
+    - Key: {fileID: 11400000, guid: b695e06ff1ee84a8293952d8f57e5769, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 420129dc2a1f148d7a5773f041b3229a, type: 2}
+    - Key: {fileID: 11400000, guid: ddc3d4baa97154b2ca27b95dcb8dfa15, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 6f216543a6e9742ac88a8aa8868b954f, type: 2}
+  ungroupedDialogues: []
