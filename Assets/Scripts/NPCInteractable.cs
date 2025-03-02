@@ -1,3 +1,4 @@
+using System;
 using DS;
 using UnityEngine;
 
@@ -9,9 +10,19 @@ public class NPCInteractable : MonoBehaviour, Interactable {
     [SerializeField] private Animator[] animators;
     [SerializeField] private TeleportPlayer teleportPlayer;
     [SerializeField] private Objective objective;
-    
+    [SerializeField] private bool isOneTime;
+    [SerializeField] private bool hasBeenInteracted;
+
+    private void Update() {
+        if (isOneTime && hasBeenInteracted) {
+            gameObject.GetComponent<BoxCollider>().enabled = false;
+            this.enabled = false;
+        }
+    }
+
     public void Interact() {
         dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());
+        hasBeenInteracted = true;
 
         if (objective != null) {
             objective.CompleteObjective();

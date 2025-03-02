@@ -2307,6 +2307,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 245175382}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!114 &245175384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3370,6 +3372,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 0}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!1 &435926150
 GameObject:
   m_ObjectHideFlags: 0
@@ -4742,6 +4746,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 0}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!1 &624585661
 GameObject:
   m_ObjectHideFlags: 0
@@ -11793,6 +11799,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 1699166992}
+  isOneTime: 1
+  hasBeenInteracted: 0
 --- !u!114 &1699166995
 MonoBehaviour:
   m_ObjectHideFlags: 0
