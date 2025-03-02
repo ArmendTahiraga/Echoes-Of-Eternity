@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue5
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue5
+  dialogueText: Cut the act, Rowe. What the hell do you want?
+  choices:
+  - text: "Nothing really. Just curious what\u2019s got the two of you out so late."
+    nextDialogue: {fileID: 11400000, guid: b6000352372ee456a93ccf4a08ff6172, type: 2}
+  - text: "I didn\u2019t think you two were the type for midnight strolls."
+    nextDialogue: {fileID: 11400000, guid: 2588d5e50102642388e617aaf8e86fb2, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: 0d00d9de-3254-4b27-80a1-28241132dbba

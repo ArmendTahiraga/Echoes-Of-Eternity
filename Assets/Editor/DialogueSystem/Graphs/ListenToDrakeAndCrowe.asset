@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: ListenToDrakeAndCrowe
+  m_EditorClassIdentifier: 
+  fileName: ListenToDrakeAndCrowe
+  groups:
+  - id: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
+    name: Victor0Crowe
+    position: {x: 176.99982, y: 179.5}
+  - id: 00542b67-21b7-4341-bb3f-91268ba808eb
+    name: Chief0Drake
+    position: {x: 819, y: 507.5}
+  - id: e0018c5f-b453-4f83-b4ea-cc7c2ad7189a
+    name: Samuel
+    position: {x: 4305.9995, y: 804.50006}
+  nodes:
+  - id: ab78aa7b-4e33-41e7-b070-b965387336ff
+    name: Dialogue4
+    text: "\u2026I said it\u2019s done. Trust me."
+    choices:
+    - text: Next Dialogue
+      nodeId: 8f1563ce-b029-4fbb-87b8-3c78e0abaa94
+    groupId: 00542b67-21b7-4341-bb3f-91268ba808eb
+    dialogueType: 0
+    position: {x: 2128, y: 566}
+  - id: 8f1563ce-b029-4fbb-87b8-3c78e0abaa94
+    name: Dialogue5
+    text: The docks are secured. The only thing we need to worry about is getting
+      things moved without drawing attention.
+    choices:
+    - text: Next Dialogue
+      nodeId: 0def6cb1-d63c-42fb-a8d7-4d87d04b96d0
+    groupId: 00542b67-21b7-4341-bb3f-91268ba808eb
+    dialogueType: 0
+    position: {x: 3017, y: 566}
+  - id: 0def6cb1-d63c-42fb-a8d7-4d87d04b96d0
+    name: Dialogue6
+    text: "That\u2019s your problem. My boys do the moving. You just keep the heat
+      off our backs."
+    choices:
+    - text: Next Dialogue
+      nodeId: 1b1f1d8a-496a-43f0-a94b-2be7c0a92cc7
+    groupId: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
+    dialogueType: 0
+    position: {x: 3659, y: 238}
+  - id: 50835830-b6da-4714-a0ec-608575a11e9b
+    name: Dialogue3
+    text: "\u2026Rowe was smart\u2026 too smart. You sure\u2026 no loose ends?"
+    choices:
+    - text: Next Dialogue
+      nodeId: ab78aa7b-4e33-41e7-b070-b965387336ff
+    groupId: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
+    dialogueType: 0
+    position: {x: 1486, y: 238}
+  - id: d37aa89b-46b6-48a4-aea1-31f813f9b22c
+    name: Dialogue2
+    text: "\u2026handled it\u2026 that detective won\u2019t be a problem anymore."
+    choices:
+    - text: Next Dialogue
+      nodeId: 50835830-b6da-4714-a0ec-608575a11e9b
+    groupId: 00542b67-21b7-4341-bb3f-91268ba808eb
+    dialogueType: 0
+    position: {x: 844, y: 566}
+  - id: 8f76b8f9-4915-4fde-b500-520c94850f0a
+    name: Dialogue1
+    text: "\u2026next shipment\u2026 should be\u2026 but we need more\u2026"
+    choices:
+    - text: Next Dialogue
+      nodeId: d37aa89b-46b6-48a4-aea1-31f813f9b22c
+    groupId: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
+    dialogueType: 0
+    position: {x: 202, y: 238}
+  - id: 1b1f1d8a-496a-43f0-a94b-2be7c0a92cc7
+    name: Dialogue7
+    text: I have heard enough, it's time to leave before they spot me.
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: e0018c5f-b453-4f83-b4ea-cc7c2ad7189a
+    dialogueType: 0
+    position: {x: 4331, y: 863}
+  oldGroupNames:
+  - Victor0Crowe
+  - Chief0Drake
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Chief0Drake
+      Value:
+      - Dialogue4
+      - Dialogue5
+      - Dialogue2
+    - Key: Victor0Crowe
+      Value:
+      - Dialogue6
+      - Dialogue3
+      - Dialogue1
+    - Key: Samuel
+      Value:
+      - Dialogue7

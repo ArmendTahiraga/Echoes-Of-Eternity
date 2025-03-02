@@ -4,7 +4,7 @@ using UnityEngine;
 public class PlayerInteract : MonoBehaviour {
     [SerializeField] private GameObject miniGame;
     
-    public void LateUpdate() { // Made it late update to see if it fixes the animation teleport glitch
+    public void Update() { // Made it late update to see if it fixes the animation teleport glitch
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
             Interactable interactable = GetInteractable();
             if (interactable != null) {

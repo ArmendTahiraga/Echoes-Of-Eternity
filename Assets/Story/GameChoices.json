@@ -1,3 +1,10 @@
 {
-	"warf": ["choice_recordConversation", "choice_listenFromDistance", "choice_confrontDrakeAndCrowe"]
+  "warf": [
+    "choice_recordConversation",
+    "choice_listenFromDistance",
+    "choice_confrontDrakeAndCrowe",
+    "confront_clueGained",
+    "confront_escape",
+    "confront_dead"
+  ]
 }

@@ -19,9 +19,9 @@ MonoBehaviour:
   - text: Get closer and record their conversation\warf\choice_recordConversation
     nextDialogue: {fileID: 11400000, guid: ddf4c684fd6f44e888dbaeeecbf437c5, type: 2}
   - text: Stay here and listen from a distance\warf\choice_listenFromDistance
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: 74c6bcf3585104414b8815e40741720f, type: 2}
   - text: Confront them\warf\choice_confrontDrakeAndCrowe
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: d4d4acd5a9c76436b98ac83b3de94192, type: 2}
   dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 4b188fc5-c216-4905-8dce-d2dfa54d74ac
+  uniqueID: e5f59fdc-04d8-499d-a701-e1fdc00a70a8

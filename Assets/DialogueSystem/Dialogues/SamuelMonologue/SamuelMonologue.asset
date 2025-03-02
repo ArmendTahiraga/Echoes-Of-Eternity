@@ -19,7 +19,11 @@ MonoBehaviour:
       Value:
       - {fileID: 11400000, guid: 410a7a2356d3d4b2188495cc14277345, type: 2}
       - {fileID: 11400000, guid: 8a0951d4118e1454ba4abf5f46162a19, type: 2}
-      - {fileID: 11400000, guid: 9bc75c7ed45694fff9d1b991443a47fd, type: 2}
       - {fileID: 11400000, guid: ddf4c684fd6f44e888dbaeeecbf437c5, type: 2}
       - {fileID: 11400000, guid: 76eb18d6dbefc4252879afa8b57c55bd, type: 2}
+      - {fileID: 11400000, guid: 74c6bcf3585104414b8815e40741720f, type: 2}
+      - {fileID: 11400000, guid: d4d4acd5a9c76436b98ac83b3de94192, type: 2}
+      - {fileID: 11400000, guid: 697185da9d36542bba9cb557b61a90f0, type: 2}
+      - {fileID: 11400000, guid: 4137b9d411dfd4a159da4b22cf0f494d, type: 2}
+      - {fileID: 11400000, guid: 9bc75c7ed45694fff9d1b991443a47fd, type: 2}
   ungroupedDialogues: []

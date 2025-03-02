@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: DialogueFileName
+  m_EditorClassIdentifier: 
+  fileName: DialogueFileName
+  groups:
+  - id: 95e56f34-db48-4902-b99e-79ba947db5c8
+    name: Samuel
+    position: {x: -2216.9998, y: -82}
+  nodes:
+  - id: 0f2df04c-9660-4728-b2ee-184f334854f2
+    name: Dialogue2
+    text: "The lampposts\u2026 I need to stay in the shadows. If they see me, I\u2019m
+      dead before I can get a word out."
+    choices:
+    - text: Next Dialogue
+      nodeId: 58dc1f4a-5705-4a54-b247-56d88d3205f1
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: -1451, y: 119.5}
+  - id: 58dc1f4a-5705-4a54-b247-56d88d3205f1
+    name: Dialogue3
+    text: Alright, Samuel. Three choices. Take a risk and record them, stay back
+      and listen, or go all in and confront them. No room for mistakes.
+    choices:
+    - text: Get closer and record their conversation\warf\choice_recordConversation
+      nodeId: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
+    - text: Stay here and listen from a distance\warf\choice_listenFromDistance
+      nodeId: 4e2f8a6f-3a05-47f0-81f8-8d91053227a5
+    - text: Confront them\warf\choice_confrontDrakeAndCrowe
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 1
+    position: {x: -640.5, y: 119.5}
+  - id: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
+    name: Dialogue4
+    text: "If I get close enough, I can capture every word. It\u2019s risky, but
+      if I pull it off, I\u2019ll have undeniable proof."
+    choices:
+    - text: Next Dialogue
+      nodeId: 57cc06c7-e0cd-47d6-8696-4f54a35f5ea2
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 232, y: -23.5}
+  - id: 0bbb8269-93cd-4df9-a559-84d2e1bcc64e
+    name: Dialogue1
+    text: "Lucas wasn\u2019t lying. This is the place. Drake and Crowe, caught in
+      the act. If I can get proof of their deal, it could be enough to blow this
+      whole thing wide open."
+    choices:
+    - text: Next Dialogue
+      nodeId: 0f2df04c-9660-4728-b2ee-184f334854f2
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: -2192, y: 119.5}
+  - id: 57cc06c7-e0cd-47d6-8696-4f54a35f5ea2
+    name: Dialogue5
+    text: "One wrong step, one creaky board, and it\u2019s over. I have to time this
+      right."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 1141.5, y: -23.5}
+  - id: 4e2f8a6f-3a05-47f0-81f8-8d91053227a5
+    name: Dialogue6
+    text: "If I get too close, I risk being seen. But if I stay back, I won\u2019t
+      hear everything. Still, it\u2019s safer. I\u2019ll take what I can get."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 232, y: 191}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue2
+      - Dialogue3
+      - Dialogue4
+      - Dialogue1
+      - Dialogue5
+      - Dialogue6

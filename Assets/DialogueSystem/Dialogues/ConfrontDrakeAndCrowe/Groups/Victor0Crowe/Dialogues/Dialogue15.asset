@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue15
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue15
+  dialogueText: "Yeah. And I don\u2019t like feeling like I\u2019m being played."
+  choices:
+  - text: Alright, alright. No need to get all worked up. I was just curious. I'll
+      be on my way now.\warf\confront_escape
+    nextDialogue: {fileID: 0}
+  - text: "Fine. I\u2019ll be straight with you\u2014I know about the shipments."
+    nextDialogue: {fileID: 11400000, guid: 26382ff1ba88f4035a759337e3120a1d, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: ba02fb2d-8467-4799-a99a-1d122618479c

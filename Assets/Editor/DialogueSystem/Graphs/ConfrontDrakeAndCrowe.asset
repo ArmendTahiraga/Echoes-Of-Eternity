@@ -1,0 +1,415 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: ConfrontDrakeAndCrowe
+  m_EditorClassIdentifier: 
+  fileName: ConfrontDrakeAndCrowe
+  groups:
+  - id: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    name: Chief0Drake
+    position: {x: 238, y: -680}
+  - id: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    name: Victor0Crowe
+    position: {x: 908, y: 280.99997}
+  - id: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    name: Samuel
+    position: {x: 2336.5, y: 1463}
+  nodes:
+  - id: ad82b9df-e001-4a96-906a-3a7193915c1a
+    name: Dialogue2
+    text: Now this is interesting. I thought you were dead, detective. Or at least,
+      you were supposed to be.
+    choices:
+    - text: Relax, gentlemen. I just happened to be in the neighborhood.
+      nodeId: bb1fc3d4-9df5-4a42-b694-8a69567d96de
+    - text: "What\u2019s wrong, Drake? You look like you\u2019ve seen a ghost."
+      nodeId: a1723900-ded4-4a0e-8a58-478c571acf33
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 1
+    position: {x: 933, y: 615}
+  - id: bb1fc3d4-9df5-4a42-b694-8a69567d96de
+    name: Dialogue3
+    text: Neighborhood, huh? Must be one hell of a coincidence.
+    choices:
+    - text: Next Dialogue
+      nodeId: 481d01fe-9d20-41c0-a576-d0733db55a62
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 1709.5, y: 615}
+  - id: cf8ff01e-56ab-4830-8b47-af05313dbbfb
+    name: Dialogue1
+    text: "You\u2019ve got nerve showing up here, Samuel."
+    choices:
+    - text: Next Dialogue
+      nodeId: ad82b9df-e001-4a96-906a-3a7193915c1a
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 263, y: -584.5}
+  - id: 481d01fe-9d20-41c0-a576-d0733db55a62
+    name: Dialogue4
+    text: "I like a good view of the water. Can\u2019t say the company\u2019s bad
+      either."
+    choices:
+    - text: Next Dialogue
+      nodeId: 79ed659c-c16b-44d4-be2e-81c833e75a93
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 2361.5, y: 1545}
+  - id: 79ed659c-c16b-44d4-be2e-81c833e75a93
+    name: Dialogue5
+    text: Cut the act, Rowe. What the hell do you want?
+    choices:
+    - text: "Nothing really. Just curious what\u2019s got the two of you out so late."
+      nodeId: 06cf4eed-cdad-475b-840e-833625dd1c76
+    - text: "I didn\u2019t think you two were the type for midnight strolls."
+      nodeId: 9dd0a7d0-fd87-4fb4-906c-9f29371d6205
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 1
+    position: {x: 2989, y: -584.5}
+  - id: 28959cf5-3c80-4696-829e-d1eb4222380b
+    name: Dialogue7
+    text: "Relax, Chief. He\u2019s just being nosy, like always."
+    choices:
+    - text: Next Dialogue
+      nodeId: eaa7eac0-dd5e-4000-a566-cce3186c5593
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 4464, y: 615}
+  - id: eaa7eac0-dd5e-4000-a566-cce3186c5593
+    name: Dialogue8
+    text: "I mean, what\u2019s the harm? I might as well hear it from you instead
+      of\u2026 well, wherever else this kind of talk ends up."
+    choices:
+    - text: Next Dialogue
+      nodeId: c9d7c655-7fa1-47dd-b733-92e659985602
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 5102, y: 1545}
+  - id: 0f6c4af8-6432-4859-8d8d-7d5e4e8c223e
+    name: Dialogue10
+    text: "See? Now that\u2019s a man who understands how things work. It\u2019s
+      all about organization, Rowe. Keeping the right people happy, making sure the
+      wrong people don\u2019t stick their noses in places they shouldn\u2019t."
+    choices:
+    - text: Next Dialogue
+      nodeId: a8985644-4dca-4841-8454-75bc04f54b6a
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 6598.5, y: 615}
+  - id: a8985644-4dca-4841-8454-75bc04f54b6a
+    name: Dialogue11
+    text: "Sure. Makes sense. If I were running a gig like this, I\u2019d make sure
+      things were airtight. No weak links."
+    choices:
+    - text: Next Dialogue
+      nodeId: 1e80815e-9a34-4f9a-80da-dc35989cab2d
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 7236.5, y: 1545}
+  - id: 1e80815e-9a34-4f9a-80da-dc35989cab2d
+    name: Dialogue12
+    text: Exactly. Everything has a place. We keep the docks clean, the shipments
+      flowing. No interruptions, no surprises. Just business.
+    choices:
+    - text: Next Dialogue
+      nodeId: fc549353-346d-4428-b76a-d480c3957f31
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 7882.5, y: 615}
+  - id: c9d7c655-7fa1-47dd-b733-92e659985602
+    name: Dialogue9
+    text: "Fine. You wanna know? We\u2019re just doing business, Rowe. Talking about\u2026
+      city infrastructure. How to keep things moving smoothly."
+    choices:
+    - text: "Smart. A city needs structure. Gotta make sure things don\u2019t get
+        messy."
+      nodeId: 0f6c4af8-6432-4859-8d8d-7d5e4e8c223e
+    - text: "Moving smoothly? That wouldn\u2019t have anything to do with, say\u2026
+        shipments?"
+      nodeId: 7c16d153-106d-4d98-813e-96284675bc0f
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 1
+    position: {x: 5748, y: 615}
+  - id: 7c16d153-106d-4d98-813e-96284675bc0f
+    name: Dialogue14
+    text: "Enough. This isn\u2019t a conversation. It\u2019s an interrogation. You
+      came here for a reason, Rowe."
+    choices:
+    - text: Next Dialogue
+      nodeId: 82a3d9bb-a21a-471c-9617-f3836c93d325
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 6560, y: -584.5}
+  - id: 82a3d9bb-a21a-471c-9617-f3836c93d325
+    name: Dialogue15
+    text: "Yeah. And I don\u2019t like feeling like I\u2019m being played."
+    choices:
+    - text: Alright, alright. No need to get all worked up. I was just curious. I'll
+        be on my way now.\warf\confront_escape
+      nodeId: 
+    - text: "Fine. I\u2019ll be straight with you\u2014I know about the shipments."
+      nodeId: 27638a91-2417-410b-94a8-45f57d689b46
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 1
+    position: {x: 7252.5, y: 339.5}
+  - id: 9dd0a7d0-fd87-4fb4-906c-9f29371d6205
+    name: Dialogue17
+    text: You know me, Rowe. Always loved the water. Something calming about it.
+      Helps a man think.
+    choices:
+    - text: Next Dialogue
+      nodeId: eb9f8bc6-0932-476c-8b51-55adb2780ab2
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 3661.5, y: 343.5}
+  - id: 06cf4eed-cdad-475b-840e-833625dd1c76
+    name: Dialogue6
+    text: "You always were a pain in the ass, Rowe. Still poking around where you
+      don\u2019t belong."
+    choices:
+    - text: Next Dialogue
+      nodeId: 28959cf5-3c80-4696-829e-d1eb4222380b
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 3839.5, y: -621.5}
+  - id: eb9f8bc6-0932-476c-8b51-55adb2780ab2
+    name: Dialogue18
+    text: "And I don\u2019t see how it\u2019s any of your damn business, detective!"
+    choices:
+    - text: Next Dialogue
+      nodeId: 718153f2-8538-41cc-8e70-ae23a45b5ff4
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 4321, y: -324}
+  - id: 718153f2-8538-41cc-8e70-ae23a45b5ff4
+    name: Dialogue19
+    text: "Oh, I don\u2019t know, Chief. Last I checked, when a cop and a known crime
+      boss meet in secret, it tends to raise a few eyebrows. Makes people wonder
+      what kind of \u2018thinking\u2019 you two are doing."
+    choices:
+    - text: Next Dialogue
+      nodeId: 7c16d153-106d-4d98-813e-96284675bc0f
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 5102, y: 1818}
+  - id: a1723900-ded4-4a0e-8a58-478c571acf33
+    name: Dialogue20
+    text: "Gotta hand it to you, Rowe. You\u2019ve got style. Popping up like this?
+      It\u2019s almost theatrical."
+    choices:
+    - text: Next Dialogue
+      nodeId: ccce8160-37fb-4ee0-ad6f-0670ba39dfab
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 1709.5, y: 892}
+  - id: f24b284f-82c6-44ab-b0ef-71005802f13a
+    name: Dialogue22
+    text: "Oh, just enjoying the view. Two of the city\u2019s finest having a heart-to-heart
+      under the stars? It\u2019s almost touching."
+    choices:
+    - text: Next Dialogue
+      nodeId: af805dc3-288b-44d4-8380-27cd2775ea29
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 2988, y: 1790}
+  - id: ccce8160-37fb-4ee0-ad6f-0670ba39dfab
+    name: Dialogue21
+    text: "What the hell do you think you\u2019re doing here, Rowe?"
+    choices:
+    - text: Next Dialogue
+      nodeId: f24b284f-82c6-44ab-b0ef-71005802f13a
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 2347, y: -40.5}
+  - id: af805dc3-288b-44d4-8380-27cd2775ea29
+    name: Dialogue23
+    text: "You always did have a mouth on you, detective. But you\u2019re playing
+      a dangerous game."
+    choices:
+    - text: Next Dialogue
+      nodeId: d6e33b49-5e4b-4636-bb8e-9c207e0b59ab
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 3631, y: -40.5}
+  - id: d6e33b49-5e4b-4636-bb8e-9c207e0b59ab
+    name: Dialogue24
+    text: "Let him talk, Drake. I want to hear what kind of fairy tale he\u2019s
+      cooked up this time."
+    choices:
+    - text: "You\u2019re enjoying this, aren\u2019t you? That\u2019s the thing about
+        guys like you\u2014you love the power trip."
+      nodeId: 795e3ad6-40a8-4c8b-80a3-da96e151c237
+    - text: "You\u2019ve been looking nervous, Chief. What, afraid I know something
+        I shouldn\u2019t?"
+      nodeId: 6c6418a3-683f-4684-a43f-5a6df671dda9
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 1
+    position: {x: 4273, y: 892}
+  - id: 795e3ad6-40a8-4c8b-80a3-da96e151c237
+    name: Dialogue25
+    text: "Heh. You\u2019re not wrong, Rowe. Power\u2019s a hell of a drug."
+    choices:
+    - text: Next Dialogue
+      nodeId: 62f97bf6-4d83-4f14-85bf-951c2854e8bf
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 5220, y: 892}
+  - id: 62f97bf6-4d83-4f14-85bf-951c2854e8bf
+    name: Dialogue26
+    text: "See, the thing about control? It\u2019s about who\u2019s calling the shots.
+      And let\u2019s just say\u2014"
+    choices:
+    - text: Next Dialogue
+      nodeId: c10b5fad-ed68-40e8-9fc8-42cb3debd0f4
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 6074, y: 892}
+  - id: c10b5fad-ed68-40e8-9fc8-42cb3debd0f4
+    name: Dialogue27
+    text: "\u2014there\u2019s a whole lot more moving through these docks than fishing
+      boats."
+    choices:
+    - text: Next Dialogue
+      nodeId: 26c9eb9e-6f6d-4541-9473-c0f97ca53a92
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 0
+    position: {x: 6871, y: 892}
+  - id: 26c9eb9e-6f6d-4541-9473-c0f97ca53a92
+    name: Dialogue28
+    text: That so?
+    choices:
+    - text: Next Dialogue
+      nodeId: ffe55c94-44b0-4fa4-8218-70f52627b3ad
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 0
+    position: {x: 7509, y: 1818}
+  - id: ffe55c94-44b0-4fa4-8218-70f52627b3ad
+    name: Dialogue29
+    text: Crowe, shut your damn mouth!
+    choices:
+    - text: Next Dialogue
+      nodeId: 3147a8f8-b7b7-4f48-b470-b0a2e1d32f05
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 7768, y: 27}
+  - id: fc549353-346d-4428-b76a-d480c3957f31
+    name: Dialogue13
+    text: Sounds like you two have it all under control. Guess I wasted my time.
+    choices:
+    - text: Next Dialogue\warf\confront_clueGained
+      nodeId: 
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 1
+    position: {x: 8520.5, y: 1521.5}
+  - id: 3147a8f8-b7b7-4f48-b470-b0a2e1d32f05
+    name: Dialogue30
+    text: "Well then gentlemen, I think it\u2019s time for me to leave."
+    choices:
+    - text: Next Dialogue\warf\confront_clueGained
+      nodeId: 
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 1
+    position: {x: 8418, y: 1818}
+  - id: 6c6418a3-683f-4684-a43f-5a6df671dda9
+    name: Dialogue31
+    text: "I don\u2019t get nervous, Rowe."
+    choices:
+    - text: Next Dialogue
+      nodeId: ba141f84-0221-45bc-9d6c-3161d2dec4fc
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 5220, y: 54}
+  - id: ba141f84-0221-45bc-9d6c-3161d2dec4fc
+    name: Dialogue32
+    text: "Really? Because you\u2019re looking a little pale."
+    choices:
+    - text: "Scared I might already know where your next shipment\u2019s coming in?"
+      nodeId: 43fc4e84-e408-40a9-b236-20398dfa1101
+    - text: What is it, Chief?
+      nodeId: 7c16d153-106d-4d98-813e-96284675bc0f
+    groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
+    dialogueType: 1
+    position: {x: 5861, y: 2106.5}
+  - id: 43fc4e84-e408-40a9-b236-20398dfa1101
+    name: Dialogue33
+    text: He knows to much.
+    choices:
+    - text: Next Dialogue
+      nodeId: c5768935-fba3-4339-9c7a-d9cbb8476e78
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 0
+    position: {x: 6523.5, y: 54}
+  - id: c5768935-fba3-4339-9c7a-d9cbb8476e78
+    name: Dialogue34
+    text: "You should\u2019ve left when you had the chance, Rowe."
+    choices:
+    - text: No!\warf\confront_dead
+      nodeId: 
+    groupId: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
+    dialogueType: 1
+    position: {x: 6778.5, y: 1183}
+  - id: 27638a91-2417-410b-94a8-45f57d689b46
+    name: Dialogue16
+    text: End this, Crowe!
+    choices:
+    - text: No!\warf\confront_dead
+      nodeId: 
+    groupId: ae2df9d2-56df-475a-8aae-6aac67f6dcbd
+    dialogueType: 1
+    position: {x: 8120, y: -584.5}
+  oldGroupNames:
+  - Chief0Drake
+  - Victor0Crowe
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Victor0Crowe
+      Value:
+      - Dialogue2
+      - Dialogue3
+      - Dialogue7
+      - Dialogue10
+      - Dialogue12
+      - Dialogue9
+      - Dialogue15
+      - Dialogue17
+      - Dialogue20
+      - Dialogue24
+      - Dialogue25
+      - Dialogue26
+      - Dialogue27
+      - Dialogue34
+    - Key: Chief0Drake
+      Value:
+      - Dialogue1
+      - Dialogue5
+      - Dialogue14
+      - Dialogue6
+      - Dialogue18
+      - Dialogue21
+      - Dialogue23
+      - Dialogue29
+      - Dialogue31
+      - Dialogue33
+      - Dialogue16
+    - Key: Samuel
+      Value:
+      - Dialogue4
+      - Dialogue8
+      - Dialogue11
+      - Dialogue19
+      - Dialogue22
+      - Dialogue28
+      - Dialogue13
+      - Dialogue30
+      - Dialogue32

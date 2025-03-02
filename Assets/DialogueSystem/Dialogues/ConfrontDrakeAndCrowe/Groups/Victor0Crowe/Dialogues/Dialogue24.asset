@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue24
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue24
+  dialogueText: "Let him talk, Drake. I want to hear what kind of fairy tale he\u2019s
+    cooked up this time."
+  choices:
+  - text: "You\u2019re enjoying this, aren\u2019t you? That\u2019s the thing about
+      guys like you\u2014you love the power trip."
+    nextDialogue: {fileID: 11400000, guid: 28af45c313068482c90822e5fa726d3f, type: 2}
+  - text: "You\u2019ve been looking nervous, Chief. What, afraid I know something
+      I shouldn\u2019t?"
+    nextDialogue: {fileID: 11400000, guid: fdd42e57b0c6f445da3a1043cc2e83e5, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: 9834c2bd-e69e-4658-9e12-cb2960127a19

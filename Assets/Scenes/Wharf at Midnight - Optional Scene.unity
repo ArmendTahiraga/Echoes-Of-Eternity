@@ -1430,7 +1430,7 @@ GameObject:
   - component: {fileID: 166042577}
   m_Layer: 0
   m_Name: RecordMiniGameHint
-  m_TagString: Untagged
+  m_TagString: Choice-RecordConversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2228,6 +2228,120 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1327674770}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &245175380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245175385}
+  - component: {fileID: 245175384}
+  - component: {fileID: 245175383}
+  - component: {fileID: 245175382}
+  - component: {fileID: 245175381}
+  m_Layer: 0
+  m_Name: ConfrontConversationStarter
+  m_TagString: Choice-ConfrontDrakeAndCrowe
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &245175381
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245175380}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &245175382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245175380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1779a88d7395434592f46c8187a8e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: Talk to Drake and Crowe
+  objectiveChoice: choice_confrontDrakeAndCrowe
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
+  uniqueID: b1705902-f766-4201-8991-433005ed56e4
+--- !u!114 &245175383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245175380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a340e889da9f4083ba5ff806348b7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Talk to Drake and Crowe
+  characterName: Chief Drake
+  dialogueUI: {fileID: 188116495}
+  animationTriggers: []
+  animators: []
+  teleportPlayer: {fileID: 0}
+  objective: {fileID: 245175382}
+--- !u!114 &245175384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245175380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: d41b4cc24967c4ec084850a7453f1b95, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: bf7884e3c91ba4c6680b47e0ce24e4e4, type: 2}
+  dialogue: {fileID: 11400000, guid: 86bf5d6ea4eb44e53ae0ddfac09ca9fa, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: ffa5aef6-1ce8-4ccc-8478-4ea000da8cc8
+--- !u!4 &245175385
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245175380}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 239.33, y: 15.33, z: 56.91}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &271233790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3197,7 +3311,7 @@ GameObject:
   - component: {fileID: 419639117}
   m_Layer: 0
   m_Name: MiniGameSuccessDialogue
-  m_TagString: Untagged
+  m_TagString: Choice-RecordConversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3498,6 +3612,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443912475}
   m_CullTransparentMesh: 1
+--- !u!1 &457734580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 457734583}
+  - component: {fileID: 457734582}
+  - component: {fileID: 457734581}
+  m_Layer: 0
+  m_Name: ObjectiveConfront1
+  m_TagString: Choice-ConfrontDrakeAndCrowe
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &457734581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457734580}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &457734582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457734580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1779a88d7395434592f46c8187a8e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objective: Go to Drake and Crowe
+  objectiveChoice: choice_confrontDrakeAndCrowe
+  onObjectiveComplete:
+    m_PersistentCalls:
+      m_Calls: []
+  isActive: 0
+  uniqueID: 3a4c72a8-ea38-446c-b0a9-d4fa387362c5
+--- !u!4 &457734583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457734580}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 215.29, y: 17.17, z: 58.5}
+  m_LocalScale: {x: 15, y: 7, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &464505085
 GameObject:
   m_ObjectHideFlags: 0
@@ -4496,7 +4683,7 @@ GameObject:
   - component: {fileID: 617510022}
   m_Layer: 0
   m_Name: MiniGameFailDialogue
-  m_TagString: Untagged
+  m_TagString: Choice-RecordConversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5209,15 +5396,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6860705283289887752, guid: 9eae5d01ff3804549b7ed34d0c7f0d36, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6860705283289887752, guid: 9eae5d01ff3804549b7ed34d0c7f0d36, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6860705283289887752, guid: 9eae5d01ff3804549b7ed34d0c7f0d36, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6860705283289887752, guid: 9eae5d01ff3804549b7ed34d0c7f0d36, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6227,7 +6414,7 @@ GameObject:
   - component: {fileID: 890112480}
   m_Layer: 0
   m_Name: MiniGameStarter
-  m_TagString: Untagged
+  m_TagString: Choice-RecordConversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8430,6 +8617,8 @@ MonoBehaviour:
   - {fileID: 1861453149}
   - {fileID: 890112480}
   - {fileID: 1699166992}
+  - {fileID: 457734582}
+  - {fileID: 245175382}
   currentObjective: {fileID: 0}
   loadGameChanges: 0
 --- !u!4 &1261973925
@@ -10278,15 +10467,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3617818775243487197, guid: 9d4a949cd3ac0594086a6cbd9f6ea44d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 3617818775243487197, guid: 9d4a949cd3ac0594086a6cbd9f6ea44d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 3617818775243487197, guid: 9d4a949cd3ac0594086a6cbd9f6ea44d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 3617818775243487197, guid: 9d4a949cd3ac0594086a6cbd9f6ea44d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11521,9 +11710,11 @@ GameObject:
   - component: {fileID: 1699166993}
   - component: {fileID: 1699166992}
   - component: {fileID: 1699166991}
+  - component: {fileID: 1699166994}
+  - component: {fileID: 1699166995}
   m_Layer: 0
   m_Name: ObjectiveListen1
-  m_TagString: Untagged
+  m_TagString: Choice-ListenFromDistance
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11577,12 +11768,51 @@ Transform:
   m_GameObject: {fileID: 1699166990}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 169.74, y: 16.54, z: 76.92}
-  m_LocalScale: {x: 20, y: 6, z: 1}
+  m_LocalPosition: {x: 169.02, y: 16.54, z: 79.61}
+  m_LocalScale: {x: 22, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1699166994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699166990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a340e889da9f4083ba5ff806348b7da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactionText: Listen to Drake's and Crowe's conversation
+  characterName: Victor Crowe
+  dialogueUI: {fileID: 188116495}
+  animationTriggers: []
+  animators: []
+  teleportPlayer: {fileID: 0}
+  objective: {fileID: 1699166992}
+--- !u!114 &1699166995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699166990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: c0f03af0a05c74753a9600490b6b9511, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 30c3d9300f1a4434ba94b64d6493f8d4, type: 2}
+  dialogue: {fileID: 11400000, guid: 51cde298a636a447d9e1d577f85feb05, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 2
+  uniqueID: 04905c6b-c718-4d4f-b650-090ad5050750
 --- !u!1 &1760711002
 GameObject:
   m_ObjectHideFlags: 0
@@ -11888,7 +12118,7 @@ GameObject:
   - component: {fileID: 1861453151}
   m_Layer: 0
   m_Name: ObjectiveRecord1
-  m_TagString: Untagged
+  m_TagString: Choice-RecordConversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13284,3 +13514,5 @@ SceneRoots:
   - {fileID: 166042581}
   - {fileID: 419639116}
   - {fileID: 617510021}
+  - {fileID: 457734583}
+  - {fileID: 245175385}

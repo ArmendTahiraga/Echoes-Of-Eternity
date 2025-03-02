@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: ListenToDrakeAndCrowe
+  m_EditorClassIdentifier: 
+  fileName: ListenToDrakeAndCrowe
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 30c3d9300f1a4434ba94b64d6493f8d4, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 9f54e01298e9f4f10ae46c95219ef15d, type: 2}
+      - {fileID: 11400000, guid: a49c61ea78515434391b525ea3890ab7, type: 2}
+      - {fileID: 11400000, guid: 51cde298a636a447d9e1d577f85feb05, type: 2}
+    - Key: {fileID: 11400000, guid: a212e5913aa7c42bcaa3112adf757ece, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 1986028f04f3241c7b5f4365bfd091d7, type: 2}
+      - {fileID: 11400000, guid: 7aa01327758d148a5bd07c8d39f6c079, type: 2}
+      - {fileID: 11400000, guid: 639e195a7bbbe4744baa69afc85fd568, type: 2}
+    - Key: {fileID: 11400000, guid: 46ef2c1950f20472f96e67ffc0f89e70, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 2062abeef444742928a1d13dcd46982c, type: 2}
+  ungroupedDialogues: []

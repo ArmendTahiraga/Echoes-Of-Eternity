@@ -39,20 +39,6 @@ MonoBehaviour:
     groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
     dialogueType: 0
     position: {x: -1451, y: 119.5}
-  - id: 58dc1f4a-5705-4a54-b247-56d88d3205f1
-    name: Dialogue3
-    text: Alright, Samuel. Three choices. Take a risk and record them, stay back
-      and listen, or go all in and confront them. No room for mistakes.
-    choices:
-    - text: Get closer and record their conversation\warf\choice_recordConversation
-      nodeId: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
-    - text: Stay here and listen from a distance\warf\choice_listenFromDistance
-      nodeId: 
-    - text: Confront them\warf\choice_confrontDrakeAndCrowe
-      nodeId: 
-    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
-    dialogueType: 1
-    position: {x: -640.5, y: 119.5}
   - id: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
     name: Dialogue4
     text: "If I get close enough, I can capture every word. It\u2019s risky, but
@@ -73,6 +59,62 @@ MonoBehaviour:
     groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
     dialogueType: 0
     position: {x: 1026.5, y: -23.5}
+  - id: ff7e7335-9b2f-4132-a876-20bac1a7b514
+    name: Dialogue6
+    text: "If I get too close, I risk being seen. But if I stay back, I won\u2019t
+      hear everything. Still, it\u2019s safer. I\u2019ll take what I can get."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 232, y: 214}
+  - id: 9256407f-02bf-44b3-ad8c-1df89d961b4b
+    name: Dialogue7
+    text: "If I want to make it out of this alive, I need to control the conversation.
+      I need to get them talking\u2014make them believe they hold the upper hand
+      while I extract what I need."
+    choices:
+    - text: Next Dialogue
+      nodeId: 17292b32-d275-4a34-a173-a283391ac75a
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 232, y: 450.5}
+  - id: 17292b32-d275-4a34-a173-a283391ac75a
+    name: Dialogue8
+    text: "Drake\u2019s cautious, he\u2019ll want to shut me down fast. Crowe? He
+      enjoys the game. If I push the right buttons, he\u2019ll slip up. That\u2019s
+      my opening."
+    choices:
+    - text: Next Dialogue
+      nodeId: 2a2686ec-fcf4-467f-892c-2ac1eeb55452
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 1026.5, y: 450.5}
+  - id: 2a2686ec-fcf4-467f-892c-2ac1eeb55452
+    name: Dialogue9
+    text: "If I falter, I\u2019m dead. But if I play this right\u2026 I walk away
+      with the truth."
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 0
+    position: {x: 1817, y: 450.5}
+  - id: 58dc1f4a-5705-4a54-b247-56d88d3205f1
+    name: Dialogue3
+    text: Alright, Samuel. Three choices. Take a risk and record them, stay back
+      and listen, or go all in and confront them. No room for mistakes.
+    choices:
+    - text: Get closer and record their conversation\warf\choice_recordConversation
+      nodeId: 95d851bd-f523-40ec-9d94-7d2c5c5451ad
+    - text: Stay here and listen from a distance\warf\choice_listenFromDistance
+      nodeId: ff7e7335-9b2f-4132-a876-20bac1a7b514
+    - text: Confront them\warf\choice_confrontDrakeAndCrowe
+      nodeId: 9256407f-02bf-44b3-ad8c-1df89d961b4b
+    groupId: 95e56f34-db48-4902-b99e-79ba947db5c8
+    dialogueType: 1
+    position: {x: -640.5, y: 119.5}
   oldGroupNames:
   - Samuel
   oldUngroupedNames: []
@@ -82,6 +124,10 @@ MonoBehaviour:
       Value:
       - Dialogue1
       - Dialogue2
-      - Dialogue3
       - Dialogue4
       - Dialogue5
+      - Dialogue6
+      - Dialogue7
+      - Dialogue8
+      - Dialogue9
+      - Dialogue3

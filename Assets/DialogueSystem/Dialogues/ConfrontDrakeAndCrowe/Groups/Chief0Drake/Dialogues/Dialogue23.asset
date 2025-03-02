@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue23
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue23
+  dialogueText: "You always did have a mouth on you, detective. But you\u2019re playing
+    a dangerous game."
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 11400000, guid: d960126604da74f48bf5a8cce39ff906, type: 2}
+  dialogueType: 0
+  isStartingDialogue: 0
+  uniqueID: 69f1e1ed-6a3c-4612-84b5-ce481fb77687
