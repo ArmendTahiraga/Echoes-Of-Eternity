@@ -8,9 +8,14 @@ public class Card : MonoBehaviour {
     public Sprite iconSprite;
     public bool isSelected;
     public CardsController controller;
-
+    float padding = 0.3f; 
+    
     private void Start() {
         iconImage.sprite = hiddenIconSprite;
+        iconImage.rectTransform.anchorMin = Vector2.zero;
+        iconImage.rectTransform.anchorMax = Vector2.one;
+        iconImage.rectTransform.offsetMin = new Vector2(padding, padding); 
+        iconImage.rectTransform.offsetMax = new Vector2(-padding, -padding); 
     }
 
     public void OnCardClick() {
@@ -25,6 +30,9 @@ public class Card : MonoBehaviour {
         Tween.Rotation(transform, new Vector3(0f, 180f, 0f), 0.2f);
         Tween.Delay(0.1f, () => iconImage.sprite = iconSprite);
         isSelected = true;
+        
+
+
     }
 
     public void Hide() {
