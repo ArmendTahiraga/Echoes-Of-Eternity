@@ -153,7 +153,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     }
 
     private IEnumerator RemoveMiniGameResultAndMiniGameStarter() {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
         miniGameResult = "";
         miniGameStarter.SetActive(false);
     }

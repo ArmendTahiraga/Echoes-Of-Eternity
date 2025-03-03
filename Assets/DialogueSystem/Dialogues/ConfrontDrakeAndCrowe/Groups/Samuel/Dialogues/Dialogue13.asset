@@ -16,8 +16,8 @@ MonoBehaviour:
   dialogueText: Sounds like you two have it all under control. Guess I wasted my
     time.
   choices:
-  - text: Next Dialogue\warf\confront_clueGained
+  - text: Next Dialogue\warf\confront_success
     nextDialogue: {fileID: 0}
   dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: ba72d361-1d6e-450d-8295-9239e357ad6e
+  uniqueID: f3d09f4e-eb79-40bd-ac23-219debee38a0

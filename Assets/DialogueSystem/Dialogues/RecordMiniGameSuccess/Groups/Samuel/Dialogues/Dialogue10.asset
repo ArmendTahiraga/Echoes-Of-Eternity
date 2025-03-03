@@ -16,8 +16,8 @@ MonoBehaviour:
   dialogueText: "That\u2019s it. I\u2019ve got what I need. Now I just have to get
     out of here before they realize they\u2019re not alone."
   choices:
-  - text: Next Dialogue
+  - text: Next Dialogue\warf\record_success
     nextDialogue: {fileID: 0}
-  dialogueType: 0
+  dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 93a8625f-3a58-4a22-9658-4b8e4d36ff25
+  uniqueID: 70770839-2902-4797-bc77-e521949e3e7e

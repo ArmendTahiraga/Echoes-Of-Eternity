@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene2.unity
     guid: bb502e248d2b43a4bb66bf309b0c597e
+  - enabled: 1
+    path: Assets/Scenes/Final Confrontation.unity
+    guid: b91240394628cb94ebba0122982a260f
   m_configObjects: {}

@@ -15,20 +15,22 @@ public class PlayerInteract : MonoBehaviour {
                 }
             }
         }
-        
-        switch (miniGame.GetComponent<MiniGame>().GetMiniGameResult()) { 
-            case "Success":
-                Interactable successInteractable = miniGame.GetComponent<MiniGame>().GetSuccessInteractable();
-                successInteractable?.Interact();
-                GetComponent<PlayerMovement>().isPlayerMoving = false;
-                GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
-                break;
-            case "Fail":
-                Interactable failInteractable = miniGame.GetComponent<MiniGame>().GetFailInteractable();
-                failInteractable?.Interact();
-                GetComponent<PlayerMovement>().isPlayerMoving = false;
-                GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
-                break;
+
+        if (miniGame) {
+            switch (miniGame.GetComponent<MiniGame>().GetMiniGameResult()) { 
+                case "Success":
+                    Interactable successInteractable = miniGame.GetComponent<MiniGame>().GetSuccessInteractable();
+                    successInteractable?.Interact();
+                    GetComponent<PlayerMovement>().isPlayerMoving = false;
+                    GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                    break;
+                case "Fail":
+                    Interactable failInteractable = miniGame.GetComponent<MiniGame>().GetFailInteractable();
+                    failInteractable?.Interact();
+                    GetComponent<PlayerMovement>().isPlayerMoving = false;
+                    GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                    break;
+            }   
         }
     }
 

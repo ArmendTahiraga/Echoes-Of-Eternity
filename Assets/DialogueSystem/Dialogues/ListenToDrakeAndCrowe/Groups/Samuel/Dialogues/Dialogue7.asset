@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogueName: Dialogue7
   dialogueText: I have heard enough, it's time to leave before they spot me.
   choices:
-  - text: Next Dialogue
+  - text: Next Dialogue\warf\listen_success
     nextDialogue: {fileID: 0}
-  dialogueType: 0
+  dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 8d8396ac-03cf-4e1a-bf57-a3ef41f8d868
+  uniqueID: 46a14ff2-f91e-43ea-a028-e11aeb182f65

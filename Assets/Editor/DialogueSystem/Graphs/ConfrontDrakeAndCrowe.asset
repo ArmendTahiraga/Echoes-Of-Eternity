@@ -19,7 +19,7 @@ MonoBehaviour:
     position: {x: 238, y: -680}
   - id: e4ae4e2a-448f-4a69-bf6a-17068e692d9a
     name: Victor0Crowe
-    position: {x: 908, y: 280.99997}
+    position: {x: 908, y: 281}
   - id: 917ac275-163b-49c9-8cbd-40d65b6190e9
     name: Samuel
     position: {x: 2336.5, y: 1463}
@@ -305,7 +305,7 @@ MonoBehaviour:
     name: Dialogue13
     text: Sounds like you two have it all under control. Guess I wasted my time.
     choices:
-    - text: Next Dialogue\warf\confront_clueGained
+    - text: Next Dialogue\warf\confront_success
       nodeId: 
     groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
     dialogueType: 1
@@ -314,7 +314,7 @@ MonoBehaviour:
     name: Dialogue30
     text: "Well then gentlemen, I think it\u2019s time for me to leave."
     choices:
-    - text: Next Dialogue\warf\confront_clueGained
+    - text: Next Dialogue\warf\confront_success
       nodeId: 
     groupId: 917ac275-163b-49c9-8cbd-40d65b6190e9
     dialogueType: 1

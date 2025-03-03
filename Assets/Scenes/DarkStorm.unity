@@ -400,6 +400,7 @@ MonoBehaviour:
   orientation: {fileID: 265230098}
   playerObjectOrientation: {fileID: 168168873}
   lockCamera: 0
+  enableCursor: 0
 --- !u!81 &16113370
 AudioListener:
   m_ObjectHideFlags: 0
@@ -649,6 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: Control Samuel's past.
+  objectiveChoice: 
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -7809,10 +7811,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b646e650026de4c2e93f395f3d869696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectiveText: {fileID: 1084793460}
   objectives:
   - {fileID: 1226985266}
-  - {fileID: 0}
-  objectiveText: {fileID: 1084793460}
+  - {fileID: 20558128}
+  currentObjective: {fileID: 0}
   loadGameChanges: 0
 --- !u!4 &519266421
 Transform:
@@ -15201,6 +15204,7 @@ MonoBehaviour:
   playerInteract: {fileID: 2097603688}
   interactionText: {fileID: 1989320845}
   dialogueUI: {fileID: 1306792577}
+  miniGame: {fileID: 0}
 --- !u!1001 &1136028409
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16838,6 +16842,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 1226985266}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!65 &1226985263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16892,6 +16898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: Listen to the relatives.
+  objectiveChoice: 
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -17821,6 +17828,7 @@ MonoBehaviour:
   dialogueText: {fileID: 279201803}
   characterName: {fileID: 2146997936}
   panel: {fileID: 2142435712}
+  miniGame: {fileID: 0}
 --- !u!1001 &1309081680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29744,6 +29752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d747edf6f45d4eafa9b0fd7d7b1cab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGame: {fileID: 0}
 --- !u!114 &2097603689
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,13 +1,22 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private ObjectiveManager objectiveManager;
+    [SerializeField] private AsyncLoader asyncLoader;
+    [SerializeField] private Animator deathScreenCanvasAnimator;
 
     private void Start() {
         ChoiceManager.Instance.RegisterChoiceEvent("choice_recordConversation", WarfRecordConversation);
         ChoiceManager.Instance.RegisterChoiceEvent("choice_listenFromDistance", WarfListenFromDistance);
         ChoiceManager.Instance.RegisterChoiceEvent("choice_confrontDrakeAndCrowe", WarfConfrontDrakeAndCrowe);
+        ChoiceManager.Instance.RegisterChoiceEvent("record_success", WarfRecordSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("record_fail", WarfRecordFail);
+        ChoiceManager.Instance.RegisterChoiceEvent("listen_success", WarfListenSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("confront_success", WarfConfrontSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("confront_escape", WarfConfrontEscape);
+        ChoiceManager.Instance.RegisterChoiceEvent("confront_dead", WarfConfrontDead);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -60,5 +69,38 @@ public class ChoiceEventManager : MonoBehaviour {
     private void WarfConfrontDrakeAndCrowe() {
         ChangeObjectives("choice_confrontDrakeAndCrowe");
         DestroyChoiceSpecificObjects("choice_confrontDrakeAndCrowe");
+    }
+
+    private IEnumerator ChangeScene(string scene, float delay) {
+        yield return new WaitForSeconds(delay);
+        asyncLoader.LoadLevel(scene);
+    }
+
+    private void WarfRecordSuccess() {
+        ChoiceManager.Instance.AddClue("record_success");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void WarfRecordFail() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void WarfListenSuccess() {
+        ChoiceManager.Instance.AddClue("listen_success");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void WarfConfrontSuccess() {
+        ChoiceManager.Instance.AddClue("confront_success");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void WarfConfrontEscape() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void WarfConfrontDead() {
+        deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
+        StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 }

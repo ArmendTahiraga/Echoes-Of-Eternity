@@ -16,13 +16,13 @@ MonoBehaviour:
   groups:
   - id: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
     name: Victor0Crowe
-    position: {x: 176.99982, y: 179.5}
+    position: {x: 177, y: 179.5}
   - id: 00542b67-21b7-4341-bb3f-91268ba808eb
     name: Chief0Drake
     position: {x: 819, y: 507.5}
   - id: e0018c5f-b453-4f83-b4ea-cc7c2ad7189a
     name: Samuel
-    position: {x: 4305.9995, y: 804.50006}
+    position: {x: 4310, y: 837.5}
   nodes:
   - id: ab78aa7b-4e33-41e7-b070-b965387336ff
     name: Dialogue4
@@ -49,7 +49,7 @@ MonoBehaviour:
       off our backs."
     choices:
     - text: Next Dialogue
-      nodeId: 1b1f1d8a-496a-43f0-a94b-2be7c0a92cc7
+      nodeId: 3c054c03-8d47-4f33-943c-c1aad4a62088
     groupId: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
     dialogueType: 0
     position: {x: 3659, y: 238}
@@ -80,15 +80,15 @@ MonoBehaviour:
     groupId: 06e4899b-c8aa-4d2e-93fa-cf44a53e03b4
     dialogueType: 0
     position: {x: 202, y: 238}
-  - id: 1b1f1d8a-496a-43f0-a94b-2be7c0a92cc7
+  - id: 3c054c03-8d47-4f33-943c-c1aad4a62088
     name: Dialogue7
     text: I have heard enough, it's time to leave before they spot me.
     choices:
-    - text: Next Dialogue
+    - text: Next Dialogue\warf\listen_success
       nodeId: 
     groupId: e0018c5f-b453-4f83-b4ea-cc7c2ad7189a
-    dialogueType: 0
-    position: {x: 4331, y: 863}
+    dialogueType: 1
+    position: {x: 4335, y: 896}
   oldGroupNames:
   - Victor0Crowe
   - Chief0Drake

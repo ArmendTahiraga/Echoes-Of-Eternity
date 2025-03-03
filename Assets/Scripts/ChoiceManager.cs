@@ -7,6 +7,7 @@ public class ChoiceManager : MonoBehaviour {
     public static ChoiceManager Instance { get; private set; }
     private Dictionary<string, List<string>> gameChoices = new Dictionary<string, List<string>>();
     private Dictionary<string, Action> choiceActions = new Dictionary<string, Action>();
+    private List<string> cluesGathered = new List<string>();
 
     private void Awake() {
         if (Instance != null && Instance != this) {
@@ -35,5 +36,9 @@ public class ChoiceManager : MonoBehaviour {
     public void TriggerChoice(string choiceId) {
         Action action = choiceActions[choiceId];
         action?.Invoke();
+    }
+
+    public void AddClue(string clue) {
+        cluesGathered.Add(clue);
     }
 }

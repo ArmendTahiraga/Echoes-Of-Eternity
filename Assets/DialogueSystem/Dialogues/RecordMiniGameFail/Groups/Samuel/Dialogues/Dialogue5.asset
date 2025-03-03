@@ -16,8 +16,8 @@ MonoBehaviour:
   dialogueText: "No time\u2014if I stay, I\u2019m dead. I have to escape now before
     they catch me."
   choices:
-  - text: Next Dialogue
+  - text: Next Dialogue\warf\record_fail
     nextDialogue: {fileID: 0}
-  dialogueType: 0
+  dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 2a5f4136-f322-4694-930e-0190a0c68842
+  uniqueID: 6cba1de3-97cc-4141-b11d-8b1d78e900b2

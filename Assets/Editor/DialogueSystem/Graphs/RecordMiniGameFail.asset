@@ -16,13 +16,13 @@ MonoBehaviour:
   groups:
   - id: 6703450c-2bdd-4109-997d-53bb48be968d
     name: Samuel
-    position: {x: 339.99997, y: 113.000046}
+    position: {x: 340, y: 156.5}
   - id: 99be21f3-ebad-4c51-a5d0-296ebb61cf35
     name: Victor0Crowe
-    position: {x: 937.49994, y: 448.50006}
+    position: {x: 937.5, y: 448.5}
   - id: 30bb01e5-7c68-4180-8ce6-abfcf6db6d68
     name: Chief0Drake
-    position: {x: 1240.0001, y: 791.50006}
+    position: {x: 1199, y: 723.5}
   nodes:
   - id: 5c5e8b53-e4de-40c1-8cfa-0dffd930ebb2
     name: Dialogue1
@@ -32,7 +32,7 @@ MonoBehaviour:
       nodeId: 18520bf6-2a46-4381-8317-c46dd291d9ec
     groupId: 6703450c-2bdd-4109-997d-53bb48be968d
     dialogueType: 0
-    position: {x: 365, y: 171.5}
+    position: {x: 365, y: 223.5}
   - id: e2edde9f-4c53-42fd-a5bd-5c317b4a7ff5
     name: Dialogue3
     text: What was that?
@@ -50,26 +50,26 @@ MonoBehaviour:
       nodeId: e2edde9f-4c53-42fd-a5bd-5c317b4a7ff5
     groupId: 6703450c-2bdd-4109-997d-53bb48be968d
     dialogueType: 0
-    position: {x: 688.5, y: 171.5}
+    position: {x: 688.5, y: 223.5}
   - id: 1f081bfe-5c5d-4f81-b638-cbbf54ac3e72
     name: Dialogue4
     text: "Someone\u2019s here. Check the crates."
     choices:
     - text: Next Dialogue
-      nodeId: 74ad0a75-e7a5-4e27-a151-471354244006
+      nodeId: 3fc2b9a9-7e82-43f1-9cf5-68af56fe2597
     groupId: 30bb01e5-7c68-4180-8ce6-abfcf6db6d68
     dialogueType: 0
-    position: {x: 1265, y: 850}
-  - id: 74ad0a75-e7a5-4e27-a151-471354244006
+    position: {x: 1224, y: 782}
+  - id: 3fc2b9a9-7e82-43f1-9cf5-68af56fe2597
     name: Dialogue5
     text: "No time\u2014if I stay, I\u2019m dead. I have to escape now before they
       catch me."
     choices:
-    - text: Next Dialogue
+    - text: Next Dialogue\warf\record_fail
       nodeId: 
     groupId: 6703450c-2bdd-4109-997d-53bb48be968d
-    dialogueType: 0
-    position: {x: 1541.5, y: 171.5}
+    dialogueType: 1
+    position: {x: 1639, y: 215}
   oldGroupNames:
   - Samuel
   - Victor0Crowe

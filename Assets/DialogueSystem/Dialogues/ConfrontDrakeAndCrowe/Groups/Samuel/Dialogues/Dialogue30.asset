@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogueName: Dialogue30
   dialogueText: "Well then gentlemen, I think it\u2019s time for me to leave."
   choices:
-  - text: Next Dialogue\warf\confront_clueGained
+  - text: Next Dialogue\warf\confront_success
     nextDialogue: {fileID: 0}
   dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 34c23916-0e33-4515-81f4-0dbeb7ade3ff
+  uniqueID: 55c7c6c6-e79d-427e-86c6-23e9f453b42c

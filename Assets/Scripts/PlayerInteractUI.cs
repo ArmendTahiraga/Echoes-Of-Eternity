@@ -25,7 +25,7 @@ public class PlayerInteractUI : MonoBehaviour {
             }
         }
         
-        if (miniGame.GetComponent<MiniGame>().GetMiniGameResult() != "") {
+        if (miniGame && miniGame.GetComponent<MiniGame>().GetMiniGameResult() != "") {
             Hide();
         }
     }
