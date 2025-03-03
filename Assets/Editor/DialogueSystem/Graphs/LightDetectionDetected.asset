@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: LightDetectionDetected
+  m_EditorClassIdentifier: 
+  fileName: LightDetectionDetected
+  groups:
+  - id: 32e1a713-9e5f-45d0-94df-40ccc6d0f564
+    name: Samuel
+    position: {x: -559.16003, y: 263}
+  nodes:
+  - id: 79f5ec73-a7b7-4f88-8bd4-ff438a63023e
+    name: Detected2
+    text: I need to go before they catch me.
+    choices:
+    - text: Next Dialogue\warf\light_detected
+      nodeId: 
+    groupId: 32e1a713-9e5f-45d0-94df-40ccc6d0f564
+    dialogueType: 1
+    position: {x: -92.5, y: 321.5}
+  - id: a0f6ee01-495c-41c3-91ed-3d2054676206
+    name: Detected1
+    text: Damn! They saw me.
+    choices:
+    - text: Next Dialogue
+      nodeId: 79f5ec73-a7b7-4f88-8bd4-ff438a63023e
+    groupId: 32e1a713-9e5f-45d0-94df-40ccc6d0f564
+    dialogueType: 0
+    position: {x: -534, y: 321.5}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Detected2
+      - Detected1

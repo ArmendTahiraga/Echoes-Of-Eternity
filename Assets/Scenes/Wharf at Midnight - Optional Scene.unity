@@ -3014,6 +3014,8 @@ GameObject:
   - component: {fileID: 351172456}
   - component: {fileID: 351172458}
   - component: {fileID: 351172457}
+  - component: {fileID: 351172461}
+  - component: {fileID: 351172460}
   - component: {fileID: 351172459}
   m_Layer: 0
   m_Name: LightCollider
@@ -3077,9 +3079,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 351172455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eac7b8671bbb4c369444e06cb9e6115, type: 3}
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 22152f4495a8f4a5da7f6939b65faecd, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e70f89426a51f45499ecb641bddd599f, type: 2}
+  dialogue: {fileID: 11400000, guid: 652f9cfbdd16a48daa3450ff58783ca3, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 1
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b0217fecav
+--- !u!114 &351172460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351172455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 7666f16738dd0480bbf7bb8315463882, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 4a520329e5f4647a7a903e86073c2796, type: 2}
+  dialogue: {fileID: 11400000, guid: ea754c2a04c4347dea46cc8f22acf11c, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b0217fecas
+--- !u!114 &351172461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351172455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a0e33492864494b3fb0c14138fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 188116495}
+  playerMovement: {fileID: 1468230649}
+  playerCam: {fileID: 808760065}
+  characterName: Samuel
+  hasWarningBeenPlayed: 0
 --- !u!1 &364553115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4414,6 +4461,8 @@ GameObject:
   - component: {fileID: 599233108}
   - component: {fileID: 599233110}
   - component: {fileID: 599233109}
+  - component: {fileID: 599233113}
+  - component: {fileID: 599233112}
   - component: {fileID: 599233111}
   m_Layer: 0
   m_Name: LightCollider
@@ -4477,9 +4526,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 599233107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eac7b8671bbb4c369444e06cb9e6115, type: 3}
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 22152f4495a8f4a5da7f6939b65faecd, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e70f89426a51f45499ecb641bddd599f, type: 2}
+  dialogue: {fileID: 11400000, guid: 652f9cfbdd16a48daa3450ff58783ca3, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 1
+  uniqueID: a4bc3511-bc8a-4ad3-b435-a4b0217fecac
+--- !u!114 &599233112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599233107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 7666f16738dd0480bbf7bb8315463882, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 4a520329e5f4647a7a903e86073c2796, type: 2}
+  dialogue: {fileID: 11400000, guid: ea754c2a04c4347dea46cc8f22acf11c, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b0217fecab
+--- !u!114 &599233113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599233107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a0e33492864494b3fb0c14138fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 188116495}
+  playerMovement: {fileID: 1468230649}
+  playerCam: {fileID: 808760065}
+  characterName: Samuel
+  hasWarningBeenPlayed: 0
 --- !u!1 &603763353
 GameObject:
   m_ObjectHideFlags: 0
@@ -7312,6 +7406,8 @@ GameObject:
   - component: {fileID: 1090336992}
   - component: {fileID: 1090336994}
   - component: {fileID: 1090336993}
+  - component: {fileID: 1090336997}
+  - component: {fileID: 1090336996}
   - component: {fileID: 1090336995}
   m_Layer: 0
   m_Name: LightCollider
@@ -7375,9 +7471,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 1090336991}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eac7b8671bbb4c369444e06cb9e6115, type: 3}
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 22152f4495a8f4a5da7f6939b65faecd, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e70f89426a51f45499ecb641bddd599f, type: 2}
+  dialogue: {fileID: 11400000, guid: 652f9cfbdd16a48daa3450ff58783ca3, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 1
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b0217fecaf
+--- !u!114 &1090336996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090336991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 7666f16738dd0480bbf7bb8315463882, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 4a520329e5f4647a7a903e86073c2796, type: 2}
+  dialogue: {fileID: 11400000, guid: ea754c2a04c4347dea46cc8f22acf11c, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b0217fecac
+--- !u!114 &1090336997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090336991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a0e33492864494b3fb0c14138fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 188116495}
+  playerMovement: {fileID: 1468230649}
+  playerCam: {fileID: 808760065}
+  characterName: Samuel
+  hasWarningBeenPlayed: 0
 --- !u!1 &1146069102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7492,6 +7633,8 @@ GameObject:
   - component: {fileID: 1148882863}
   - component: {fileID: 1148882865}
   - component: {fileID: 1148882864}
+  - component: {fileID: 1148882868}
+  - component: {fileID: 1148882867}
   - component: {fileID: 1148882866}
   m_Layer: 0
   m_Name: LightCollider
@@ -7555,9 +7698,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148882862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eac7b8671bbb4c369444e06cb9e6115, type: 3}
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 22152f4495a8f4a5da7f6939b65faecd, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e70f89426a51f45499ecb641bddd599f, type: 2}
+  dialogue: {fileID: 11400000, guid: 652f9cfbdd16a48daa3450ff58783ca3, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 1
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4b1217fecac
+--- !u!114 &1148882867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148882862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 7666f16738dd0480bbf7bb8315463882, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 4a520329e5f4647a7a903e86073c2796, type: 2}
+  dialogue: {fileID: 11400000, guid: ea754c2a04c4347dea46cc8f22acf11c, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: a4bc3511-bc8a-4ad3-b475-a4f0217fecac
+--- !u!114 &1148882868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148882862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a0e33492864494b3fb0c14138fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 188116495}
+  playerMovement: {fileID: 1468230649}
+  playerCam: {fileID: 808760065}
+  characterName: Samuel
+  hasWarningBeenPlayed: 0
 --- !u!1 &1149806271
 GameObject:
   m_ObjectHideFlags: 0
@@ -11892,6 +12080,8 @@ GameObject:
   - component: {fileID: 1686614548}
   - component: {fileID: 1686614550}
   - component: {fileID: 1686614549}
+  - component: {fileID: 1686614553}
+  - component: {fileID: 1686614552}
   - component: {fileID: 1686614551}
   m_Layer: 0
   m_Name: LightCollider
@@ -11955,9 +12145,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 1686614547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0eac7b8671bbb4c369444e06cb9e6115, type: 3}
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 22152f4495a8f4a5da7f6939b65faecd, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: e70f89426a51f45499ecb641bddd599f, type: 2}
+  dialogue: {fileID: 11400000, guid: 652f9cfbdd16a48daa3450ff58783ca3, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 1
+  uniqueID: 13cb58a9-5a9c-4c7e-b474-8ab93ae82c2d
+--- !u!114 &1686614552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686614547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueContainer: {fileID: 11400000, guid: 7666f16738dd0480bbf7bb8315463882, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 4a520329e5f4647a7a903e86073c2796, type: 2}
+  dialogue: {fileID: 11400000, guid: ea754c2a04c4347dea46cc8f22acf11c, type: 2}
+  groupedDialogues: 1
+  startingDialoguesOnly: 0
+  selectedDialogueGroupIndex: 0
+  selectedDialogueIndex: 0
+  uniqueID: 13cb58a9-5a9c-4c7e-b474-8ab93ae82c2c
+--- !u!114 &1686614553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1686614547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f60a0e33492864494b3fb0c14138fc87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueUI: {fileID: 188116495}
+  playerMovement: {fileID: 1468230649}
+  playerCam: {fileID: 808760065}
+  characterName: Samuel
+  hasWarningBeenPlayed: 0
 --- !u!1 &1698811438
 GameObject:
   m_ObjectHideFlags: 0

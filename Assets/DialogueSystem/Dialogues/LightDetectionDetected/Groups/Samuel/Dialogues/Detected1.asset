@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Detected1
+  m_EditorClassIdentifier: 
+  dialogueName: Detected1
+  dialogueText: Damn! They saw me.
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 11400000, guid: 597610ecc781a425ab08bbf582b1d249, type: 2}
+  dialogueType: 0
+  isStartingDialogue: 1
+  uniqueID: 823202c9-be94-45de-a12a-4ad25b127b05

@@ -17,6 +17,7 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("confront_success", WarfConfrontSuccess);
         ChoiceManager.Instance.RegisterChoiceEvent("confront_escape", WarfConfrontEscape);
         ChoiceManager.Instance.RegisterChoiceEvent("confront_dead", WarfConfrontDead);
+        ChoiceManager.Instance.RegisterChoiceEvent("light_detected", WarfLightDetected);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -102,5 +103,9 @@ public class ChoiceEventManager : MonoBehaviour {
     private void WarfConfrontDead() {
         deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
         StartCoroutine(ChangeScene("DarkStorm", 1f));
+    }
+
+    private void WarfLightDetected() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 }

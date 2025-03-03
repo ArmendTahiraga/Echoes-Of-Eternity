@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: LightDetectionWarning
+  m_EditorClassIdentifier: 
+  fileName: LightDetectionWarning
+  groups:
+  - id: ca818008-6d4f-4a4c-aea7-f5cedf05f8b5
+    name: Samuel
+    position: {x: 149, y: 121.5}
+  nodes:
+  - id: b4a53324-0052-4ec9-a5c6-b80931e290eb
+    name: Warning1
+    text: Shoot! I shouldn't step in the light.
+    choices:
+    - text: Next Dialogue
+      nodeId: ae5cc322-84e7-4647-9e9b-cdb924c8819b
+    groupId: ca818008-6d4f-4a4c-aea7-f5cedf05f8b5
+    dialogueType: 0
+    position: {x: 174, y: 180}
+  - id: ae5cc322-84e7-4647-9e9b-cdb924c8819b
+    name: Warning2
+    text: I need to be careful because next time they will see me.
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: ca818008-6d4f-4a4c-aea7-f5cedf05f8b5
+    dialogueType: 0
+    position: {x: 1003, y: 180}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Warning1
+      - Warning2

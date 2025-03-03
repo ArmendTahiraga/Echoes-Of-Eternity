@@ -8,6 +8,7 @@
     "listen_success",
     "confront_success",
     "confront_escape",
-    "confront_dead"
+    "confront_dead",
+    "light_detected"
   ]
 }
