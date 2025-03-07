@@ -1481,7 +1481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.43
+      value: 45.622
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3846,9 +3846,9 @@ Transform:
   m_GameObject: {fileID: 233327288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.64, y: 45.039, z: 182.944}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.64, y: 44.977, z: 182.944}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 139921950}
   - {fileID: 1696555170}
@@ -3890,6 +3890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d747edf6f45d4eafa9b0fd7d7b1cab3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniGame: {fileID: 0}
 --- !u!114 &233327292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3905,7 +3906,6 @@ MonoBehaviour:
   speed: 4
   orientation: {fileID: 1696555170}
   isPlayerMoving: 1
-  loadPositionToChange: {x: 0, y: 0, z: 0}
 --- !u!54 &233327293
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3992,7 +3992,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.79
+      value: 45.895
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4402,7 +4402,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.43
+      value: 45.622
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5208,6 +5208,7 @@ MonoBehaviour:
   orientation: {fileID: 1696555170}
   playerObjectOrientation: {fileID: 233327289}
   lockCamera: 0
+  enableCursor: 0
 --- !u!81 &334244367
 AudioListener:
   m_ObjectHideFlags: 0
@@ -5431,7 +5432,6 @@ GameObject:
   m_Component:
   - component: {fileID: 341764048}
   - component: {fileID: 341764049}
-  - component: {fileID: 341764050}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -5516,19 +5516,6 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &341764050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341764047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac33a406707138c4da3b058da776a949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeDelay: 4
 --- !u!4 &342413561 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a7ef6464741e4254bb872b147c75b33e, type: 3}
@@ -5658,6 +5645,7 @@ MonoBehaviour:
   playerInteract: {fileID: 233327291}
   interactionText: {fileID: 1064086987}
   dialogueUI: {fileID: 921278109}
+  miniGame: {fileID: 0}
 --- !u!1 &352216299
 GameObject:
   m_ObjectHideFlags: 0
@@ -9550,7 +9538,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.79
+      value: 45.895
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10110,6 +10098,8 @@ MonoBehaviour:
   - {fileID: 233327296}
   teleportPlayer: {fileID: 233327295}
   objective: {fileID: 783864515}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!65 &783864511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10187,6 +10177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: Talk to Lucas.
+  objectiveChoice: 
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -10709,11 +10700,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b646e650026de4c2e93f395f3d869696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectiveText: {fileID: 1966924706}
   objectives:
   - {fileID: 2062691029}
   - {fileID: 1198158305}
   - {fileID: 783864515}
-  objectiveText: {fileID: 1966924706}
+  currentObjective: {fileID: 0}
   loadGameChanges: 0
 --- !u!4 &828200810
 Transform:
@@ -11700,6 +11692,7 @@ MonoBehaviour:
   dialogueText: {fileID: 718510012}
   characterName: {fileID: 1288769272}
   panel: {fileID: 11644784}
+  miniGame: {fileID: 0}
 --- !u!4 &923392039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0309c95257c747e419a85aff1c45d1ca, type: 3}
@@ -14421,7 +14414,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1169896511}
   - component: {fileID: 1169896513}
-  - component: {fileID: 1169896512}
   m_Layer: 0
   m_Name: Spot Light
   m_TagString: Untagged
@@ -14444,19 +14436,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1930469153}
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &1169896512
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1169896510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac33a406707138c4da3b058da776a949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeDelay: 4
 --- !u!108 &1169896513
 Light:
   m_ObjectHideFlags: 0
@@ -14904,6 +14883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: Go to Lucas.
+  objectiveChoice: 
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -16042,6 +16022,8 @@ MonoBehaviour:
   animators: []
   teleportPlayer: {fileID: 0}
   objective: {fileID: 0}
+  isOneTime: 0
+  hasBeenInteracted: 0
 --- !u!114 &1238694384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16106,7 +16088,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.43
+      value: 45.622
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16292,7 +16274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.79
+      value: 45.895
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17591,7 +17573,7 @@ Transform:
   m_GameObject: {fileID: 1365459567}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.563, z: 0.043}
+  m_LocalPosition: {x: 0, y: 0.54, z: 0.043}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18478,7 +18460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.79
+      value: 45.895
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: da4c1a2e0c61fd946967f48f83d40354, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25788,6 +25770,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objective: Go inside the diner.
+  objectiveChoice: 
   onObjectiveComplete:
     m_PersistentCalls:
       m_Calls: []
@@ -26681,7 +26664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 45.43
+      value: 45.622
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c4f7819ac9d70d846824736db40f24fb, type: 3}
       propertyPath: m_LocalPosition.z
