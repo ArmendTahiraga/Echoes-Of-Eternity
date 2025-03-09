@@ -16,7 +16,7 @@ public class TeleportPlayer : MonoBehaviour {
     private Quaternion previousPlayerCamRotation;
     private Quaternion previousOrientationRotation;
 
-    private void LateUpdate() {
+    private void Update() {
         if (GameObject.Find("Player").GetComponent<PlayerMovement>().isPlayerMoving && !previousPlayerPosition.Equals(Vector3.zero)) {
             MovePlayerBack();
             if (animationTrigger == "PlayerNotSitTrigger") {

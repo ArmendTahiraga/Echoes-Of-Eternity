@@ -3828,7 +3828,6 @@ GameObject:
   - component: {fileID: 233327292}
   - component: {fileID: 233327291}
   - component: {fileID: 233327290}
-  - component: {fileID: 233327295}
   - component: {fileID: 233327296}
   m_Layer: 0
   m_Name: Player
@@ -3928,31 +3927,11 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 1
---- !u!114 &233327295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 233327288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c40a44a3e09c944b5aa5392fbc09b9f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 233327289}
-  playerObject: {fileID: 139921950}
-  cameraPosition: {fileID: 1365459568}
-  playerCam: {fileID: 334244365}
-  orientation: {fileID: 1696555170}
-  playerCamScript: {fileID: 334244366}
-  animationTrigger: PlayerNotSitTrigger
-  animator: {fileID: 233327296}
 --- !u!95 &233327296
 Animator:
   serializedVersion: 5
@@ -10092,11 +10071,8 @@ MonoBehaviour:
   interactionText: Talk to Lucas
   characterName: Lucas
   dialogueUI: {fileID: 921278109}
-  animationTriggers:
-  - PlayerSitTrigger
-  animators:
-  - {fileID: 233327296}
-  teleportPlayer: {fileID: 233327295}
+  animationTriggers: []
+  animators: []
   objective: {fileID: 783864515}
   isOneTime: 0
   hasBeenInteracted: 0
@@ -16020,7 +15996,6 @@ MonoBehaviour:
   dialogueUI: {fileID: 921278109}
   animationTriggers: []
   animators: []
-  teleportPlayer: {fileID: 0}
   objective: {fileID: 0}
   isOneTime: 0
   hasBeenInteracted: 0
