@@ -23,6 +23,7 @@ public class ChoiceManager : MonoBehaviour {
         GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(jsonText);
         gameChoices = new Dictionary<string, List<string>>();
         gameChoices.Add("warf", choicesData.warf);
+        gameChoices.Add("bridge", choicesData.bridge);
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {

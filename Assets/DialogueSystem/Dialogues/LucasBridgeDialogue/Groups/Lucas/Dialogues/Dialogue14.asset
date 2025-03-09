@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue14
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue14
+  dialogueText: Hell, I thought I was helping her by keeping quiet. I was wrong.
+  choices:
+  - text: "Why didn\u2019t she tell me? Why didn\u2019t you tell me? You should have
+      trusted me, Lucas."
+    nextDialogue: {fileID: 11400000, guid: 323b3464694fe41bdb3ace525d31d7d5, type: 2}
+  - text: "You\u2019re telling me my wife\u2019s betrayal is why Drake\u2019s untouchable?!
+      This better be leading somewhere useful."
+    nextDialogue: {fileID: 11400000, guid: 4dfc338a1167b4c1c9b8d70dac4bee83, type: 2}
+  - text: "What\u2019s done is done. What do you have that can help me fix this?"
+    nextDialogue: {fileID: 11400000, guid: 59049833b39d748f7a27b8aa7466fff2, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: eb5fd1f6-5d56-4846-ad66-69147333709a

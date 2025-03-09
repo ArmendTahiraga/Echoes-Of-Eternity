@@ -1,0 +1,324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: LucasBridgeDialogue
+  m_EditorClassIdentifier: 
+  fileName: LucasBridgeDialogue
+  groups:
+  - id: b5a744c5-36fd-4d27-be1f-65e8360acead
+    name: Lucas
+    position: {x: 300, y: -431.5}
+  nodes:
+  - id: 60a7f261-0217-47ad-9edf-857cbb80efee
+    name: Dialogue1
+    text: "Rowe\u2026 you\u2019re here? Things are worse than you think."
+    choices:
+    - text: "I\u2019m here now. Let\u2019s fix this together, Lucas."
+      nodeId: bcbead35-8b6e-4708-896c-6c1486f6ab31
+    - text: "Spit it out, Lucas. What\u2019s your game this time?"
+      nodeId: df125aac-26bb-4f61-8436-ab4e75a5fa65
+    - text: "If you\u2019ve got something to say, say it. But don\u2019t waste my
+        time."
+      nodeId: df125aac-26bb-4f61-8436-ab4e75a5fa65
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 325, y: -373}
+  - id: 943cace7-55b4-4095-b246-e05e6556cb42
+    name: Dialogue8
+    text: "I\u2019ve got something. A flash drive. Financial records, names, payouts\u2014it\u2019s
+      all there. It clears Margaret, but\u2026"
+    choices:
+    - text: Next Dialogue
+      nodeId: cff87acd-6f6f-4626-af09-a7e67056baec
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 4375, y: -373}
+  - id: cff87acd-6f6f-4626-af09-a7e67056baec
+    name: Dialogue9
+    text: "\u2026you\u2019ve got to let me walk. This city doesn\u2019t forgive snitches,
+      Rowe. I\u2019m dead if I stay here."
+    choices:
+    - text: "Fine. Give me the drive, and I\u2019ll say we never spoke. Just get
+        out of my sight."
+      nodeId: 366a65f5-1523-4cf9-a0aa-7b22cd1f32aa
+    - text: "What aren\u2019t you telling me, Lucas? Who else knows about Margaret?
+        Start talking."
+      nodeId: a30eb8f9-6afb-47e8-9193-408208b26c4e
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 5152, y: -373}
+  - id: 366a65f5-1523-4cf9-a0aa-7b22cd1f32aa
+    name: Dialogue10
+    text: ' I hope this makes us even. Bye, Samuel.'
+    choices:
+    - text: Next Dialogue\bridge\flash_success
+      nodeId: 
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 6012.5, y: -373}
+  - id: a30eb8f9-6afb-47e8-9193-408208b26c4e
+    name: Dialogue11
+    text: "You really want the truth? Fine. Drake wasn\u2019t working alone\u2014someone
+      in the DA\u2019s office is pulling the strings. Margaret was their pawn. Now
+      you know, Samuel. I'm leaving now."
+    choices:
+    - text: Next Dialogue\bridge\da_hint
+      nodeId: 
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 6012.5, y: -112.5}
+  - id: bcbead35-8b6e-4708-896c-6c1486f6ab31
+    name: Dialogue2
+    text: "It\u2019s Margaret, Rowe. She didn\u2019t mean to, but\u2026 she leaked
+      information."
+    choices:
+    - text: Next Dialogue
+      nodeId: ecf76d56-7738-4bcd-ae27-f85d6c9128e0
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 1060, y: -373}
+  - id: df125aac-26bb-4f61-8436-ab4e75a5fa65
+    name: Dialogue12
+    text: "It\u2019s Margaret, she leaked information."
+    choices:
+    - text: Next Dialogue
+      nodeId: d22c2ac7-0a79-4069-b118-549356054749
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 1060, y: 291.5}
+  - id: ecf76d56-7738-4bcd-ae27-f85d6c9128e0
+    name: Dialogue3
+    text: "Drake\u2019s people cornered her, said they\u2019d destroy your career
+      if she didn\u2019t cooperate. She thought she was saving you."
+    choices:
+    - text: Next Dialogue
+      nodeId: 0c603750-2d84-4283-a699-9f6edf6aaadf
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 1832, y: -373}
+  - id: d22c2ac7-0a79-4069-b118-549356054749
+    name: Dialogue13
+    text: "Drake\u2019s people cornered her, said they\u2019d destroy your career
+      if she didn\u2019t cooperate. She thought she was saving you."
+    choices:
+    - text: Next Dialogue
+      nodeId: faa64a28-e447-45e3-8e05-2f7ae5902be5
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 1832, y: 291.5}
+  - id: faa64a28-e447-45e3-8e05-2f7ae5902be5
+    name: Dialogue14
+    text: Hell, I thought I was helping her by keeping quiet. I was wrong.
+    choices:
+    - text: "Why didn\u2019t she tell me? Why didn\u2019t you tell me? You should
+        have trusted me, Lucas."
+      nodeId: b2712e9e-fb30-4c96-b5df-db1784e50033
+    - text: "You\u2019re telling me my wife\u2019s betrayal is why Drake\u2019s untouchable?!
+        This better be leading somewhere useful."
+      nodeId: 27c47b3a-15bd-45ef-8f85-0eedd42cdaa8
+    - text: "What\u2019s done is done. What do you have that can help me fix this?"
+      nodeId: 8b8c4abf-d742-41de-a3db-384ffa570273
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 2632, y: 291.5}
+  - id: 0c603750-2d84-4283-a699-9f6edf6aaadf
+    name: Dialogue4
+    text: Hell, I thought I was helping her by keeping quiet. I was wrong.
+    choices:
+    - text: "Why didn\u2019t she tell me? Why didn\u2019t you tell me? You should
+        have trusted me, Lucas."
+      nodeId: 12ca5a3d-dc1b-46da-b85b-4669c0725d90
+    - text: "You\u2019re telling me my wife\u2019s betrayal is why Drake\u2019s untouchable?!
+        This better be leading somewhere useful."
+      nodeId: 6d79153b-65a6-4c0b-a450-4abff0a9df93
+    - text: "What\u2019s done is done. What do you have that can help me fix this?"
+      nodeId: 95cb85cd-7dcd-459d-91d5-93437f9be410
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 2632, y: -373}
+  - id: 27c47b3a-15bd-45ef-8f85-0eedd42cdaa8
+    name: Dialogue16
+    text: You think this is simple? You think I wanted this? I was trying to keep
+      you alive, dammit!
+    choices:
+    - text: Next Dialogue
+      nodeId: bc98f56b-949f-4021-9db1-a0cc561a7e88
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: 522}
+  - id: 12ca5a3d-dc1b-46da-b85b-4669c0725d90
+    name: Dialogue5
+    text: "Trust? That\u2019s rich coming from you. You think Margaret wanted you
+      to know? She was trying to protect you, Sam. Same as I was. But look where
+      that got us."
+    choices:
+    - text: Next Dialogue
+      nodeId: 943cace7-55b4-4095-b246-e05e6556cb42
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: -373}
+  - id: b2712e9e-fb30-4c96-b5df-db1784e50033
+    name: Dialogue15
+    text: "Trust? That\u2019s rich coming from you. You think Margaret wanted you
+      to know? She was trying to protect you, Sam. Same as I was. But look where
+      that got us."
+    choices:
+    - text: Next Dialogue
+      nodeId: bc98f56b-949f-4021-9db1-a0cc561a7e88
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: 286}
+  - id: 6d79153b-65a6-4c0b-a450-4abff0a9df93
+    name: Dialogue6
+    text: You think this is simple? You think I wanted this? I was trying to keep
+      you alive, dammit!
+    choices:
+    - text: Next Dialogue
+      nodeId: 943cace7-55b4-4095-b246-e05e6556cb42
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: -152.5}
+  - id: 95cb85cd-7dcd-459d-91d5-93437f9be410
+    name: Dialogue7
+    text: "That\u2019s why you\u2019re still standing, Samuel. You don\u2019t get
+      lost in the past. Alright. Listen up."
+    choices:
+    - text: Next Dialogue
+      nodeId: 943cace7-55b4-4095-b246-e05e6556cb42
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: 58.5}
+  - id: 8b8c4abf-d742-41de-a3db-384ffa570273
+    name: Dialogue17
+    text: "That\u2019s why you\u2019re still standing, Samuel. You don\u2019t get
+      lost in the past. Alright. Listen up."
+    choices:
+    - text: Next Dialogue
+      nodeId: bc98f56b-949f-4021-9db1-a0cc561a7e88
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 3608.5, y: 775.5}
+  - id: bc98f56b-949f-4021-9db1-a0cc561a7e88
+    name: Dialogue18
+    text: "I\u2019ve got something. A flash drive. Financial records, names, payouts\u2014it\u2019s
+      all there. It clears Margaret, but\u2026"
+    choices:
+    - text: Next Dialogue
+      nodeId: dbf5c1b0-d73b-4484-829a-22326d7bee2a
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 4375, y: 291.5}
+  - id: dbf5c1b0-d73b-4484-829a-22326d7bee2a
+    name: Dialogue19
+    text: "\u2026you\u2019ve got to let me walk. This city doesn\u2019t forgive snitches,
+      Rowe. I\u2019m dead if I stay here."
+    choices:
+    - text: "Fine. Give me the drive, and I\u2019ll say we never spoke. Just get
+        out of my sight."
+      nodeId: c882a30e-8103-49b3-b054-f1a00636bcd4
+    - text: "What aren\u2019t you telling me, Lucas? Who else knows about Margaret?
+        Start talking."
+      nodeId: 43360250-d601-4248-847b-1ca28b606a35
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 5152, y: 291.5}
+  - id: c882a30e-8103-49b3-b054-f1a00636bcd4
+    name: Dialogue20
+    text: "You don\u2019t get it, do you? You never did."
+    choices:
+    - text: Next Dialogue
+      nodeId: b8c628ea-91ff-4581-969c-bff8d38a7f3d
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 6012.5, y: 291.5}
+  - id: b8c628ea-91ff-4581-969c-bff8d38a7f3d
+    name: Dialogue21
+    text: "I came here, on my own, to help you. I stuck my neck out when I should\u2019ve
+      disappeared. And what do I get? The same old bullshit from you!"
+    choices:
+    - text: Next Dialogue
+      nodeId: 6682185b-7e9f-4672-b595-21428dce6765
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 6783, y: 291.5}
+  - id: 6682185b-7e9f-4672-b595-21428dce6765
+    name: Dialogue22
+    text: "You want the drive? Too bad. You don\u2019t deserve it. Go to hell!"
+    choices:
+    - text: Next Dialogue\bridge\flash_fail
+      nodeId: 
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 7529, y: 291.5}
+  - id: 59cf4ddf-f676-4a23-98ea-d5eb677c672f
+    name: Dialogue24
+    text: "Drake wasn\u2019t working alone. The whole damn system\u2019s rotten.
+      Someone in the DA\u2019s office was pulling the strings, and guess what? Margaret
+      was just a pawn. They used her. They broke her. And you were too damn busy
+      chasing your own righteousness to even see it!"
+    choices:
+    - text: Next Dialogue
+      nodeId: 56e8a8ce-db46-4ae2-9f2c-8e8dfcd718a8
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 6783, y: 532}
+  - id: 56e8a8ce-db46-4ae2-9f2c-8e8dfcd718a8
+    name: Dialogue25
+    text: Now get out of my face!
+    choices:
+    - text: Next Dialogue\bridge\da_hint
+      nodeId: 
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 1
+    position: {x: 7529, y: 532}
+  - id: 43360250-d601-4248-847b-1ca28b606a35
+    name: Dialogue23
+    text: "You want the truth? Fine. You think Margaret\u2019s betrayal is the worst
+      of it? You don\u2019t know a damn thing."
+    choices:
+    - text: Next Dialogue
+      nodeId: 59cf4ddf-f676-4a23-98ea-d5eb677c672f
+    groupId: b5a744c5-36fd-4d27-be1f-65e8360acead
+    dialogueType: 0
+    position: {x: 6012.5, y: 532}
+  oldGroupNames:
+  - Lucas
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Lucas
+      Value:
+      - Dialogue1
+      - Dialogue8
+      - Dialogue9
+      - Dialogue10
+      - Dialogue11
+      - Dialogue2
+      - Dialogue12
+      - Dialogue3
+      - Dialogue13
+      - Dialogue14
+      - Dialogue4
+      - Dialogue16
+      - Dialogue5
+      - Dialogue15
+      - Dialogue6
+      - Dialogue7
+      - Dialogue17
+      - Dialogue18
+      - Dialogue19
+      - Dialogue20
+      - Dialogue21
+      - Dialogue22
+      - Dialogue24
+      - Dialogue25
+      - Dialogue23

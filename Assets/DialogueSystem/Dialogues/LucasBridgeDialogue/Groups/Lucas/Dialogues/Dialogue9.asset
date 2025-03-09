@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue9
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue9
+  dialogueText: "\u2026you\u2019ve got to let me walk. This city doesn\u2019t forgive
+    snitches, Rowe. I\u2019m dead if I stay here."
+  choices:
+  - text: "Fine. Give me the drive, and I\u2019ll say we never spoke. Just get out
+      of my sight."
+    nextDialogue: {fileID: 11400000, guid: 3b2f63442c720460290f68639f03c0e3, type: 2}
+  - text: "What aren\u2019t you telling me, Lucas? Who else knows about Margaret?
+      Start talking."
+    nextDialogue: {fileID: 11400000, guid: 8b7ca3befcf414b79aae6c3afd18a791, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: e026a234-243d-4fe3-8f95-fd850e6c15a7

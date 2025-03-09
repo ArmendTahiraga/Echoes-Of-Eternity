@@ -18,6 +18,9 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("confront_escape", WarfConfrontEscape);
         ChoiceManager.Instance.RegisterChoiceEvent("confront_dead", WarfConfrontDead);
         ChoiceManager.Instance.RegisterChoiceEvent("light_detected", WarfLightDetected);
+        ChoiceManager.Instance.RegisterChoiceEvent("flash_success", BridgeFlashSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("flash_fail", BridgeFlashFail);
+        ChoiceManager.Instance.RegisterChoiceEvent("da_hint", BridgeDaHint);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -106,6 +109,20 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfLightDetected() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void BridgeFlashSuccess() {
+        ChoiceManager.Instance.AddClue("flash_success");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+    
+    private void BridgeFlashFail() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+    
+    private void BridgeDaHint() {
+        ChoiceManager.Instance.AddClue("da_hint");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 }

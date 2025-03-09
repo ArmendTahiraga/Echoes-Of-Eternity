@@ -4,4 +4,5 @@ using System.Collections.Generic;
 [Serializable]
 public class GameChoicesData {
     public List<string> warf;
+    public List<string> bridge;
 }

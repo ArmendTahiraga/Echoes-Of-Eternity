@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: SamuelBridgeMonologue
+  m_EditorClassIdentifier: 
+  fileName: SamuelBridgeMonologue
+  groups:
+  - id: 672c4a76-8bf3-4737-b1fb-903090f6e455
+    name: Samuel
+    position: {x: 124, y: 145}
+  nodes:
+  - id: 8b3ff6c2-b21f-403d-9fe6-968bc5c3550e
+    name: Dialogue1
+    text: Wait, what's Lucas doing here? It's late.
+    choices:
+    - text: Next Dialogue
+      nodeId: 72761210-5c17-40c2-b6f2-e1bd3f49dda4
+    groupId: 672c4a76-8bf3-4737-b1fb-903090f6e455
+    dialogueType: 0
+    position: {x: 149, y: 203.5}
+  - id: 72761210-5c17-40c2-b6f2-e1bd3f49dda4
+    name: Dialogue2
+    text: He looks stressed, this can't be good. I'll try to talk to him
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: 672c4a76-8bf3-4737-b1fb-903090f6e455
+    dialogueType: 0
+    position: {x: 940.5, y: 203.5}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue1
+      - Dialogue2

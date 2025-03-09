@@ -10,5 +10,10 @@
     "confront_escape",
     "confront_dead",
     "light_detected"
+  ],
+  "bridge": [
+    "flash_success",
+    "flash_fail",
+    "da_hint"
   ]
 }

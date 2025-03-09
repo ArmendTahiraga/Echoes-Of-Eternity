@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: LucasBridgeDialogue
+  m_EditorClassIdentifier: 
+  fileName: LucasBridgeDialogue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 2b745e138a6e1450d8dc45ef35062825, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f12a426df51484271ba138342797532a, type: 2}
+      - {fileID: 11400000, guid: f6e3ed6f27b704bf39917af87cdfa4d8, type: 2}
+      - {fileID: 11400000, guid: a576646083145468bbec7e3f3ef91c74, type: 2}
+      - {fileID: 11400000, guid: 3b2f63442c720460290f68639f03c0e3, type: 2}
+      - {fileID: 11400000, guid: 8b7ca3befcf414b79aae6c3afd18a791, type: 2}
+      - {fileID: 11400000, guid: 4fe2913cc4ee44df3b152fb4b7f5a21e, type: 2}
+      - {fileID: 11400000, guid: 8b14258012b05462ba1a274d2b6bde6f, type: 2}
+      - {fileID: 11400000, guid: 17eec3e694fab45f9a23cc5f26dfd1a8, type: 2}
+      - {fileID: 11400000, guid: 578d1b9dc60654df4b24ea3ea0bab065, type: 2}
+      - {fileID: 11400000, guid: 7ed2a4eb4850c414787a8a701d08e3b1, type: 2}
+      - {fileID: 11400000, guid: 1889a4ded28644dddb818e46962e8284, type: 2}
+      - {fileID: 11400000, guid: 4dfc338a1167b4c1c9b8d70dac4bee83, type: 2}
+      - {fileID: 11400000, guid: 262d981d0eeac4d268ab94875bf2cbb0, type: 2}
+      - {fileID: 11400000, guid: 323b3464694fe41bdb3ace525d31d7d5, type: 2}
+      - {fileID: 11400000, guid: 13566a209c0874eac900a62387685030, type: 2}
+      - {fileID: 11400000, guid: e026748ef2d6a4a6984ea1d2c02cd00b, type: 2}
+      - {fileID: 11400000, guid: 59049833b39d748f7a27b8aa7466fff2, type: 2}
+      - {fileID: 11400000, guid: 65e170689f36843fe8b6e7a129f8d1c0, type: 2}
+      - {fileID: 11400000, guid: 741abda9b8e914c10830cecc1fd84008, type: 2}
+      - {fileID: 11400000, guid: 3304840177ef34250acee0717aa3dcd1, type: 2}
+      - {fileID: 11400000, guid: 5da7e4b414d634bf29482d77bf750dde, type: 2}
+      - {fileID: 11400000, guid: 14f9734d826fd4c489d8931e485a13e2, type: 2}
+      - {fileID: 11400000, guid: 40a9919b6f54448ee886b13b11b13f66, type: 2}
+      - {fileID: 11400000, guid: 33cb07cce623f4a5d82184fb1e6e3ef6, type: 2}
+      - {fileID: 11400000, guid: 8d906aa4c4b31468f8628d33c03bcc9d, type: 2}
+  ungroupedDialogues: []
