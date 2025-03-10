@@ -15,5 +15,10 @@
     "flash_success",
     "flash_fail",
     "da_hint"
+  ],
+  "diner": [
+    "wharf",
+    "old_town",
+    "bridge"
   ]
 }

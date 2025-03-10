@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue10
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue10
+  dialogueText: "Listen, Lucas, you\u2019ve got two options: stay quiet and go down
+    with them or give me something I can use to take them out. What\u2019s it going
+    to be?"
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 11400000, guid: e533c368606564e9b850122fd157b21e, type: 2}
+  dialogueType: 0
+  isStartingDialogue: 0
+  uniqueID: 3cb3740e-5142-462f-8d50-d2dad81c8539

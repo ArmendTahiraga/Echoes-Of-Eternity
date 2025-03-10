@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue31
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue31
+  dialogueText: "I\u2019ll get it done, Lucas. But I need you to stay out of sight.
+    If they find out, you talked to me\u2014\u201D"
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 11400000, guid: 1d29e3d785c824186b94a3a7ec22326b, type: 2}
+  dialogueType: 0
+  isStartingDialogue: 0
+  uniqueID: 997f1c9f-efbd-4fbe-a973-6d8d1ac1aebc

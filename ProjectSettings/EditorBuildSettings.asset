@@ -29,4 +29,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Final Confrontation.unity
     guid: b91240394628cb94ebba0122982a260f
+  - enabled: 1
+    path: Assets/Scenes/Wharf at Midnight - Optional Scene.unity
+    guid: 43c47a052dd44874ba6106831ac6308c
+  - enabled: 1
+    path: Assets/Scenes/Encrypted Records.unity
+    guid: afc62e2ecdf8f3742834d495a55e6640
   m_configObjects: {}

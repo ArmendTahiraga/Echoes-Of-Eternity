@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue4
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue4
+  dialogueText: "Quiet enough for you to spill the truth? Let\u2019s cut to the chase."
+  choices:
+  - text: "You owe me answers. Don\u2019t make me dig for them."
+    nextDialogue: {fileID: 11400000, guid: 45debab8cb30745dfaecf51d19feac9b, type: 2}
+  - text: "Relax. No one\u2019s watching. I just need to know what you\u2019ve got."
+    nextDialogue: {fileID: 11400000, guid: ad897742160f740939f7d7c30ce1c4b8, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: 1df1d7ef-326e-47f6-b820-739091cac3cb

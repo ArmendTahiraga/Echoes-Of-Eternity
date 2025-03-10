@@ -6,6 +6,8 @@ public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private ObjectiveManager objectiveManager;
     [SerializeField] private AsyncLoader asyncLoader;
     [SerializeField] private Animator deathScreenCanvasAnimator;
+    [SerializeField] private GameObject gameUI;
+    [SerializeField] private CapsuleCollider[] lightColliders;
 
     private void Start() {
         ChoiceManager.Instance.RegisterChoiceEvent("choice_recordConversation", WarfRecordConversation);
@@ -21,6 +23,9 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("flash_success", BridgeFlashSuccess);
         ChoiceManager.Instance.RegisterChoiceEvent("flash_fail", BridgeFlashFail);
         ChoiceManager.Instance.RegisterChoiceEvent("da_hint", BridgeDaHint);
+        ChoiceManager.Instance.RegisterChoiceEvent("wharf", DinerGoToWharf);
+        ChoiceManager.Instance.RegisterChoiceEvent("old_town", DinerGoToOldTown);
+        ChoiceManager.Instance.RegisterChoiceEvent("bridge", DinerGoToBridge);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -71,6 +76,10 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfConfrontDrakeAndCrowe() {
+        for (int i = 0; i < lightColliders.Length; i++) {
+            lightColliders[i].enabled = false;
+        }
+        
         ChangeObjectives("choice_confrontDrakeAndCrowe");
         DestroyChoiceSpecificObjects("choice_confrontDrakeAndCrowe");
     }
@@ -104,6 +113,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfConfrontDead() {
+        gameUI.SetActive(false);
         deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
         StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
@@ -124,5 +134,17 @@ public class ChoiceEventManager : MonoBehaviour {
     private void BridgeDaHint() {
         ChoiceManager.Instance.AddClue("da_hint");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void DinerGoToWharf() {
+        StartCoroutine(ChangeScene("Wharf at Midnight - Optional Scene", 1f));
+    }
+    
+    private void DinerGoToOldTown() {
+        StartCoroutine(ChangeScene("Encrypted Records", 1f));
+    }
+    
+    private void DinerGoToBridge() {
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 }

@@ -529,6 +529,13 @@ MonoBehaviour:
   objectiveManager: {fileID: 1261973924}
   asyncLoader: {fileID: 1994676066}
   deathScreenCanvasAnimator: {fileID: 1618048399}
+  gameUI: {fileID: 1525218127}
+  lightColliders:
+  - {fileID: 1686614549}
+  - {fileID: 1090336993}
+  - {fileID: 351172457}
+  - {fileID: 599233109}
+  - {fileID: 1148882864}
 --- !u!4 &77858564
 Transform:
   m_ObjectHideFlags: 0
@@ -2405,7 +2412,7 @@ MonoBehaviour:
   m_text: Objective
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 21148088844906328, guid: 9d24e6b3ecd1d2b479a31d3d0e7b1f9e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2468,7 +2475,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &271233793
@@ -6664,7 +6671,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &879148818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9203,7 +9210,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261973923}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b646e650026de4c2e93f395f3d869696, type: 3}
   m_Name: 
@@ -12275,7 +12282,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 999
+  m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1618048398
 RectTransform:

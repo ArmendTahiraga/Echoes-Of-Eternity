@@ -5,4 +5,5 @@ using System.Collections.Generic;
 public class GameChoicesData {
     public List<string> warf;
     public List<string> bridge;
+    public List<string> diner;
 }

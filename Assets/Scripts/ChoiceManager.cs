@@ -24,6 +24,7 @@ public class ChoiceManager : MonoBehaviour {
         gameChoices = new Dictionary<string, List<string>>();
         gameChoices.Add("warf", choicesData.warf);
         gameChoices.Add("bridge", choicesData.bridge);
+        gameChoices.Add("diner", choicesData.diner);
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {

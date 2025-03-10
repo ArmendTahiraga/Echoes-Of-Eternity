@@ -1,0 +1,522 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: LucasDinerDIalogue
+  m_EditorClassIdentifier: 
+  fileName: LucasDinerDIalogue
+  groups:
+  - id: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    name: Lucas
+    position: {x: -56, y: 91}
+  - id: d6844840-27ec-4c49-ad5e-5f02b792be13
+    name: Samuel
+    position: {x: 582, y: -826.5}
+  nodes:
+  - id: 04362b4b-9ed8-4892-ba6f-84e5930dce89
+    name: Dialogue2
+    text: You always pick the shadiest spots, Lucas. Not exactly discreet.
+    choices:
+    - text: Next Dialogue
+      nodeId: d294be9c-3375-46dd-a03b-50a87b551760
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 607, y: -768}
+  - id: a828292c-9aef-413a-ad00-abbf5243d387
+    name: Dialogue1
+    text: "You\u2019re late, Sam. Real late. I almost bailed."
+    choices:
+    - text: Next Dialogue
+      nodeId: 04362b4b-9ed8-4892-ba6f-84e5930dce89
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: -31, y: 165.5}
+  - id: d294be9c-3375-46dd-a03b-50a87b551760
+    name: Dialogue3
+    text: "Discreet? Look at me, Sam. I\u2019m a walking target. This place might
+      be grim, but at least it\u2019s quiet."
+    choices:
+    - text: Next Dialogue
+      nodeId: a4859633-8ce6-4939-8aac-82427dc01161
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 1253, y: 165.5}
+  - id: a4859633-8ce6-4939-8aac-82427dc01161
+    name: Dialogue4
+    text: "Quiet enough for you to spill the truth? Let\u2019s cut to the chase."
+    choices:
+    - text: "You owe me answers. Don\u2019t make me dig for them."
+      nodeId: 193d5c95-ed3d-411b-bd29-76b073121ba1
+    - text: "Relax. No one\u2019s watching. I just need to know what you\u2019ve
+        got."
+      nodeId: be95ba82-f7b4-46f7-b33e-eb411c9fa51a
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 1
+    position: {x: 1891, y: -768}
+  - id: 193d5c95-ed3d-411b-bd29-76b073121ba1
+    name: Dialogue5
+    text: Alright, alright. But you better listen carefully, Sam.
+    choices:
+    - text: Next Dialogue
+      nodeId: 825d7419-1dcf-4dbd-836e-640ed5ece0a7
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 2537, y: 165.5}
+  - id: 825d7419-1dcf-4dbd-836e-640ed5ece0a7
+    name: Dialogue7
+    text: "Sam, you don\u2019t get it. These people I\u2019m dealing with\u2014they\u2019re
+      not just bad news. They\u2019ll do whatever it takes to bury anyone who crosses
+      them. And now\u2026 I\u2019m stuck in the middle."
+    choices:
+    - text: Next Dialogue
+      nodeId: de514310-0f81-44c8-938c-12a99c49a400
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 3395, y: 165.5}
+  - id: de514310-0f81-44c8-938c-12a99c49a400
+    name: Dialogue8
+    text: "So, you\u2019re saying this is bigger than just the usual suspects? What\u2019s
+      their play?"
+    choices:
+    - text: Next Dialogue
+      nodeId: d4a8bd95-247f-4d12-8e12-a1a645f61e67
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 4033, y: -768}
+  - id: d4a8bd95-247f-4d12-8e12-a1a645f61e67
+    name: Dialogue9
+    text: "Bribes, smuggling, blackmail\u2014pick your poison. Chief Drake\u2019s
+      at the center, but he\u2019s not working alone. There\u2019s someone else pulling
+      strings. I\u2019m just a cog in their machine."
+    choices:
+    - text: Next Dialogue
+      nodeId: 45523398-d22b-4373-8144-57650f18fea1
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 4679, y: 165.5}
+  - id: 45523398-d22b-4373-8144-57650f18fea1
+    name: Dialogue10
+    text: "Listen, Lucas, you\u2019ve got two options: stay quiet and go down with
+      them or give me something I can use to take them out. What\u2019s it going
+      to be?"
+    choices:
+    - text: Next Dialogue
+      nodeId: 6d385197-6e9e-4d00-8bf3-2b9d4c46460e
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 5317, y: -768}
+  - id: e68e746b-dc26-4e10-815e-a4bdb65abfb7
+    name: Dialogue12
+    text: "Why do you always do this, Sam? Always corner me like I\u2019m the bad
+      guy. You think I like living like this? Looking over my shoulder every second,
+      wondering if today\u2019s the day they find me?"
+    choices:
+    - text: Next Dialogue
+      nodeId: 1711b1c0-7f87-4dff-ab06-50d58b6e64ba
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 6889, y: 165.5}
+  - id: 1711b1c0-7f87-4dff-ab06-50d58b6e64ba
+    name: Dialogue13
+    text: "Spare me the sob story, Lucas. You\u2019ve made your choices. Now live
+      with them\u2014or fix them. If you\u2019ve got something to say, say it."
+    choices:
+    - text: Next Dialogue
+      nodeId: e0b03127-5535-462f-a4b6-29afec9f0ff4
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 7527, y: -768}
+  - id: afeced53-22cd-4a61-a394-40091db10161
+    name: Dialogue16
+    text: "\u2026Fine. If they find out I talked, I\u2019m not just dead\u2014I\u2019m
+      erased. No one will even remember my name."
+    choices:
+    - text: Next Dialogue
+      nodeId: debc947a-95b7-4f18-ac3d-7149e2ed3524
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 9457, y: 165.5}
+  - id: 82b447d6-9dd6-4662-b585-a50be0565de4
+    name: Dialogue15
+    text: "You\u2019ve still got me, Lucas. But if you don\u2019t start talking,
+      you\u2019re on your own. And we both know how that ends."
+    choices:
+    - text: Next Dialogue
+      nodeId: afeced53-22cd-4a61-a394-40091db10161
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 8811, y: -768}
+  - id: debc947a-95b7-4f18-ac3d-7149e2ed3524
+    name: Dialogue17
+    text: Then make sure what you say is worth the risk. Start talking.
+    choices:
+    - text: Next Dialogue
+      nodeId: e7128dcd-6447-4c38-8e74-a22e23ac29e4
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 10095, y: -768}
+  - id: e7128dcd-6447-4c38-8e74-a22e23ac29e4
+    name: Dialogue18
+    text: "There\u2019s a meeting\u2026 Chief Drake and Victor Crowe. Midnight tomorrow
+      at the old shipyard. They\u2019re finalizing something big\u2014money, weapons,
+      I don\u2019t know. That\u2019s all I got; I swear."
+    choices:
+    - text: Next Dialogue
+      nodeId: ad78d4b2-d00f-4c03-ad26-d9f239e70e3d
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 10741, y: 165.5}
+  - id: 25249b8c-1920-4213-b3f5-bc05bdf0826f
+    name: Dialogue22
+    text: "\u201CYou don\u2019t know what they\u2019re capable of. People disappear,
+      Sam. They don\u2019t just kill you\u2014they erase you. Like you were never
+      even there."
+    choices:
+    - text: Next Dialogue
+      nodeId: 9be61d09-6227-40e2-b971-831973dd8a7e
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 8173, y: 402}
+  - id: f32f6019-8471-407b-923c-516610dc975a
+    name: Dialogue21
+    text: "Safe? Sam, there\u2019s no such thing as safe\u2014not for me, not for
+      anyone who crosses them."
+    choices:
+    - text: Next Dialogue
+      nodeId: 25249b8c-1920-4213-b3f5-bc05bdf0826f
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 6889, y: 402}
+  - id: 9be61d09-6227-40e2-b971-831973dd8a7e
+    name: Dialogue23
+    text: "You\u2019re not disappearing, Lucas. Not while I\u2019m here. Now, take
+      a breath and tell me what\u2019s going on."
+    choices:
+    - text: Next Dialogue
+      nodeId: 6c079917-4295-4bbc-a6cf-c1ac6cd9f4ba
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 8811, y: -511.5}
+  - id: e0b03127-5535-462f-a4b6-29afec9f0ff4
+    name: Dialogue14
+    text: "Fix them? You think it\u2019s that easy? I\u2019m not like you, Sam. I
+      don\u2019t get to play the hero. I don\u2019t have backup or a badge to hide
+      behind."
+    choices:
+    - text: Next Dialogue
+      nodeId: 82b447d6-9dd6-4662-b585-a50be0565de4
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 8173, y: 165.5}
+  - id: 6c079917-4295-4bbc-a6cf-c1ac6cd9f4ba
+    name: Dialogue24
+    text: "\u2026Alright, fine. You need to know what\u2019s really going on."
+    choices:
+    - text: Next Dialogue
+      nodeId: bea828b1-076e-4616-9ba7-7e05e179f60e
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 9457, y: 402}
+  - id: bea828b1-076e-4616-9ba7-7e05e179f60e
+    name: Dialogue25
+    text: "Drake isn\u2019t just taking bribes, Sam\u2014he\u2019s running the whole
+      operation. Money laundering, arms deal, everything. He\u2019s the one pulling
+      the strings, and Victor Crowe? He\u2019s the enforcer. The guy who makes the
+      problems disappear."
+    choices:
+    - text: Next Dialogue
+      nodeId: b476d099-cd97-4578-bb87-0eb5938ddc93
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 10741, y: 402}
+  - id: b476d099-cd97-4578-bb87-0eb5938ddc93
+    name: Dialogue26
+    text: "That\u2019s not enough, Lucas. I need proof\u2014something solid that
+      ties Drake to this mess."
+    choices:
+    - text: Next Dialogue
+      nodeId: d76349da-1656-49ee-b6a2-72b752869a94
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 11379, y: -511.5}
+  - id: d76349da-1656-49ee-b6a2-72b752869a94
+    name: Dialogue27
+    text: "There\u2019s a safehouse. Old Town, just past the docks. Crowe keeps everything
+      there\u2014encrypted records. Payments, deals, names\u2026 it\u2019s all in
+      that place."
+    choices:
+    - text: Next Dialogue
+      nodeId: 8cc16bac-19cc-4541-b3fa-c924d098da23
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 12025, y: 402}
+  - id: 8cc16bac-19cc-4541-b3fa-c924d098da23
+    name: Dialogue28
+    text: "But Sam, it\u2019s not a regular stash. They\u2019ve got guards, surveillance,
+      the whole setup. You walk in there without a plan, and you\u2019re not walking
+      out."
+    choices:
+    - text: Next Dialogue
+      nodeId: 9f2687dd-7a15-4119-ab9c-381276df0bcf
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 13037, y: 402}
+  - id: 9f2687dd-7a15-4119-ab9c-381276df0bcf
+    name: Dialogue29
+    text: Let me worry about that. What do I need to look for?
+    choices:
+    - text: Next Dialogue
+      nodeId: 1be6c3c5-3a67-4711-9997-3c5b52070dbc
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 13671, y: -511.5}
+  - id: 79c1be69-6efa-43a1-92a5-0d13785fef15
+    name: Dialogue31
+    text: "I\u2019ll get it done, Lucas. But I need you to stay out of sight. If
+      they find out, you talked to me\u2014\u201D"
+    choices:
+    - text: Next Dialogue
+      nodeId: c023acb7-d467-4499-9e2e-bdd7736d1a2f
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 14955, y: -511.5}
+  - id: 1be6c3c5-3a67-4711-9997-3c5b52070dbc
+    name: Dialogue30
+    text: "A safe in the back room. Crowe\u2019s paranoid\u2014everything\u2019s
+      locked up tight. You\u2019ll need to figure out a way to crack it. If you can
+      get in, you\u2019ll have all the proof you need to bury Drake and Crowe."
+    choices:
+    - text: Next Dialogue
+      nodeId: 79c1be69-6efa-43a1-92a5-0d13785fef15
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 14321, y: 402}
+  - id: 0f6ab31b-f39b-4a0c-a0c3-01f3e16c0315
+    name: Dialogue33
+    text: "I\u2019ll make sure they don\u2019t. You\u2019ve done good, Lucas."
+    choices:
+    - text: Next Dialogue
+      nodeId: d6eb1a07-23f6-446a-b97a-09aae4858594
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 16239, y: -511.5}
+  - id: c023acb7-d467-4499-9e2e-bdd7736d1a2f
+    name: Dialogue32
+    text: "They won\u2019t. I\u2019ve done my part, Sam. Just\u2026 don\u2019t let
+      them know it came from me. I don\u2019t want to end up like the others."
+    choices:
+    - text: Next Dialogue
+      nodeId: 0f6ab31b-f39b-4a0c-a0c3-01f3e16c0315
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 15605, y: 402}
+  - id: 6d385197-6e9e-4d00-8bf3-2b9d4c46460e
+    name: Dialogue11
+    text: (sigh)
+    choices:
+    - text: "You\u2019ve got no choice, Lucas. Tell me what is going on!"
+      nodeId: e68e746b-dc26-4e10-815e-a4bdb65abfb7
+    - text: "Relax, Lucas. You\u2019re safe here. Just talk to me."
+      nodeId: f32f6019-8471-407b-923c-516610dc975a
+    - text: Stop stalling, Lucas. Just give me what I need.
+      nodeId: 1a4136a4-10b4-43d7-99d0-93f34abd8286
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 1
+    position: {x: 5967, y: 354.5}
+  - id: 1a4136a4-10b4-43d7-99d0-93f34abd8286
+    name: Dialogue35
+    text: "Stalling? You think I\u2019m stalling, Sam? You think this is easy for
+      me?"
+    choices:
+    - text: Next Dialogue
+      nodeId: 324eb313-1a97-423e-8613-97a7ea527450
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 6889, y: 635.5}
+  - id: 384836d0-13b0-459d-a67e-2d13b9dd6adc
+    name: Dialogue37
+    text: "Answers? You\u2019ve already decided what you think about me, haven\u2019t
+      you? Some rat who\u2019ll sell anyone out if the price is right."
+    choices:
+    - text: Next Dialogue
+      nodeId: d384a750-c2af-46bc-ae5c-ab9c8644c8e3
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 8173, y: 635.5}
+  - id: d384a750-c2af-46bc-ae5c-ab9c8644c8e3
+    name: Dialogue38
+    text: "You don\u2019t know what it\u2019s like, Sam. Looking over your shoulder
+      every second, waiting for someone to put a bullet in your back. You don\u2019t
+      get it, and you never will."
+    choices:
+    - text: Next Dialogue
+      nodeId: 0f4ca332-35f8-4cbd-ab8a-2c4777a4a75e
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 9457, y: 635.5}
+  - id: 6e20d622-c905-41f9-ac60-48837edfe881
+    name: Dialogue40
+    text: "You\u2019re right about one thing\u2014I am scared. And you know what?
+      I\u2019m done being your pawn in this little crusade."
+    choices:
+    - text: Next Dialogue
+      nodeId: 29c9a09a-1a94-4da6-ae09-53704c197cc0
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 10741, y: 635.5}
+  - id: a0bf47c1-1e80-4d9f-9114-202a272814c8
+    name: Dialogue42
+    text: "You already do. But don\u2019t worry\u2014I won\u2019t make that mistake
+      again."
+    choices:
+    - text: Next Dialogue
+      nodeId: 26ad3efa-1adc-4a92-b81e-b4fcd3d8486c
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 12025, y: 635.5}
+  - id: 324eb313-1a97-423e-8613-97a7ea527450
+    name: Dialogue36
+    text: "You\u2019re wasting time. I came here for answers, not excuses."
+    choices:
+    - text: Next Dialogue
+      nodeId: 384836d0-13b0-459d-a67e-2d13b9dd6adc
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 7527, y: -274.5}
+  - id: 0f4ca332-35f8-4cbd-ab8a-2c4777a4a75e
+    name: Dialogue39
+    text: "I get that you\u2019re scared. But fear doesn\u2019t excuse you from doing
+      the right thing. You\u2019re in this mess because of your own choices, Lucas."
+    choices:
+    - text: Next Dialogue
+      nodeId: 6e20d622-c905-41f9-ac60-48837edfe881
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 10095, y: -274.5}
+  - id: 29c9a09a-1a94-4da6-ae09-53704c197cc0
+    name: Dialogue41
+    text: "You know something, Lucas. Don\u2019t make me regret trusting you."
+    choices:
+    - text: Next Dialogue
+      nodeId: a0bf47c1-1e80-4d9f-9114-202a272814c8
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 11379, y: -274.5}
+  - id: 26ad3efa-1adc-4a92-b81e-b4fcd3d8486c
+    name: Dialogue43
+    text: "You walk out that door, and you\u2019re on your own."
+    choices:
+    - text: Next Dialogue
+      nodeId: 29a511b1-3ed0-464e-8030-5eb39ea958fd
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 13037, y: -274.5}
+  - id: be95ba82-f7b4-46f7-b33e-eb411c9fa51a
+    name: Dialogue6
+    text: "You always had that way of talking, Sam. Fine. I\u2019ll tell you what
+      I know."
+    choices:
+    - text: Next Dialogue
+      nodeId: 825d7419-1dcf-4dbd-836e-640ed5ece0a7
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 0
+    position: {x: 2537, y: 410}
+  - id: ad78d4b2-d00f-4c03-ad26-d9f239e70e3d
+    name: Dialogue19
+    text: "You better hope it\u2019s enough, Lucas."
+    choices:
+    - text: Next Dialogue
+      nodeId: 50096806-2115-4013-960e-7c4e2d0d20ad
+    groupId: d6844840-27ec-4c49-ad5e-5f02b792be13
+    dialogueType: 0
+    position: {x: 11379, y: -768}
+  - id: 50096806-2115-4013-960e-7c4e2d0d20ad
+    name: Dialogue20
+    text: "It has to be. Don\u2019t drag me any deeper into this, Sam."
+    choices:
+    - text: Next Dialogue\diner\wharf
+      nodeId: 
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 1
+    position: {x: 12025, y: 149.5}
+  - id: d6eb1a07-23f6-446a-b97a-09aae4858594
+    name: Dialogue34
+    text: "Thanks, Sam. Just\u2026 don\u2019t let them bury you too."
+    choices:
+    - text: Next Dialogue\diner\old_town
+      nodeId: 
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 1
+    position: {x: 16881, y: 402}
+  - id: 29a511b1-3ed0-464e-8030-5eb39ea958fd
+    name: Dialogue44
+    text: "I\u2019ve been on my own this whole time, Sam. Good luck\u2014sounds like
+      you\u2019re gonna need it more than me."
+    choices:
+    - text: Next Dialogue\diner\bridge
+      nodeId: 
+    groupId: cf1ee93f-a044-47fd-8bc0-32facd85f72e
+    dialogueType: 1
+    position: {x: 13679, y: 635.5}
+  oldGroupNames:
+  - Lucas
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue2
+      - Dialogue4
+      - Dialogue8
+      - Dialogue10
+      - Dialogue13
+      - Dialogue15
+      - Dialogue17
+      - Dialogue23
+      - Dialogue26
+      - Dialogue29
+      - Dialogue31
+      - Dialogue33
+      - Dialogue36
+      - Dialogue39
+      - Dialogue41
+      - Dialogue43
+      - Dialogue19
+    - Key: Lucas
+      Value:
+      - Dialogue1
+      - Dialogue3
+      - Dialogue5
+      - Dialogue7
+      - Dialogue9
+      - Dialogue12
+      - Dialogue16
+      - Dialogue18
+      - Dialogue22
+      - Dialogue21
+      - Dialogue14
+      - Dialogue24
+      - Dialogue25
+      - Dialogue27
+      - Dialogue28
+      - Dialogue30
+      - Dialogue32
+      - Dialogue11
+      - Dialogue35
+      - Dialogue37
+      - Dialogue38
+      - Dialogue40
+      - Dialogue42
+      - Dialogue6
+      - Dialogue20
+      - Dialogue34
+      - Dialogue44

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: LucasDinerDIalogue
+  m_EditorClassIdentifier: 
+  fileName: LucasDinerDIalogue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: a8a89d16f385b4a2d9dae575318b3a0d, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 5caead2460f934187b3e285e7a7f752d, type: 2}
+      - {fileID: 11400000, guid: 0db6cce57be1f4100be8e392fa7c4602, type: 2}
+      - {fileID: 11400000, guid: 45debab8cb30745dfaecf51d19feac9b, type: 2}
+      - {fileID: 11400000, guid: 4eb70bef51694437fa02c1bc9d1880a5, type: 2}
+      - {fileID: 11400000, guid: e1d03a6ae1cc14991a0cd68dced2a835, type: 2}
+      - {fileID: 11400000, guid: b2e40836b59dd4af093ec332b5cf87ad, type: 2}
+      - {fileID: 11400000, guid: 27054b91ff0d3480da24cce422a1e43d, type: 2}
+      - {fileID: 11400000, guid: 4d542029d314e4c3983f6c263face5a5, type: 2}
+      - {fileID: 11400000, guid: 739c9235439334bde9214616d57aa022, type: 2}
+      - {fileID: 11400000, guid: a84b1b9d90fd64c3786bb33b26689764, type: 2}
+      - {fileID: 11400000, guid: af70d1754dc7d4a63b5efdf7bb3f1321, type: 2}
+      - {fileID: 11400000, guid: df04a011dba164cb2bcdd17a2ca1df8b, type: 2}
+      - {fileID: 11400000, guid: bcb0eda63e0774f56827aca5bf8761cb, type: 2}
+      - {fileID: 11400000, guid: ee8b2867d95cb46069bc711ac67cf4ca, type: 2}
+      - {fileID: 11400000, guid: deed11ffe40e447b49c1a0a286c1a088, type: 2}
+      - {fileID: 11400000, guid: b23cc76d4f2234a519c2375d8d7cc4c8, type: 2}
+      - {fileID: 11400000, guid: 1d29e3d785c824186b94a3a7ec22326b, type: 2}
+      - {fileID: 11400000, guid: e533c368606564e9b850122fd157b21e, type: 2}
+      - {fileID: 11400000, guid: 4475622480524451c90a4f348d4558c3, type: 2}
+      - {fileID: 11400000, guid: c24968efb8a3c4ab7a60b425c1c49cb3, type: 2}
+      - {fileID: 11400000, guid: 54584660b5d864323955baaadcca4acf, type: 2}
+      - {fileID: 11400000, guid: 29adfe3c392cb427395a7c96757ed766, type: 2}
+      - {fileID: 11400000, guid: 2c5addfc49dfc4bb4989102ac530b20f, type: 2}
+      - {fileID: 11400000, guid: ad897742160f740939f7d7c30ce1c4b8, type: 2}
+      - {fileID: 11400000, guid: da4377ff5a9c14428bf583949caef17b, type: 2}
+      - {fileID: 11400000, guid: 03e272b20666d479d9d5bea9a5b15c48, type: 2}
+      - {fileID: 11400000, guid: 0a2f0c4a1d75b4fe2b78f7255372ed73, type: 2}
+    - Key: {fileID: 11400000, guid: 26279d93c284f4400b7f681961caf2c4, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e6fbaba418b8646129f285bd0010016c, type: 2}
+      - {fileID: 11400000, guid: 540306f252d9a4c198586279743a3fa2, type: 2}
+      - {fileID: 11400000, guid: e6f1ed9b2166d40309c86a41d6d5747d, type: 2}
+      - {fileID: 11400000, guid: a3699c81c144e4fc2915cf416e0c38b3, type: 2}
+      - {fileID: 11400000, guid: 8dc291f93e30b4616a12fec68e5b7a95, type: 2}
+      - {fileID: 11400000, guid: d6c5c9de61b114703ac144c5fccd33ed, type: 2}
+      - {fileID: 11400000, guid: 984b3ea59cbb6410daf9a3f3caeb7ca8, type: 2}
+      - {fileID: 11400000, guid: e7bd960c613a7492c889200fb004afdb, type: 2}
+      - {fileID: 11400000, guid: e5bd7ce2dce7645a7865c783e3b6de3c, type: 2}
+      - {fileID: 11400000, guid: 714159a640fa34813a26ccec0607e884, type: 2}
+      - {fileID: 11400000, guid: e21886ab237e7408f961a481dfe9d7da, type: 2}
+      - {fileID: 11400000, guid: a0a87b5b3eccb495fa5bd568b23a414b, type: 2}
+      - {fileID: 11400000, guid: 5ad951592ab9d40558c634c20848583e, type: 2}
+      - {fileID: 11400000, guid: c067d2f18db4f40b8b18cd00afe7c3ac, type: 2}
+      - {fileID: 11400000, guid: 42283e68898ed493a991702dd86a5bb9, type: 2}
+      - {fileID: 11400000, guid: 211fd959b20344cf09b7a523e1519edf, type: 2}
+      - {fileID: 11400000, guid: 7bfaf96a61a9245fdbf9725c2d928ba0, type: 2}
+  ungroupedDialogues: []
