@@ -8,7 +8,9 @@ public class ChoiceManager : MonoBehaviour {
     private Dictionary<string, List<string>> gameChoices = new Dictionary<string, List<string>>();
     private Dictionary<string, Action> choiceActions = new Dictionary<string, Action>();
     private List<string> cluesGathered = new List<string>();
-
+    private List<ClueData> clues = new List<ClueData>();
+    private float cluePoints;
+    
     private void Awake() {
         if (Instance != null && Instance != this) {
             Destroy(gameObject);
@@ -18,13 +20,17 @@ public class ChoiceManager : MonoBehaviour {
         Instance = this;
         DontDestroyOnLoad(gameObject);
         
-        string file = Path.Combine(Application.dataPath, "Story/GameChoices.json");
-        string jsonText = File.ReadAllText(file);
-        GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(jsonText);
-        gameChoices = new Dictionary<string, List<string>>();
+        string choicesFile = Path.Combine(Application.dataPath, "Story/GameChoices.json");
+        string choicesJson = File.ReadAllText(choicesFile);
+        GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(choicesJson);
         gameChoices.Add("warf", choicesData.warf);
         gameChoices.Add("bridge", choicesData.bridge);
         gameChoices.Add("diner", choicesData.diner);
+        
+        string cluesFile = Path.Combine(Application.dataPath, "Story/Clues.json");
+        string cluesJson = File.ReadAllText(cluesFile);
+        GameCluesData cluesData = JsonUtility.FromJson<GameCluesData>(cluesJson);
+        clues = cluesData.clues;
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {
@@ -42,5 +48,17 @@ public class ChoiceManager : MonoBehaviour {
 
     public void AddClue(string clue) {
         cluesGathered.Add(clue);
+    }
+
+    public void CalculateCluePoints() {
+        cluePoints = 0;
+        
+        foreach (ClueData clue in clues) {
+            foreach (String clueGathered in cluesGathered) {
+                if (clue.name == clueGathered) {
+                    cluePoints += clue.value;
+                }    
+            }
+        }
     }
 }

@@ -90,7 +90,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfRecordSuccess() {
-        ChoiceManager.Instance.AddClue("record_success");
+        ChoiceManager.Instance.AddClue("wharf_record");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
@@ -99,12 +99,12 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfListenSuccess() {
-        ChoiceManager.Instance.AddClue("listen_success");
+        ChoiceManager.Instance.AddClue("wharf_listen");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
     private void WarfConfrontSuccess() {
-        ChoiceManager.Instance.AddClue("confront_success");
+        ChoiceManager.Instance.AddClue("wharf_confront");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
@@ -123,7 +123,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void BridgeFlashSuccess() {
-        ChoiceManager.Instance.AddClue("flash_success");
+        ChoiceManager.Instance.AddClue("bridge_flash");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
     
@@ -132,7 +132,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
     
     private void BridgeDaHint() {
-        ChoiceManager.Instance.AddClue("da_hint");
+        ChoiceManager.Instance.AddClue("bridge_da");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 

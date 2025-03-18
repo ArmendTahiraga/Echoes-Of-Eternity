@@ -1,0 +1,12 @@
+{
+  "clues": [
+    {"name": "graveyard_relatives", "value":  0.25},
+    {"name": "wharf_record", "value": 1},
+    {"name": "wharf_listen", "value": 0.5},
+    {"name": "wharf_confront", "value": 0.75},
+    {"name": "encrypted_full", "value": 1},
+    {"name": "encrypted_half", "value": 0.5},
+    {"name": "bridge_flash", "value": 1},
+    {"name": "bridge_da", "value": 0.5}
+  ]
+}
