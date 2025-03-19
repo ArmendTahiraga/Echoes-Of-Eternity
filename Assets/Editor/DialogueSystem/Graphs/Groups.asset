@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
-  m_Name: DialogueFileName
+  m_Name: Groups
   m_EditorClassIdentifier: 
-  fileName: DialogueFileName
+  fileName: Groups
   groups:
   - id: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
     name: SamuelEncryptedRecords
@@ -36,18 +36,6 @@ MonoBehaviour:
     groupId: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
     dialogueType: 0
     position: {x: 172, y: 260}
-  - id: d8c11d0c-d236-4d54-8aed-3ccabb0a7898
-    name: Dialogue3
-    text: 'Samuel, now is your time to be quick and try to visit which room has the
-      door unlocked.
-
-      HINT: Higher up is a good place to hide documents.'
-    choices:
-    - text: Next Dialogue
-      nodeId: a2aadb27-4cb5-43eb-b00f-1c44c638c590
-    groupId: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
-    dialogueType: 0
-    position: {x: 859, y: 260}
   oldGroupNames:
   - SamuelEncryptedRecords
   oldUngroupedNames: []
@@ -57,4 +45,3 @@ MonoBehaviour:
       Value:
       - Dialogue1
       - Dialogue2
-      - Dialogue3
