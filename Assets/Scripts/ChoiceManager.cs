@@ -26,11 +26,15 @@ public class ChoiceManager : MonoBehaviour {
         gameChoices.Add("warf", choicesData.warf);
         gameChoices.Add("bridge", choicesData.bridge);
         gameChoices.Add("diner", choicesData.diner);
+        gameChoices.Add("final", choicesData.final);
         
         string cluesFile = Path.Combine(Application.dataPath, "Story/Clues.json");
         string cluesJson = File.ReadAllText(cluesFile);
         GameCluesData cluesData = JsonUtility.FromJson<GameCluesData>(cluesJson);
         clues = cluesData.clues;
+        
+        cluesGathered.Add("wharfRecord");
+        cluesGathered.Add("bridgeFlash");
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {
@@ -60,5 +64,13 @@ public class ChoiceManager : MonoBehaviour {
                 }    
             }
         }
+    }
+
+    public List<string> GetCluesGathered() {
+        return cluesGathered;
+    }
+
+    public void RemoveClue(string clue) {
+        cluesGathered.Remove(clue);
     }
 }

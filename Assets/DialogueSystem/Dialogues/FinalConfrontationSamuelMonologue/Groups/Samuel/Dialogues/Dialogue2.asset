@@ -15,8 +15,8 @@ MonoBehaviour:
   dialogueName: Dialogue2
   dialogueText: I need to find out what is going on here.
   choices:
-  - text: Next Dialogue
+  - text: Next Dialogue\calculatePoints
     nextDialogue: {fileID: 0}
-  dialogueType: 0
+  dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: eb2d4629-437b-4c80-b2ba-afe7ca6c424c
+  uniqueID: 46ef865e-b18d-4587-864a-a9f53a656be5

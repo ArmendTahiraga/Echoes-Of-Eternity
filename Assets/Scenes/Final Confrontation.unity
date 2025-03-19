@@ -3635,6 +3635,12 @@ MonoBehaviour:
   deathScreenCanvasAnimator: {fileID: 0}
   gameUI: {fileID: 0}
   lightColliders: []
+  evidenceDialogues:
+  - {fileID: 11400000, guid: 457eed9486f3f4c8dad36bab743fac31, type: 2}
+  - {fileID: 11400000, guid: 84a37d8fdef6d4d1ca1e185b1a3cfd64, type: 2}
+  finalDialogueComponent: {fileID: 1370595574}
+  finalDialogueEnd: {fileID: 11400000, guid: e9770acc5a72b48cf8bcbf86411f8f18, type: 2}
+  dialogueUI: {fileID: 516079006}
 --- !u!4 &728620001
 Transform:
   m_ObjectHideFlags: 0
@@ -7710,14 +7716,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 188227748c34042e89ef17c8fbd2537b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueContainer: {fileID: 0}
-  dialogueGroup: {fileID: 0}
-  dialogue: {fileID: 0}
-  groupedDialogues: 0
+  dialogueContainer: {fileID: 11400000, guid: d8e8a03321b994edc9af5f0f571e49e3, type: 2}
+  dialogueGroup: {fileID: 11400000, guid: 21715680aafba462dae9dcd661ad54ac, type: 2}
+  dialogue: {fileID: 11400000, guid: 23969d35630b74d14854757a16e3fa48, type: 2}
+  groupedDialogues: 1
   startingDialoguesOnly: 0
   selectedDialogueGroupIndex: 0
   selectedDialogueIndex: 0
-  uniqueID: 
+  uniqueID: bebb44c6-5848-4943-997a-c85a471d2vf7
 --- !u!114 &1370595575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11895,7 +11901,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

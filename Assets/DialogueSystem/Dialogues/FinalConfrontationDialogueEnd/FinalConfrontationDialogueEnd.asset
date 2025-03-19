@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: FinalConfrontationDialogueEnd
+  m_EditorClassIdentifier: 
+  fileName: FinalConfrontationDialogueEnd
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 5a3393d274e5c45aead6acf434971e51, type: 2}
+      Value:
+      - {fileID: 11400000, guid: a51ebf22c65894076b6ee605fcb9b8a9, type: 2}
+      - {fileID: 11400000, guid: d69dca477e0874f9e890ac2998100695, type: 2}
+  ungroupedDialogues: []

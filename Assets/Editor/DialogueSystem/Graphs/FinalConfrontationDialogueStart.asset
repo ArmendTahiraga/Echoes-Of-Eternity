@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: FinalConfrontationDialogueStart
+  m_EditorClassIdentifier: 
+  fileName: FinalConfrontationDialogueStart
+  groups:
+  - id: 3ea29190-ceda-4e20-aa14-2a5926411179
+    name: Vivian0Cross
+    position: {x: 84.5, y: 116.5}
+  - id: e536990e-72d3-490e-83d6-0246ce795cee
+    name: Chief0Drake
+    position: {x: 726.5, y: 419}
+  - id: aef4ab35-04e9-45a5-94b9-d60dda6c2b09
+    name: Samuel
+    position: {x: 1368.5, y: 823}
+  nodes:
+  - id: 32ce4eab-f1c2-4765-8389-0d899ffd7f36
+    name: Dialogue1
+    text: "You really don\u2019t know when to stay dead, do you, Samuel?"
+    choices:
+    - text: Next Dialogue
+      nodeId: 7f061238-d22d-4e4c-b5ec-f8748bb0fc36
+    groupId: 3ea29190-ceda-4e20-aa14-2a5926411179
+    dialogueType: 0
+    position: {x: 109.5, y: 175}
+  - id: 7f061238-d22d-4e4c-b5ec-f8748bb0fc36
+    name: Dialogue2
+    text: "I\u2019ll give you credit. Takes guts to come here alone. But you better
+      have something worth my time."
+    choices:
+    - text: Next Dialogue
+      nodeId: 6f2a35a4-877c-4433-94ff-5352d0ff6f46
+    groupId: e536990e-72d3-490e-83d6-0246ce795cee
+    dialogueType: 0
+    position: {x: 751.5, y: 477.5}
+  - id: 6f2a35a4-877c-4433-94ff-5352d0ff6f46
+    name: Dialogue3
+    text: Oh I'm sure I do.
+    choices:
+    - text: Next Dialogue\final\nextEvidence
+      nodeId: 17dc53f7-c643-41f6-85b0-854a04f0256c
+    groupId: aef4ab35-04e9-45a5-94b9-d60dda6c2b09
+    dialogueType: 1
+    position: {x: 1393.5, y: 881.5}
+  - id: 17dc53f7-c643-41f6-85b0-854a04f0256c
+    name: DialogueName
+    text: Dialogue Text
+    choices:
+    - text: Next Dialogue
+      nodeId: 
+    groupId: aef4ab35-04e9-45a5-94b9-d60dda6c2b09
+    dialogueType: 0
+    position: {x: 1966.5, y: 881.5}
+  oldGroupNames:
+  - Vivian0Cross
+  - Chief0Drake
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue1
+    - Key: Chief0Drake
+      Value:
+      - Dialogue2
+    - Key: Samuel
+      Value:
+      - Dialogue3
+      - DialogueName

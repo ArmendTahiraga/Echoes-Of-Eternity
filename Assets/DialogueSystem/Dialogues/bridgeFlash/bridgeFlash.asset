@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: bridgeFlash
+  m_EditorClassIdentifier: 
+  fileName: bridgeFlash
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 38f323ca114fe416abd6e8f81b739f1b, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 9a59d4fb9cc74476687f76d44d4a49d9, type: 2}
+    - Key: {fileID: 11400000, guid: 9941f418902684d05a6e29de962a80ce, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f6e60e5ce060e4000a03d066982bebba, type: 2}
+  ungroupedDialogues: []

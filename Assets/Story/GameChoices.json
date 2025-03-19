@@ -20,5 +20,8 @@
     "wharf",
     "old_town",
     "bridge"
+  ],
+  "final": [
+    "nextEvidence"
   ]
 }

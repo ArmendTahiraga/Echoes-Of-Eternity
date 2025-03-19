@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: FinalConfrontationDialogueStart
+  m_EditorClassIdentifier: 
+  fileName: FinalConfrontationDialogueStart
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 21715680aafba462dae9dcd661ad54ac, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 23969d35630b74d14854757a16e3fa48, type: 2}
+    - Key: {fileID: 11400000, guid: 731ae2ad795c7422daa959a298c45df5, type: 2}
+      Value:
+      - {fileID: 11400000, guid: a607dbaf5915d41d681ed3c07cc954eb, type: 2}
+    - Key: {fileID: 11400000, guid: 7233785d678e44b0e9fcaafc370c307c, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 1b788f308b2be4c2cb3614ecebe2620f, type: 2}
+      - {fileID: 11400000, guid: 0c81b98bb53694350ad947b82b1919e8, type: 2}
+  ungroupedDialogues: []

@@ -67,12 +67,20 @@ public class DialogueUI : MonoBehaviour {
     
     private void OnChoiceSelected(int choiceIndex) {
         DSDialogueChoiceData selectedChoice = dialogue.GetDialogue().choices[choiceIndex];
+        string[] selectedChoiceParts = selectedChoice.text.Split('\\');
+
+        if (selectedChoiceParts.Length == 3 && selectedChoiceParts[2] == "nextEvidence") {
+            ChoiceManager.Instance.TriggerChoice(selectedChoiceParts[2]);
+            return;
+        }
+        
         DSDialogueSO nextDialogue = selectedChoice.nextDialogue;
         DSDialogueContainerSO dialogueContainer = dialogue.GetDialogueContainer();
         List<DSDialogueGroupSO> groups = dialogueContainer.GetGroups();
 
-        
-        string[] selectedChoiceParts = selectedChoice.text.Split('\\');
+        if (selectedChoiceParts.Length == 2 && selectedChoiceParts[1] == "calculatePoints") {
+            ChoiceManager.Instance.CalculateCluePoints();
+        }
         
         if (selectedChoiceParts.Length == 3) {
             nextDialogue = null;

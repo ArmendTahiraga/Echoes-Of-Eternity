@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: wharfRecord
+  m_EditorClassIdentifier: 
+  fileName: wharfRecord
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 225b3ff706030466293a6d0bf6880e12, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 26802404917d04292aa2cb050dec30e8, type: 2}
+    - Key: {fileID: 11400000, guid: a0701caee0437411c91c4342feafadf8, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f81f6658f83c74c62bb2f3a266eba0a1, type: 2}
+  ungroupedDialogues: []

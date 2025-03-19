@@ -1,4 +1,3 @@
-using System;
 using DS.ScriptableObjects;
 using UnityEngine;
 
@@ -31,6 +30,10 @@ namespace DS {
         
         public void SetDSDialogueGroupSO(DSDialogueGroupSO dialogueGroup) {
             this.dialogueGroup = dialogueGroup;
+        }
+
+        public void SetDSDialogueContainerSO(DSDialogueContainerSO dialogueContainer) {
+            this.dialogueContainer = dialogueContainer;
         }
     }
 }

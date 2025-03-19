@@ -16,26 +16,26 @@ MonoBehaviour:
   groups:
   - id: 167df306-7829-40af-a3de-efb53cad0012
     name: Samuel
-    position: {x: 163, y: 187.99998}
+    position: {x: -1017, y: 56.000034}
   nodes:
   - id: 58dab5c3-795a-4a8e-ac2d-a493fb805a30
     name: Dialogue1
     text: Ok, now it's time to finish this.
     choices:
     - text: Next Dialogue
-      nodeId: 3dfda319-efd9-4602-b135-322e2b318e60
+      nodeId: 8537d4a4-61b7-4e35-b377-6bca7539c955
     groupId: 167df306-7829-40af-a3de-efb53cad0012
     dialogueType: 0
-    position: {x: 188, y: 246.5}
-  - id: 3dfda319-efd9-4602-b135-322e2b318e60
+    position: {x: -992, y: 114.5}
+  - id: 8537d4a4-61b7-4e35-b377-6bca7539c955
     name: Dialogue2
     text: I need to find out what is going on here.
     choices:
-    - text: Next Dialogue
+    - text: Next Dialogue\calculatePoints
       nodeId: 
     groupId: 167df306-7829-40af-a3de-efb53cad0012
-    dialogueType: 0
-    position: {x: 987.5, y: 246.5}
+    dialogueType: 1
+    position: {x: -188.5, y: 114.5}
   oldGroupNames:
   - Samuel
   oldUngroupedNames: []

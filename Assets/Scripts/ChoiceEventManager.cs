@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using DS;
+using DS.ScriptableObjects;
 using UnityEngine;
 
 public class ChoiceEventManager : MonoBehaviour {
@@ -8,6 +10,10 @@ public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private Animator deathScreenCanvasAnimator;
     [SerializeField] private GameObject gameUI;
     [SerializeField] private CapsuleCollider[] lightColliders;
+    [SerializeField] private List<DSDialogueContainerSO> evidenceDialogues;
+    [SerializeField] private DSDialogue finalDialogueComponent;
+    [SerializeField] private DSDialogueContainerSO finalDialogueEnd;
+    [SerializeField] private DialogueUI dialogueUI;
 
     private void Start() {
         ChoiceManager.Instance.RegisterChoiceEvent("choice_recordConversation", WarfRecordConversation);
@@ -26,6 +32,7 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("wharf", DinerGoToWharf);
         ChoiceManager.Instance.RegisterChoiceEvent("old_town", DinerGoToOldTown);
         ChoiceManager.Instance.RegisterChoiceEvent("bridge", DinerGoToBridge);
+        ChoiceManager.Instance.RegisterChoiceEvent("nextEvidence", FinalNextEvidence);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -90,7 +97,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfRecordSuccess() {
-        ChoiceManager.Instance.AddClue("wharf_record");
+        ChoiceManager.Instance.AddClue("wharfRecord");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
@@ -99,12 +106,12 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfListenSuccess() {
-        ChoiceManager.Instance.AddClue("wharf_listen");
+        ChoiceManager.Instance.AddClue("wharfListen");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
     private void WarfConfrontSuccess() {
-        ChoiceManager.Instance.AddClue("wharf_confront");
+        ChoiceManager.Instance.AddClue("wharfConfront");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
@@ -123,7 +130,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void BridgeFlashSuccess() {
-        ChoiceManager.Instance.AddClue("bridge_flash");
+        ChoiceManager.Instance.AddClue("bridgeFlash");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
     
@@ -132,7 +139,7 @@ public class ChoiceEventManager : MonoBehaviour {
     }
     
     private void BridgeDaHint() {
-        ChoiceManager.Instance.AddClue("bridge_da");
+        ChoiceManager.Instance.AddClue("bridgeDa");
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 
@@ -146,5 +153,41 @@ public class ChoiceEventManager : MonoBehaviour {
     
     private void DinerGoToBridge() {
         StartCoroutine(ChangeScene("Scene2", 1f));
+    }
+
+    private void FinalNextEvidence() {
+        List<string> cluesGathered = ChoiceManager.Instance.GetCluesGathered();
+        string groupName;
+        
+        foreach (string clue in cluesGathered) {
+            if (clue != "graveyardRelatives") {
+                foreach (DSDialogueContainerSO evidenceDialogue in evidenceDialogues) {
+                    if (evidenceDialogue.fileName == clue) {
+                        groupName = ChangeDialogue(evidenceDialogue);
+                        dialogueUI.StartDialogue(groupName, finalDialogueComponent);
+                        ChoiceManager.Instance.RemoveClue(clue);
+                        return;
+                    }
+                }
+            }
+        }
+        
+        groupName = ChangeDialogue(finalDialogueEnd);
+        dialogueUI.StartDialogue(groupName, finalDialogueComponent);
+    }
+
+    private string ChangeDialogue(DSDialogueContainerSO dialogueContainerSo) {
+        finalDialogueComponent.SetDSDialogueContainerSO(dialogueContainerSo);
+        foreach (DSDialogueGroupSO dialogueGroupSo in dialogueContainerSo.GetGroups()) {
+            foreach (DSDialogueSO dialogueSo in dialogueContainerSo.GetGroupDialogues(dialogueGroupSo)) {
+                if (dialogueSo.isStartingDialogue) {
+                    finalDialogueComponent.SetDSDialogueGroupSO(dialogueGroupSo);
+                    finalDialogueComponent.SetDSDialogueSO(dialogueSo);
+                    return dialogueGroupSo.groupName;
+                }
+            }
+        }
+        
+        return null;
     }
 }
