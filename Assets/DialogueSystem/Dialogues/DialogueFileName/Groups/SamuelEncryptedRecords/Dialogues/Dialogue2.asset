@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueText: Shit! I have to be quick though or I'll be caught!!
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: 58144a21d35fbcd4b9d3c2cf2593ac36, type: 2}
+    nextDialogue: {fileID: 11400000, guid: 2c32b4cc7751498458976e9c7f7a2b0c, type: 2}
   dialogueType: 0
   isStartingDialogue: 0
-  uniqueID: 1fecb5b8-5e49-4190-ba2c-31f8a44757b8
+  uniqueID: e07295c3-56a0-4aaa-b927-92fb3c10ef4a

@@ -19,7 +19,7 @@ MonoBehaviour:
     HINT: Higher up is a good place to hide documents.'
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: e291e9bd7bd2043439a42db1e1737f09, type: 2}
+    nextDialogue: {fileID: 0}
   dialogueType: 0
-  isStartingDialogue: 1
-  uniqueID: 232a5216-64c8-4f67-8838-534b67655678
+  isStartingDialogue: 0
+  uniqueID: f146f981-7a9a-40fe-a362-ed158bbdd010

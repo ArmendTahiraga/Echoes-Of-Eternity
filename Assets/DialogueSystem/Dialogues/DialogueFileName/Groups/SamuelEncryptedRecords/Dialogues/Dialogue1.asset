@@ -16,7 +16,7 @@ MonoBehaviour:
   dialogueText: I think, this is where Lucas meant there were the encrypted records.
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 0}
+    nextDialogue: {fileID: 11400000, guid: e291e9bd7bd2043439a42db1e1737f09, type: 2}
   dialogueType: 0
-  isStartingDialogue: 0
-  uniqueID: 94914d29-ee26-40ee-96dc-ebc886eecaa1
+  isStartingDialogue: 1
+  uniqueID: e4bde5fd-3b70-43cc-b8a1-b54eb46b4f8d

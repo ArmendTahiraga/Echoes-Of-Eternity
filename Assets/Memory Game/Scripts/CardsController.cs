@@ -12,6 +12,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI gameOverText;
+    [SerializeField] private TextMeshProUGUI headerText;
     [SerializeField] private GameObject memoryGameCanvas;
     [SerializeField] private NPCInteractable successInteractable;
     [SerializeField] private NPCInteractable failInteractable;
@@ -19,7 +20,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     private Card firstSelected;
     private Card secondSelected;
     private int matchCounts;
-    private float timeRemaining = 60f;
+    private float timeRemaining = 40f;
     private int totalPairs;
     public bool hasMiniGameStarted;
     public bool isCursorNeeded = true;
@@ -133,12 +134,26 @@ public class CardsController : MonoBehaviour, MiniGame {
         memoryGameCanvas.SetActive(false);
         GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enableCursor = false;
 
-        if (matchCounts >= 6) {
+        if (matchCounts >= 6)
+        {
+            headerText.text = "SUCCESS";
             gameOverText.text = "You matched " + matchCounts + " pairs!\nYou get all the needed documents!";
+            miniGameResult = "Success";
         } else if (matchCounts >= 3) {
+            headerText.text = "PARTIAL SUCCESS";
             gameOverText.text = "You matched " + matchCounts + " pairs!\nYou only get part of the documents.";
+            miniGameResult = "Partial";
         } else {
+            headerText.text = "FAILURE";
             gameOverText.text = "You matched " + matchCounts + " pairs.\nYou don’t get the needed documents.";
+            miniGameResult = "Fail";
         }
+
+        if (successInteractable != null)
+            successInteractable.gameObject.SetActive(false);
+        if (failInteractable != null)
+            failInteractable.gameObject.SetActive(false);
     }
+    
+
 }

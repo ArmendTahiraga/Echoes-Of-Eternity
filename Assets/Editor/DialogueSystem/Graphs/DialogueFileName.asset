@@ -23,7 +23,7 @@ MonoBehaviour:
     text: I think, this is where Lucas meant there were the encrypted records.
     choices:
     - text: Next Dialogue
-      nodeId: 
+      nodeId: a2aadb27-4cb5-43eb-b00f-1c44c638c590
     groupId: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
     dialogueType: 0
     position: {x: -507, y: 249}
@@ -32,7 +32,7 @@ MonoBehaviour:
     text: Shit! I have to be quick though or I'll be caught!!
     choices:
     - text: Next Dialogue
-      nodeId: 6c932a2b-d0fc-4f86-a269-71aa88cfb81e
+      nodeId: d8c11d0c-d236-4d54-8aed-3ccabb0a7898
     groupId: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
     dialogueType: 0
     position: {x: 172, y: 260}
@@ -44,7 +44,7 @@ MonoBehaviour:
       HINT: Higher up is a good place to hide documents.'
     choices:
     - text: Next Dialogue
-      nodeId: a2aadb27-4cb5-43eb-b00f-1c44c638c590
+      nodeId: 
     groupId: a17fdd75-56ef-4a2b-8878-42dbf6494d5e
     dialogueType: 0
     position: {x: 859, y: 260}
