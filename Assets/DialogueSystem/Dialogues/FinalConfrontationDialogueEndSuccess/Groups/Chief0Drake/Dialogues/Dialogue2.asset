@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue2
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue2
+  dialogueText: "You don\u2019t understand the game you\u2019re playing, Rowe."
+  choices:
+  - text: This is enough to take you both down. Surrender now.
+    nextDialogue: {fileID: 11400000, guid: af30cc9eefe134a468bd417b0e6383fa, type: 2}
+  - text: "The press, the police, the public\u2014they\u2019ll all know."
+    nextDialogue: {fileID: 11400000, guid: af30cc9eefe134a468bd417b0e6383fa, type: 2}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: e49d6227-ba9d-4a93-a97c-ccf14277a000

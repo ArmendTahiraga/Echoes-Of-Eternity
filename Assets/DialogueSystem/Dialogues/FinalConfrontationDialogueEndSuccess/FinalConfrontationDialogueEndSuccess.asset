@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: FinalConfrontationDialogueEndSuccess
+  m_EditorClassIdentifier: 
+  fileName: FinalConfrontationDialogueEndSuccess
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: a29ef9e776f2c4481af06773e524eaeb, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 8658c7c5ad0d44e898425b238bbdc8e0, type: 2}
+      - {fileID: 11400000, guid: 477f53a866e12442aaef960ef71cab43, type: 2}
+    - Key: {fileID: 11400000, guid: 84a181da71b4c4eff8b2d1bbcbcec427, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 169d12ce9c98a43e98c4ae7aad59d778, type: 2}
+      - {fileID: 11400000, guid: af30cc9eefe134a468bd417b0e6383fa, type: 2}
+      - {fileID: 11400000, guid: af29b964e947341b098ea0119472204a, type: 2}
+    - Key: {fileID: 11400000, guid: b70f84f0971064f488cfd68aeb6e11cc, type: 2}
+      Value:
+      - {fileID: 11400000, guid: d1e9237bb105447c786e2a3d4ca33795, type: 2}
+      - {fileID: 11400000, guid: 8ea86c4187d044cb699f308d07061218, type: 2}
+  ungroupedDialogues: []

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue7
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue7
+  dialogueText: "You\u2019ve only won today, detective. The is just beginning."
+  choices:
+  - text: Next Dialogue\final\success
+    nextDialogue: {fileID: 0}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: e18a18ae-f568-4eab-b2f0-d9ef2b3facb7

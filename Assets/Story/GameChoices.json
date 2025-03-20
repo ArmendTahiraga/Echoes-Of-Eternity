@@ -25,6 +25,8 @@
     "bridge"
   ],
   "final": [
-    "nextEvidence"
+    "nextEvidence",
+    "success",
+    "fail"
   ]
 }

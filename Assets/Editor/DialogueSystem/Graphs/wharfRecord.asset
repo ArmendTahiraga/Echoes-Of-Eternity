@@ -16,38 +16,55 @@ MonoBehaviour:
   groups:
   - id: e2945374-d508-4208-b68e-c617045c2a26
     name: Samuel
-    position: {x: 115.00008, y: 171.00008}
+    position: {x: 115.00001, y: 171}
   - id: 1242c552-4740-4802-b44d-8277383fbe6d
-    name: Chief
-    position: {x: 458.99982, y: 326.00003}
+    name: Chief0Drake
+    position: {x: 757.0001, y: 487.50003}
+  - id: 19b8902e-f12d-416f-8593-9cc2e369326d
+    name: Vivian0Cross
+    position: {x: 1399.0002, y: 785.5}
   nodes:
   - id: 28eedfe8-f4ca-4a62-8abb-939d048946ad
     name: Dialogue1
-    text: DSasdasd
+    text: Well, Drake. What do you think of this? This is your confession. The moment
+      you sealed your fate.
     choices:
     - text: Next Dialogue
-      nodeId: 93ac4ef5-a96c-431b-b102-d4e16787517c
+      nodeId: a6f7797f-6d7d-496c-bc6e-adea8c3fc831
     groupId: e2945374-d508-4208-b68e-c617045c2a26
     dialogueType: 0
     position: {x: 140, y: 229.5}
+  - id: a6f7797f-6d7d-496c-bc6e-adea8c3fc831
+    name: Dialogue2
+    text: "No\u2026 no, you\u2014you set me up! That recording is doctored, it\u2014"
+    choices:
+    - text: Next Dialogue
+      nodeId: 93ac4ef5-a96c-431b-b102-d4e16787517c
+    groupId: 1242c552-4740-4802-b44d-8277383fbe6d
+    dialogueType: 0
+    position: {x: 782, y: 546}
   - id: 93ac4ef5-a96c-431b-b102-d4e16787517c
-    name: DialogueName
-    text: asfasfsafsafasfsfasfsfs
+    name: Dialogue3
+    text: "You\u2019re going to need more than that detective."
     choices:
     - text: Next Dialogue\final\nextEvidence
       nodeId: 
-    groupId: 1242c552-4740-4802-b44d-8277383fbe6d
+    groupId: 19b8902e-f12d-416f-8593-9cc2e369326d
     dialogueType: 1
-    position: {x: 484, y: 384.5}
+    position: {x: 1424, y: 844}
   oldGroupNames:
   - Samuel
-  - Chief
+  - Chief0Drake
+  - Vivian0Cross
   oldUngroupedNames: []
   oldGroupedNames:
     list:
     - Key: Samuel
       Value:
       - Dialogue1
-    - Key: Chief
+    - Key: Chief0Drake
       Value:
-      - DialogueName
+      - Dialogue2
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue3

@@ -55,7 +55,7 @@ public class ChoiceManager : MonoBehaviour {
         cluesGathered.Add(clue);
     }
 
-    public void CalculateCluePoints() {
+    public float CalculateCluePoints() {
         cluePoints = 0;
         
         foreach (ClueData clue in clues) {
@@ -65,6 +65,8 @@ public class ChoiceManager : MonoBehaviour {
                 }    
             }
         }
+        
+        return cluePoints;
     }
 
     public List<string> GetCluesGathered() {
@@ -73,5 +75,9 @@ public class ChoiceManager : MonoBehaviour {
 
     public void RemoveClue(string clue) {
         cluesGathered.Remove(clue);
+    }
+
+    public float GetCluePoints() {
+        return cluePoints;
     }
 }

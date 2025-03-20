@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: wharfConfront
+  m_EditorClassIdentifier: 
+  fileName: wharfConfront
+  groups:
+  - id: c4257f8f-172a-47d9-8ab0-442fbc0f3baf
+    name: Samuel
+    position: {x: -170.5, y: 217}
+  - id: a98a60a0-f374-49f6-9061-36f9e3142ef3
+    name: Chief0Drake
+    position: {x: 471.49997, y: 506.5}
+  - id: b588d199-9e57-4831-9a2e-d4b5a25a94ed
+    name: Vivian0Cross
+    position: {x: 1113.5, y: 820.00006}
+  nodes:
+  - id: 22aec6b1-1789-4244-a770-2394454f2f5f
+    name: Dialogue1
+    text: "This isn\u2019t just hearsay, Drake. I walked right up to you that night.
+      You saw me. You knew I wasn\u2019t backing down. This photo says it all\u2014you
+      in bed with criminals, securing deals that should never have seen the light
+      of day."
+    choices:
+    - text: Next Dialogue
+      nodeId: 57190ff5-8346-4117-8f22-8db8ade01da4
+    groupId: c4257f8f-172a-47d9-8ab0-442fbc0f3baf
+    dialogueType: 0
+    position: {x: -145.5, y: 275.5}
+  - id: 57190ff5-8346-4117-8f22-8db8ade01da4
+    name: Dialogue2
+    text: "You arrogant son of a\u2014! You don\u2019t know what you\u2019re playing
+      with!"
+    choices:
+    - text: Next Dialogue
+      nodeId: 2615ae08-80e0-4f61-b9ea-b4d13898e74f
+    groupId: a98a60a0-f374-49f6-9061-36f9e3142ef3
+    dialogueType: 0
+    position: {x: 496.5, y: 565}
+  - id: 2615ae08-80e0-4f61-b9ea-b4d13898e74f
+    name: Dialogue3
+    text: A bold move, detective. But desperation makes men sloppy. Is this really
+      all you have?
+    choices:
+    - text: Next Dialogue\final\nextEvidence
+      nodeId: 
+    groupId: b588d199-9e57-4831-9a2e-d4b5a25a94ed
+    dialogueType: 1
+    position: {x: 1138.5, y: 878.5}
+  oldGroupNames:
+  - Samuel
+  - Chief0Drake
+  - Vivian0Cross
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue1
+    - Key: Chief0Drake
+      Value:
+      - Dialogue2
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue3

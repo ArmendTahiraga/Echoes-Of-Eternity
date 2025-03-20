@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   dialogueName: Dialogue1
-  dialogueText: bdrige
+  dialogueText: "The final nail in your coffin. Every lie, every bribe, every crime
+    linked back to you, Vivian. I wonder\u2026 how will the world react when they
+    see the real mastermind behind all this?"
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: f6e60e5ce060e4000a03d066982bebba, type: 2}
+    nextDialogue: {fileID: 11400000, guid: fb3f44dae42ba496fbff52bdb1009cdc, type: 2}
   dialogueType: 0
   isStartingDialogue: 1
-  uniqueID: d1934f75-49a5-4801-9184-ad0bdb694349
+  uniqueID: d22884ad-1676-4b61-ac0a-a83f8a0d5c3c

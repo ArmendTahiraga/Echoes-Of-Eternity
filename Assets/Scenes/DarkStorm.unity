@@ -712,7 +712,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8377879342649129028, guid: f90927f99f3f9b24a988caf56167c738, type: 3}
+  - {fileID: 8377879342649129028, guid: df6edf2c46f6f804498fd59dfdd56a8d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -741,7 +741,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20558127}
-  m_Mesh: {fileID: -7019898775153754091, guid: f90927f99f3f9b24a988caf56167c738, type: 3}
+  m_Mesh: {fileID: -7019898775153754091, guid: df6edf2c46f6f804498fd59dfdd56a8d, type: 3}
 --- !u!4 &20558133
 Transform:
   m_ObjectHideFlags: 0
@@ -8648,7 +8648,7 @@ Transform:
   m_GameObject: {fileID: 550999915}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -27.86, y: 3.13, z: 4.8}
+  m_LocalPosition: {x: -22.137, y: 2.7519996, z: 4.8}
   m_LocalScale: {x: 1.8000002, y: 1.8, z: 1.8000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10794,7 +10794,8 @@ MonoBehaviour:
   lightColliders: []
   evidenceDialogues: []
   finalDialogueComponent: {fileID: 0}
-  finalDialogueEnd: {fileID: 0}
+  finalDialogueEndSuccess: {fileID: 0}
+  finalDialogueEndFail: {fileID: 0}
   dialogueUI: {fileID: 0}
 --- !u!4 &779014412
 Transform:
@@ -30016,7 +30017,7 @@ Transform:
   m_GameObject: {fileID: 2097603686}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -27.86, y: 2.5180006, z: 4.8}
+  m_LocalPosition: {x: -22.137, y: 2.210963, z: 4.8}
   m_LocalScale: {x: 1.4, y: 1.8, z: 1.8000002}
   m_ConstrainProportionsScale: 0
   m_Children:

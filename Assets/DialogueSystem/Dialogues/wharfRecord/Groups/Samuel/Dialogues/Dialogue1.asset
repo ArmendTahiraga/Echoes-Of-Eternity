@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Dialogue1
   m_EditorClassIdentifier: 
   dialogueName: Dialogue1
-  dialogueText: DSasdasd
+  dialogueText: What do you think of this? This is your confession. The moment you
+    sealed your fate.
   choices:
   - text: Next Dialogue
-    nextDialogue: {fileID: 11400000, guid: f81f6658f83c74c62bb2f3a266eba0a1, type: 2}
+    nextDialogue: {fileID: 11400000, guid: da36cf758c1ab4a268b135a83e4f4a7d, type: 2}
   dialogueType: 0
   isStartingDialogue: 1
-  uniqueID: 5c147ea3-6cac-425f-9530-b83a61bff86a
+  uniqueID: 6e4d03eb-5089-4765-a561-f6028ffadc1b

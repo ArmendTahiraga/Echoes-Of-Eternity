@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: encryptedHalf
+  m_EditorClassIdentifier: 
+  fileName: encryptedHalf
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: c580c6e59cd974eea8d1e8abde529c20, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f6fa3406d93394e2a938de6084e83960, type: 2}
+    - Key: {fileID: 11400000, guid: a2aa0904eb03a4d53ad2a2360e25ec8f, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e51ec24e5aa6044b8bd77a393634acbe, type: 2}
+    - Key: {fileID: 11400000, guid: 7a7125c3cab40419bbda78861469cb73, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 001c78f3834bb4d88a1fbac8a14e93fe, type: 2}
+  ungroupedDialogues: []

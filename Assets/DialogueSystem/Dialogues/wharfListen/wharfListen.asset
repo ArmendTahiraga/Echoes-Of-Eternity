@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: wharfListen
+  m_EditorClassIdentifier: 
+  fileName: wharfListen
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 1560d57f59f864e1a8265be50027a782, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 8f78cf4674a9f4388a3498e975a0d9cc, type: 2}
+      - {fileID: 11400000, guid: 48d7f8b530401439aae857f73cac6446, type: 2}
+    - Key: {fileID: 11400000, guid: bcf6b47e736f149b39c3ce8e58172b1a, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 1cbd88f91a7ca4672b6c3b5e4d803b5d, type: 2}
+    - Key: {fileID: 11400000, guid: 91e631f691fa147148931a53e21ca01a, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 6c83d233d74d14202b6a5b6ac4c22e11, type: 2}
+  ungroupedDialogues: []

@@ -12,7 +12,8 @@ public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private CapsuleCollider[] lightColliders;
     [SerializeField] private List<DSDialogueContainerSO> evidenceDialogues;
     [SerializeField] private DSDialogue finalDialogueComponent;
-    [SerializeField] private DSDialogueContainerSO finalDialogueEnd;
+    [SerializeField] private DSDialogueContainerSO finalDialogueEndSuccess;
+    [SerializeField] private DSDialogueContainerSO finalDialogueEndFail;
     [SerializeField] private DialogueUI dialogueUI;
 
     private void Start() {
@@ -33,6 +34,8 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("old_town", DinerGoToOldTown);
         ChoiceManager.Instance.RegisterChoiceEvent("bridge", DinerGoToBridge);
         ChoiceManager.Instance.RegisterChoiceEvent("nextEvidence", FinalNextEvidence);
+        ChoiceManager.Instance.RegisterChoiceEvent("success", FinalSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("fail", FinalFail);
         ChoiceManager.Instance.RegisterChoiceEvent("relatives_hint", GraveyardRelativesHint);
     }
 
@@ -172,8 +175,13 @@ public class ChoiceEventManager : MonoBehaviour {
                 }
             }
         }
+
+        if (ChoiceManager.Instance.GetCluePoints() >= 2) {
+            groupName = ChangeDialogue(finalDialogueEndSuccess);
+        } else {
+            groupName = ChangeDialogue(finalDialogueEndFail);
+        }
         
-        groupName = ChangeDialogue(finalDialogueEnd);
         dialogueUI.StartDialogue(groupName, finalDialogueComponent);
     }
 
@@ -194,5 +202,13 @@ public class ChoiceEventManager : MonoBehaviour {
 
     private void GraveyardRelativesHint() {
         ChoiceManager.Instance.AddClue("graveyardRelatives");
+    }
+
+    private void FinalSuccess() {
+        StartCoroutine(ChangeScene("DarkStorm", 1f));
+    }
+
+    private void FinalFail() {
+        StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 }

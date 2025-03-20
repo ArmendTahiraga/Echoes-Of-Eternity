@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: FinalConfrontationDialogueEndSuccess
+  m_EditorClassIdentifier: 
+  fileName: FinalConfrontationDialogueEndSuccess
+  groups:
+  - id: 89d074aa-9d99-4325-af1f-93a4295c0670
+    name: Vivian0Cross
+    position: {x: 150, y: 167}
+  - id: 993b11ad-b6e2-4c10-a4e6-cc29e01453e1
+    name: Chief0Drake
+    position: {x: 792, y: 466}
+  - id: d5fe7230-0de7-4250-92de-b12a980325af
+    name: Samuel
+    position: {x: 2719, y: 826}
+  nodes:
+  - id: c983fefe-7150-46fb-a06a-04671ee5e8bf
+    name: Dialogue1
+    text: "And what do you think this will accomplish, detective? You think we haven\u2019t
+      buried men for less?"
+    choices:
+    - text: Next Dialogue
+      nodeId: 87d3147d-50da-4310-bdb8-590cd9c87292
+    groupId: 89d074aa-9d99-4325-af1f-93a4295c0670
+    dialogueType: 0
+    position: {x: 175, y: 225.5}
+  - id: 87d3147d-50da-4310-bdb8-590cd9c87292
+    name: Dialogue2
+    text: "You don\u2019t understand the game you\u2019re playing, Rowe."
+    choices:
+    - text: This is enough to take you both down. Surrender now.
+      nodeId: 51d502b0-74b4-4bbe-9fa6-aefe258b42c0
+    - text: "The press, the police, the public\u2014they\u2019ll all know."
+      nodeId: 51d502b0-74b4-4bbe-9fa6-aefe258b42c0
+    groupId: 993b11ad-b6e2-4c10-a4e6-cc29e01453e1
+    dialogueType: 1
+    position: {x: 817, y: 524.5}
+  - id: 51d502b0-74b4-4bbe-9fa6-aefe258b42c0
+    name: Dialogue3
+    text: "Damn it, Vivian\u2026 "
+    choices:
+    - text: This is your last chance. Surrender.
+      nodeId: 1855bf12-b05c-44dd-b681-ac56260ff34e
+    - text: "The evidence is enough. You\u2019re done."
+      nodeId: 1855bf12-b05c-44dd-b681-ac56260ff34e
+    groupId: 993b11ad-b6e2-4c10-a4e6-cc29e01453e1
+    dialogueType: 1
+    position: {x: 1552.5, y: 524.5}
+  - id: 1855bf12-b05c-44dd-b681-ac56260ff34e
+    name: Dialogue4
+    text: "You bastard\u2026 you really think arresting us changes anything."
+    choices:
+    - text: Next Dialogue
+      nodeId: ce75963e-ac30-4462-8380-afc1b4d0d95c
+    groupId: 993b11ad-b6e2-4c10-a4e6-cc29e01453e1
+    dialogueType: 0
+    position: {x: 2102, y: 524.5}
+  - id: ce75963e-ac30-4462-8380-afc1b4d0d95c
+    name: Dialogue5
+    text: "I don\u2019t think. I know."
+    choices:
+    - text: Next Dialogue
+      nodeId: 98db3aed-abaa-4da7-bccf-292d0056cc14
+    groupId: d5fe7230-0de7-4250-92de-b12a980325af
+    dialogueType: 0
+    position: {x: 2744, y: 884.5}
+  - id: 98db3aed-abaa-4da7-bccf-292d0056cc14
+    name: Dialogue6
+    text: Dispatch, this is Detective Rowe. I have two suspects in custody at the
+      old dungeon. Requesting immediate squad car assistance for transport. Over.
+    choices:
+    - text: Next Dialogue
+      nodeId: 9544bd70-dc18-4e23-9660-41fbcaf58ce6
+    groupId: d5fe7230-0de7-4250-92de-b12a980325af
+    dialogueType: 0
+    position: {x: 3068.5, y: 884.5}
+  - id: 9544bd70-dc18-4e23-9660-41fbcaf58ce6
+    name: Dialogue7
+    text: "You\u2019ve only won today, detective. The is just beginning."
+    choices:
+    - text: Next Dialogue\final\success
+      nodeId: 
+    groupId: 89d074aa-9d99-4325-af1f-93a4295c0670
+    dialogueType: 1
+    position: {x: 3710.5, y: 229.5}
+  oldGroupNames:
+  - Vivian0Cross
+  - Chief0Drake
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue1
+      - Dialogue7
+    - Key: Chief0Drake
+      Value:
+      - Dialogue2
+      - Dialogue3
+      - Dialogue4
+    - Key: Samuel
+      Value:
+      - Dialogue5
+      - Dialogue6

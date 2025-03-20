@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: bridgeDa
+  m_EditorClassIdentifier: 
+  fileName: bridgeDa
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 8713f00061f08482b8ea587309effaa5, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 2dec45e6f31264327a95069f38af4f22, type: 2}
+    - Key: {fileID: 11400000, guid: 65d08765c19924a3890f2cb8c16915ff, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f913980fdb23742a9a111cfcfbe9cf37, type: 2}
+    - Key: {fileID: 11400000, guid: 8f57e7985064b41559e5ec13f1423c61, type: 2}
+      Value:
+      - {fileID: 11400000, guid: d4426870bb6604df29187325ba17cbb6, type: 2}
+  ungroupedDialogues: []

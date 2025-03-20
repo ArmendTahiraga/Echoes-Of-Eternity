@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: wharfConfront
+  m_EditorClassIdentifier: 
+  fileName: wharfConfront
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 6d93a96636bef474c9b349cd37a74880, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 6867ae2f8c0384b47b0222e16247c1ad, type: 2}
+    - Key: {fileID: 11400000, guid: ce00b26108746433084865d238429ec0, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f77222f6a05524040997ab232ddc9105, type: 2}
+    - Key: {fileID: 11400000, guid: bd9a79b803942498aaa3416e490a631a, type: 2}
+      Value:
+      - {fileID: 11400000, guid: baa7d7ac1072b4cf5a5991129014a83e, type: 2}
+  ungroupedDialogues: []

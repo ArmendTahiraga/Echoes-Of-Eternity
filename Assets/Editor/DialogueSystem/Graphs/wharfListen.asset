@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: wharfListen
+  m_EditorClassIdentifier: 
+  fileName: wharfListen
+  groups:
+  - id: c4257f8f-172a-47d9-8ab0-442fbc0f3baf
+    name: Samuel
+    position: {x: -170.50003, y: 193.50003}
+  - id: a98a60a0-f374-49f6-9061-36f9e3142ef3
+    name: Chief0Drake
+    position: {x: 471.49997, y: 506.5}
+  - id: b588d199-9e57-4831-9a2e-d4b5a25a94ed
+    name: Vivian0Cross
+    position: {x: 1113.5, y: 826.5}
+  nodes:
+  - id: 22aec6b1-1789-4244-a770-2394454f2f5f
+    name: Dialogue1
+    text: "I stayed in the shadows, listened to your little dockside deal. You and
+      Crowe made it clear\u2014bribes, smuggling, cleaning up \u2018loose ends.\u2019
+      If you think that detective you had killed was just a minor inconvenience,
+      think again."
+    choices:
+    - text: Next Dialogue
+      nodeId: 57190ff5-8346-4117-8f22-8db8ade01da4
+    groupId: c4257f8f-172a-47d9-8ab0-442fbc0f3baf
+    dialogueType: 0
+    position: {x: -145.5, y: 275.5}
+  - id: 57190ff5-8346-4117-8f22-8db8ade01da4
+    name: Dialogue2
+    text: You heard a conversation. Out of context. Meaningless.
+    choices:
+    - text: Next Dialogue
+      nodeId: 94afc633-5e51-4dfe-891d-53ee8c97ca38
+    groupId: a98a60a0-f374-49f6-9061-36f9e3142ef3
+    dialogueType: 0
+    position: {x: 496.5, y: 565}
+  - id: 94afc633-5e51-4dfe-891d-53ee8c97ca38
+    name: Dialogue3
+    text: "I suggest you think carefully before making baseless accusations, Samuel.
+      Words can be twisted, and you\u2019ve always had a flair for dramatic ones."
+    choices:
+    - text: Next Dialogue
+      nodeId: 2615ae08-80e0-4f61-b9ea-b4d13898e74f
+    groupId: b588d199-9e57-4831-9a2e-d4b5a25a94ed
+    dialogueType: 0
+    position: {x: 1138.5, y: 885}
+  - id: 2615ae08-80e0-4f61-b9ea-b4d13898e74f
+    name: Dialogue4
+    text: You can talk all you want but this is still incriminating evidence.
+    choices:
+    - text: Next Dialogue\final\nextEvidence
+      nodeId: 
+    groupId: c4257f8f-172a-47d9-8ab0-442fbc0f3baf
+    dialogueType: 1
+    position: {x: 1780.5, y: 252}
+  oldGroupNames:
+  - Samuel
+  - Chief0Drake
+  - Vivian0Cross
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue1
+      - Dialogue4
+    - Key: Chief0Drake
+      Value:
+      - Dialogue2
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue3

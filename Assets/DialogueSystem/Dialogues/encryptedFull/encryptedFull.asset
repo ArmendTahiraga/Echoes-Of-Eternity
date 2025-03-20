@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: encryptedFull
+  m_EditorClassIdentifier: 
+  fileName: encryptedFull
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 64bb164dbc8f94d3eb50aaa3fb77df97, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 578127d0144b848ff811bb6135915cca, type: 2}
+    - Key: {fileID: 11400000, guid: 7627391752cad4a0197f91e02f4803df, type: 2}
+      Value:
+      - {fileID: 11400000, guid: f0a9432f743244852a5f04914d906514, type: 2}
+    - Key: {fileID: 11400000, guid: adb221280b1ca4663ae4aa15d2981cc9, type: 2}
+      Value:
+      - {fileID: 11400000, guid: 09c10bccf2fe145648baed02e35cc577, type: 2}
+  ungroupedDialogues: []

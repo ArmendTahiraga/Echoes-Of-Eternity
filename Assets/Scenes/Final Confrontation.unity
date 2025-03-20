@@ -3639,7 +3639,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 457eed9486f3f4c8dad36bab743fac31, type: 2}
   - {fileID: 11400000, guid: 84a37d8fdef6d4d1ca1e185b1a3cfd64, type: 2}
   finalDialogueComponent: {fileID: 1370595574}
-  finalDialogueEnd: {fileID: 11400000, guid: e9770acc5a72b48cf8bcbf86411f8f18, type: 2}
+  finalDialogueEndSuccess: {fileID: 11400000, guid: b0d6635c391ec4f768ae0ca986e8565f, type: 2}
+  finalDialogueEndFail: {fileID: 11400000, guid: cccd6ef76bb104fc9beca297d90c12df, type: 2}
   dialogueUI: {fileID: 516079006}
 --- !u!4 &728620001
 Transform:
@@ -11484,9 +11485,9 @@ Transform:
   m_GameObject: {fileID: 1771538418}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.237, y: 1.32, z: -9.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -6.237, y: 1.301, z: -9.3}
+  m_LocalScale: {x: 0.90000004, y: 0.90000004, z: 0.90000004}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1881505374}
   - {fileID: 141869912}

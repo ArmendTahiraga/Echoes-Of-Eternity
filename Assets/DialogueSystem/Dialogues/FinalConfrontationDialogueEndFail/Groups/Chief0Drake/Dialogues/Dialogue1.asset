@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue1
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue1
+  dialogueText: "You poor bastard. You really thought you\u2019d have enough evidence
+    to arrest us?"
+  choices:
+  - text: Next Dialogue
+    nextDialogue: {fileID: 11400000, guid: 8b34a56f7f8264e37a0453fe01ef3421, type: 2}
+  dialogueType: 0
+  isStartingDialogue: 1
+  uniqueID: 69626bbe-cad9-4bb0-b46e-240c010fe03f

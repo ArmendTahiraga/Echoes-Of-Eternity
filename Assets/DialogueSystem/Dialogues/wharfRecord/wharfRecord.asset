@@ -18,7 +18,10 @@ MonoBehaviour:
     - Key: {fileID: 11400000, guid: 225b3ff706030466293a6d0bf6880e12, type: 2}
       Value:
       - {fileID: 11400000, guid: 26802404917d04292aa2cb050dec30e8, type: 2}
-    - Key: {fileID: 11400000, guid: a0701caee0437411c91c4342feafadf8, type: 2}
+    - Key: {fileID: 11400000, guid: 252aa6606e36e44538c9e9dce569ae14, type: 2}
       Value:
-      - {fileID: 11400000, guid: f81f6658f83c74c62bb2f3a266eba0a1, type: 2}
+      - {fileID: 11400000, guid: da36cf758c1ab4a268b135a83e4f4a7d, type: 2}
+    - Key: {fileID: 11400000, guid: 38907896559794baa9355d6dae379a3f, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e2007311140cf495eb2cf9f8f462ac32, type: 2}
   ungroupedDialogues: []

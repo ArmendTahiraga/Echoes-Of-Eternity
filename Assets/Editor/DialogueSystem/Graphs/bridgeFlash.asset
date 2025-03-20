@@ -16,38 +16,57 @@ MonoBehaviour:
   groups:
   - id: e2945374-d508-4208-b68e-c617045c2a26
     name: Samuel
-    position: {x: 115.00008, y: 171.00008}
+    position: {x: 115.00002, y: 171}
   - id: 1242c552-4740-4802-b44d-8277383fbe6d
-    name: Chief
-    position: {x: 459, y: 326}
+    name: Vivian0Cross
+    position: {x: 1500, y: 775}
+  - id: b4cc1992-6497-4a7a-a213-503d1c986792
+    name: Chief0Drake
+    position: {x: 858, y: 458}
   nodes:
+  - id: 28eedfe8-f4ca-4a62-8abb-939d048946ad
+    name: Dialogue1
+    text: "This is it. The final nail in your coffin. Every lie, every bribe, every
+      crime linked back to you, Vivian. I wonder\u2026 how will the world react when
+      they see the real mastermind behind all this?"
+    choices:
+    - text: Next Dialogue
+      nodeId: c5d361e8-eae9-4ec1-ad82-91896eb6867d
+    groupId: e2945374-d508-4208-b68e-c617045c2a26
+    dialogueType: 0
+    position: {x: 140, y: 229.5}
+  - id: c5d361e8-eae9-4ec1-ad82-91896eb6867d
+    name: Dialogue2
+    text: "You\u2026 you set me up, didn\u2019t you? You were always planning to
+      cut me loose!"
+    choices:
+    - text: Next Dialogue
+      nodeId: 93ac4ef5-a96c-431b-b102-d4e16787517c
+    groupId: b4cc1992-6497-4a7a-a213-503d1c986792
+    dialogueType: 0
+    position: {x: 883, y: 516.5}
   - id: 93ac4ef5-a96c-431b-b102-d4e16787517c
-    name: DialogueName
-    text: dasdadad
+    name: Dialogue3
+    text: Damn it, Samuel!
     choices:
     - text: Next Dialogue\final\nextEvidence
       nodeId: 
     groupId: 1242c552-4740-4802-b44d-8277383fbe6d
     dialogueType: 1
-    position: {x: 484, y: 384.5}
-  - id: 28eedfe8-f4ca-4a62-8abb-939d048946ad
-    name: Dialogue1
-    text: bdrige
-    choices:
-    - text: Next Dialogue
-      nodeId: 93ac4ef5-a96c-431b-b102-d4e16787517c
-    groupId: e2945374-d508-4208-b68e-c617045c2a26
-    dialogueType: 0
-    position: {x: 140, y: 229.5}
+    position: {x: 1525, y: 833.5}
   oldGroupNames:
   - Samuel
-  - Chief
+  - Vivian0Cross
+  - Chief0Drake
   oldUngroupedNames: []
   oldGroupedNames:
     list:
-    - Key: Chief
-      Value:
-      - DialogueName
     - Key: Samuel
       Value:
       - Dialogue1
+    - Key: Chief0Drake
+      Value:
+      - Dialogue2
+    - Key: Vivian0Cross
+      Value:
+      - Dialogue3
