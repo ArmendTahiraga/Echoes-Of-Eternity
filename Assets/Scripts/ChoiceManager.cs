@@ -23,9 +23,10 @@ public class ChoiceManager : MonoBehaviour {
         string choicesFile = Path.Combine(Application.dataPath, "Story/GameChoices.json");
         string choicesJson = File.ReadAllText(choicesFile);
         GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(choicesJson);
+        gameChoices.Add("graveyard", choicesData.graveyard);
+        gameChoices.Add("diner", choicesData.diner);
         gameChoices.Add("warf", choicesData.warf);
         gameChoices.Add("bridge", choicesData.bridge);
-        gameChoices.Add("diner", choicesData.diner);
         gameChoices.Add("final", choicesData.final);
         
         string cluesFile = Path.Combine(Application.dataPath, "Story/Clues.json");

@@ -16,8 +16,8 @@ MonoBehaviour:
   dialogueText: "I hope you\u2019re right, Uncle. I just wish\u2026 I wish I\u2019d
     told him that, before it was too late."
   choices:
-  - text: Next Dialogue
+  - text: Next Dialogue\graveyard\relatives_hint
     nextDialogue: {fileID: 0}
-  dialogueType: 0
+  dialogueType: 1
   isStartingDialogue: 0
-  uniqueID: 689ffc06-48c4-4f34-910b-7dc606b5a432
+  uniqueID: fc7c0a71-19ae-4eda-93aa-5474c8702300

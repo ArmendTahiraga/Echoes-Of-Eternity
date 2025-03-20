@@ -7601,6 +7601,10 @@ MonoBehaviour:
   deathScreenCanvasAnimator: {fileID: 0}
   gameUI: {fileID: 0}
   lightColliders: []
+  evidenceDialogues: []
+  finalDialogueComponent: {fileID: 0}
+  finalDialogueEnd: {fileID: 0}
+  dialogueUI: {fileID: 0}
 --- !u!1001 &562192177
 PrefabInstance:
   m_ObjectHideFlags: 0

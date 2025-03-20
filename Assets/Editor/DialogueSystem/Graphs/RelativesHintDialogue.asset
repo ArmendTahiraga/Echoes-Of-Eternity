@@ -143,19 +143,19 @@ MonoBehaviour:
       just another unsolved tragedy in this city."
     choices:
     - text: Next Dialogue
-      nodeId: 0fd723f9-b444-4a9c-9793-a74dedcaa7d0
+      nodeId: 25dd4224-f5db-4ace-a33d-b05acd30b566
     groupId: 687ebf5f-d6d9-4c39-9d67-20fbb1a7a8ea
     dialogueType: 0
     position: {x: 7195.5, y: 74.5}
-  - id: 0fd723f9-b444-4a9c-9793-a74dedcaa7d0
+  - id: 25dd4224-f5db-4ace-a33d-b05acd30b566
     name: Dialogue13
     text: "I hope you\u2019re right, Uncle. I just wish\u2026 I wish I\u2019d told
       him that, before it was too late."
     choices:
-    - text: Next Dialogue
+    - text: Next Dialogue\graveyard\relatives_hint
       nodeId: 
     groupId: 687c128e-1b3b-49a0-b1d1-59494235d6cf
-    dialogueType: 0
+    dialogueType: 1
     position: {x: 7837.5, y: 519}
   oldGroupNames:
   - Relative01

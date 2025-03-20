@@ -33,6 +33,7 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("old_town", DinerGoToOldTown);
         ChoiceManager.Instance.RegisterChoiceEvent("bridge", DinerGoToBridge);
         ChoiceManager.Instance.RegisterChoiceEvent("nextEvidence", FinalNextEvidence);
+        ChoiceManager.Instance.RegisterChoiceEvent("relatives_hint", GraveyardRelativesHint);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -189,5 +190,9 @@ public class ChoiceEventManager : MonoBehaviour {
         }
         
         return null;
+    }
+
+    private void GraveyardRelativesHint() {
+        ChoiceManager.Instance.AddClue("graveyardRelatives");
     }
 }

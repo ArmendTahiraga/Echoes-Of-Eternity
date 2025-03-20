@@ -1,4 +1,7 @@
 {
+  "graveyard": [
+    "relatives_hint"
+  ],
   "warf": [
     "choice_recordConversation",
     "choice_listenFromDistance",
