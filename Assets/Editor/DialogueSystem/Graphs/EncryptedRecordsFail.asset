@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: EncryptedRecordsFail
+  m_EditorClassIdentifier: 
+  fileName: EncryptedRecordsFail
+  groups:
+  - id: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    name: Samuel
+    position: {x: 273.64, y: 107.5}
+  nodes:
+  - id: 7c8f1c8c-6aa3-41d5-9ee6-6ea8e4f7df5f
+    name: Dialogue1
+    text: "No, no\u2026 I needed more time. The files\u2014most of them are still
+      in there."
+    choices:
+    - text: Next Dialogue
+      nodeId: 38a02e16-f9b6-45d6-81aa-623bafe0dbe3
+    groupId: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    dialogueType: 0
+    position: {x: 298.5, y: 166}
+  - id: 38a02e16-f9b6-45d6-81aa-623bafe0dbe3
+    name: Dialogue2
+    text: "Damn it. I came all this way for scraps. This won\u2019t be enough to
+      bring them down."
+    choices:
+    - text: Next Dialogue\encrypted\fail
+      nodeId: 
+    groupId: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    dialogueType: 1
+    position: {x: 1066, y: 166}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue1
+      - Dialogue2

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5751925e38c574f098942543d1385857, type: 3}
+  m_Name: Dialogue2
+  m_EditorClassIdentifier: 
+  dialogueName: Dialogue2
+  dialogueText: "I can\u2019t risk another second. If I stay, I lose what I have\u2014and
+    my life along with it."
+  choices:
+  - text: Next Dialogue\encrypted\encrypted_partial
+    nextDialogue: {fileID: 0}
+  dialogueType: 1
+  isStartingDialogue: 0
+  uniqueID: ac2ad556-4554-4c10-a54a-0e78f26e6f95

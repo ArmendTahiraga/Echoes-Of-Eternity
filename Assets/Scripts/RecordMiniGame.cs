@@ -85,6 +85,10 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     public NPCInteractable GetFailInteractable() {
         return failInteractable;
     }
+
+    public NPCInteractable GetPartialInteractable() {
+        return null;
+    }
     
     private void ShowNextKey() {
         if (keysPressed >= keysToPress) {

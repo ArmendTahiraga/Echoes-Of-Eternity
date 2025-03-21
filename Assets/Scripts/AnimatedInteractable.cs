@@ -7,7 +7,6 @@ public class AnimatedInteractable : MonoBehaviour, Interactable {
 
     public void Interact() {
         for (int i = 0; i < animationTriggers.Length; i++) {
-            Debug.Log(animationTriggers[i]);
             animators[i].SetTrigger(animationTriggers[i]);
         }
     }

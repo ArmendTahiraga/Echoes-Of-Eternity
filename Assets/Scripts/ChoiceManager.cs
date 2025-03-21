@@ -26,6 +26,7 @@ public class ChoiceManager : MonoBehaviour {
         gameChoices.Add("graveyard", choicesData.graveyard);
         gameChoices.Add("diner", choicesData.diner);
         gameChoices.Add("warf", choicesData.warf);
+        gameChoices.Add("encrypted", choicesData.encrypted);
         gameChoices.Add("bridge", choicesData.bridge);
         gameChoices.Add("final", choicesData.final);
         
@@ -33,9 +34,6 @@ public class ChoiceManager : MonoBehaviour {
         string cluesJson = File.ReadAllText(cluesFile);
         GameCluesData cluesData = JsonUtility.FromJson<GameCluesData>(cluesJson);
         clues = cluesData.clues;
-        
-        cluesGathered.Add("wharfRecord");
-        cluesGathered.Add("bridgeFlash");
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {
@@ -55,7 +53,7 @@ public class ChoiceManager : MonoBehaviour {
         cluesGathered.Add(clue);
     }
 
-    public float CalculateCluePoints() {
+    public void CalculateCluePoints() {
         cluePoints = 0;
         
         foreach (ClueData clue in clues) {
@@ -65,8 +63,6 @@ public class ChoiceManager : MonoBehaviour {
                 }    
             }
         }
-        
-        return cluePoints;
     }
 
     public List<string> GetCluesGathered() {

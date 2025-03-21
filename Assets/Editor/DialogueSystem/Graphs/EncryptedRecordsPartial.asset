@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: EncryptedRecordsPartial
+  m_EditorClassIdentifier: 
+  fileName: EncryptedRecordsPartial
+  groups:
+  - id: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    name: Samuel
+    position: {x: -50.36, y: 103.5}
+  nodes:
+  - id: 38a02e16-f9b6-45d6-81aa-623bafe0dbe3
+    name: Dialogue2
+    text: "I can\u2019t risk another second. If I stay, I lose what I have\u2014and
+      my life along with it."
+    choices:
+    - text: Next Dialogue\encrypted\partial
+      nodeId: 
+    groupId: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    dialogueType: 1
+    position: {x: 742, y: 162}
+  - id: 7c8f1c8c-6aa3-41d5-9ee6-6ea8e4f7df5f
+    name: Dialogue1
+    text: "Damn it. There was more, but I couldn\u2019t crack it all. Still, this
+      might be enough to shake them."
+    choices:
+    - text: Next Dialogue
+      nodeId: 38a02e16-f9b6-45d6-81aa-623bafe0dbe3
+    groupId: c710f6fd-7a02-4816-aaef-eab8af18d10f
+    dialogueType: 0
+    position: {x: -25.5, y: 162}
+  oldGroupNames:
+  - Samuel
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Samuel
+      Value:
+      - Dialogue2
+      - Dialogue1

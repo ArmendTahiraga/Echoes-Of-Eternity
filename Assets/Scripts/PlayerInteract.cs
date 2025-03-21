@@ -31,6 +31,12 @@ public class PlayerInteract : MonoBehaviour {
                     GetComponent<PlayerMovement>().isPlayerMoving = false;
                     GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
                     break;
+                case "Partial":
+                    Interactable partialInteractable = miniGame.GetComponent<MiniGame>().GetPartialInteractable();
+                    partialInteractable?.Interact();
+                    GetComponent<PlayerMovement>().isPlayerMoving = false;
+                    GameObject.Find("PlayerCam").GetComponent<PlayerCam>().lockCamera = true;
+                    break;
             }   
         }
     }

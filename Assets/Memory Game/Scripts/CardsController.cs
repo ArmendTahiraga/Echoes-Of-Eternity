@@ -10,12 +10,12 @@ public class CardsController : MonoBehaviour, MiniGame {
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private TextMeshProUGUI countText;
     [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private TextMeshProUGUI headerText;
     [SerializeField] private GameObject memoryGameCanvas;
     [SerializeField] private NPCInteractable successInteractable;
     [SerializeField] private NPCInteractable failInteractable;
+    [SerializeField] private NPCInteractable partialInteractable;
     private List<Sprite> spritePairs;
     private Card firstSelected;
     private Card secondSelected;
@@ -33,7 +33,6 @@ public class CardsController : MonoBehaviour, MiniGame {
         CreateCards();
         totalPairs = sprites.Length;
         StartCoroutine(TimerCountdown());
-        gameOverPanel.SetActive(false);
     }
 
     public bool GetHasMiniGameStarted() {
@@ -54,6 +53,10 @@ public class CardsController : MonoBehaviour, MiniGame {
     
     public NPCInteractable GetFailInteractable() {
         return failInteractable;
+    }
+
+    public NPCInteractable GetPartialInteractable() {
+        return partialInteractable;
     }
     
     private void PrepareSprites() {
@@ -130,30 +133,15 @@ public class CardsController : MonoBehaviour, MiniGame {
 
     private void EndGame() {
         hasMiniGameStarted = false;
-        gameOverPanel.SetActive(true);
         memoryGameCanvas.SetActive(false);
         GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enableCursor = false;
 
-        if (matchCounts >= 6)
-        {
-            headerText.text = "SUCCESS";
-            gameOverText.text = "You matched " + matchCounts + " pairs!\nYou get all the needed documents!";
+        if (matchCounts >= 6) {
             miniGameResult = "Success";
         } else if (matchCounts >= 3) {
-            headerText.text = "PARTIAL SUCCESS";
-            gameOverText.text = "You matched " + matchCounts + " pairs!\nYou only get part of the documents.";
             miniGameResult = "Partial";
         } else {
-            headerText.text = "FAILURE";
-            gameOverText.text = "You matched " + matchCounts + " pairs.\nYou don’t get the needed documents.";
             miniGameResult = "Fail";
         }
-
-        if (successInteractable != null)
-            successInteractable.gameObject.SetActive(false);
-        if (failInteractable != null)
-            failInteractable.gameObject.SetActive(false);
     }
-    
-
 }

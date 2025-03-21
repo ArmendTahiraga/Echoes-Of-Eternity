@@ -37,6 +37,9 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("success", FinalSuccess);
         ChoiceManager.Instance.RegisterChoiceEvent("fail", FinalFail);
         ChoiceManager.Instance.RegisterChoiceEvent("relatives_hint", GraveyardRelativesHint);
+        ChoiceManager.Instance.RegisterChoiceEvent("encrypted_success", EncryptedSuccess);
+        ChoiceManager.Instance.RegisterChoiceEvent("encrypted_partial", EncryptedPartial);
+        ChoiceManager.Instance.RegisterChoiceEvent("encrypted_fail", EncryptedFail);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -210,5 +213,19 @@ public class ChoiceEventManager : MonoBehaviour {
 
     private void FinalFail() {
         StartCoroutine(ChangeScene("DarkStorm", 1f));
+    }
+
+    private void EncryptedSuccess() {
+        ChoiceManager.Instance.AddClue("encryptedFull");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+    
+    private void EncryptedPartial() {
+        ChoiceManager.Instance.AddClue("encryptedHalf");
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+    
+    private void EncryptedFail() {
+        StartCoroutine(ChangeScene("Final Confrontation", 1f));
     }
 }

@@ -28,5 +28,10 @@
     "nextEvidence",
     "success",
     "fail"
+  ],
+  "encrypted": [
+    "encrypted_success",
+    "encrypted_partial",
+    "encrypted_fail"
   ]
 }

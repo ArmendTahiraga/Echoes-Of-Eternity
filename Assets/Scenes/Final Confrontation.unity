@@ -2083,8 +2083,9 @@ GameObject:
   - component: {fileID: 345314802}
   - component: {fileID: 345314801}
   - component: {fileID: 345314800}
+  - component: {fileID: 345314803}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: QuestionIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2199,6 +2200,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &345314803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345314798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
+  hasImage: 1
+  isText: 0
 --- !u!1 &360424012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8339808811228103237, guid: 977a311c9abae2340b782c4b70b3b42a, type: 3}
@@ -10745,6 +10761,7 @@ GameObject:
   - component: {fileID: 1645274718}
   - component: {fileID: 1645274720}
   - component: {fileID: 1645274719}
+  - component: {fileID: 1645274721}
   m_Layer: 5
   m_Name: ObjectiveContainer
   m_TagString: Untagged
@@ -10793,7 +10810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a8292d7c3170a7348accf3d85c0e7359, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4fde6e0b21dc224d813ee493157874f, type: 3}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10811,6 +10828,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645274717}
   m_CullTransparentMesh: 1
+--- !u!114 &1645274721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645274717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
+  hasImage: 1
+  isText: 0
 --- !u!1 &1659653553
 GameObject:
   m_ObjectHideFlags: 0
@@ -11639,6 +11671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   miniGame: {fileID: 0}
+  interactRange: 2
 --- !u!114 &1771538423
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,4 +5,5 @@ public interface MiniGame {
     string GetMiniGameResult();
     NPCInteractable GetSuccessInteractable();
     NPCInteractable GetFailInteractable();
+    NPCInteractable GetPartialInteractable();
 }
