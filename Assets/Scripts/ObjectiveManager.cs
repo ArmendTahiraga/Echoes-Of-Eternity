@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectiveManager : MonoBehaviour {
     [SerializeField] private TextMeshProUGUI objectiveText;
+    [SerializeField] private GameObject objectiveContainer;
     public List<Objective> objectives;
     public Objective currentObjective;
     public bool loadGameChanges;
@@ -52,7 +53,7 @@ public class ObjectiveManager : MonoBehaviour {
     }
 
     private void CompletedObjectives() {
-        objectiveText.gameObject.SetActive(false);
+        objectiveContainer.SetActive(false);
         currentObjective = null;
     }
 
