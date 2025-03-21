@@ -7,6 +7,7 @@ public class AnimatedInteractable : MonoBehaviour, Interactable {
 
     public void Interact() {
         for (int i = 0; i < animationTriggers.Length; i++) {
+            Debug.Log(animationTriggers[i]);
             animators[i].SetTrigger(animationTriggers[i]);
         }
     }
@@ -16,6 +17,7 @@ public class AnimatedInteractable : MonoBehaviour, Interactable {
     }
 
     public Transform GetTransform() {
+        Debug.Log(transform.rotation.eulerAngles);
         return transform;
     }
 }

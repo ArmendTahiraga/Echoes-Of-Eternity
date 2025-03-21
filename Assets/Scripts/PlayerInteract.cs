@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerInteract : MonoBehaviour {
     [SerializeField] private GameObject miniGame;
+    [SerializeField] private float interactRange = 2f;
     
     public void Update() { // Made it late update to see if it fixes the animation teleport glitch
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
@@ -36,7 +37,6 @@ public class PlayerInteract : MonoBehaviour {
 
     public Interactable GetInteractable() {
         List<Interactable> interactableList = new List<Interactable>();
-        float interactRange = 2f;
         Collider[] colliders = Physics.OverlapSphere(transform.position, interactRange);
 
         foreach (Collider collider in colliders) {
