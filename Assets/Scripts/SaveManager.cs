@@ -37,6 +37,7 @@ public class SaveManager : MonoBehaviour {
         objectiveManager.Save(ref saveData.objectivesSaveData);
         dialogueUI.Save(ref saveData.dialogueSaveData);
         playerCam.Save(ref saveData.playerCamSaveData);
+        ChoiceManager.Instance.Save(ref saveData.choiceData);
     }
 
     public void LoadGame() {
@@ -71,8 +72,10 @@ public class SaveManager : MonoBehaviour {
         playerMovement.Load(saveData.playerSaveData);
         objectiveManager.loadGameChanges = true;
         objectiveManager.Load(saveData.objectivesSaveData);
+        MonologueInteractable.loadGameChanges = true;
         dialogueUI.Load(saveData.dialogueSaveData);
         playerCam.Load(saveData.playerCamSaveData);
+        ChoiceManager.Instance.Load(saveData.choiceData);
     }
 
     public void DeleteSaveData() {

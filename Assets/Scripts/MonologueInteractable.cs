@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using DS;
 using UnityEngine;
@@ -10,7 +11,12 @@ public class MonologueInteractable : MonoBehaviour {
     [SerializeField] private bool isOneTime;
     [SerializeField] private bool hasBeenPlayed;
     [SerializeField] private float delay;
-    
+    public static bool loadGameChanges;
+
+    private void Update() {
+        loadGameChanges = false;
+    }
+
     private IEnumerator PlayMonologue() {
         yield return new WaitForSeconds(delay);
         Interact();
@@ -25,7 +31,7 @@ public class MonologueInteractable : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player")) {
-            if (isOneTime && !hasBeenPlayed) {
+            if (isOneTime && !hasBeenPlayed && !loadGameChanges) {
                 StartCoroutine(PlayMonologue());
             }
         }

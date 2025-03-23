@@ -5,4 +5,5 @@ public struct SaveData {
     public ObjectivesSaveData objectivesSaveData;
     public DialogueSaveData dialogueSaveData;
     public PlayerCamSaveData playerCamSaveData;
+    public ChoiceData choiceData;
 }

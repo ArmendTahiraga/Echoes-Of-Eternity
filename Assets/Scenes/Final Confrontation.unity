@@ -3508,6 +3508,7 @@ MonoBehaviour:
   finalDialogueEndSuccess: {fileID: 11400000, guid: b0d6635c391ec4f768ae0ca986e8565f, type: 2}
   finalDialogueEndFail: {fileID: 11400000, guid: cccd6ef76bb104fc9beca297d90c12df, type: 2}
   dialogueUI: {fileID: 516079006}
+  gameOverPanel: {fileID: 0}
 --- !u!4 &728620001
 Transform:
   m_ObjectHideFlags: 0
@@ -5042,6 +5043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 654e7abfd5c1344fc843b34c292a69e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameResult: 
 --- !u!4 &1053119764
 Transform:
   m_ObjectHideFlags: 0
@@ -7856,7 +7858,7 @@ MonoBehaviour:
   animationTriggers: []
   animators: []
   objective: {fileID: 1370595575}
-  isOneTime: 1
+  isOneTime: 0
   hasBeenInteracted: 0
 --- !u!65 &1370595577
 BoxCollider:
