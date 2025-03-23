@@ -10,6 +10,7 @@ public class ChoiceManager : MonoBehaviour {
     private List<string> cluesGathered = new List<string>();
     private List<ClueData> clues = new List<ClueData>();
     private float cluePoints;
+    public string gameResult;
     
     private void Awake() {
         if (Instance != null && Instance != this) {
@@ -75,5 +76,9 @@ public class ChoiceManager : MonoBehaviour {
 
     public float GetCluePoints() {
         return cluePoints;
+    }
+
+    public void ResetCluesGathered() {
+        cluesGathered.Clear();
     }
 }

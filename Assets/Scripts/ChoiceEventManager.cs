@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DS;
 using DS.ScriptableObjects;
+using TMPro;
 using UnityEngine;
 
 public class ChoiceEventManager : MonoBehaviour {
@@ -15,6 +16,7 @@ public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private DSDialogueContainerSO finalDialogueEndSuccess;
     [SerializeField] private DSDialogueContainerSO finalDialogueEndFail;
     [SerializeField] private DialogueUI dialogueUI;
+    [SerializeField] private GameObject gameOverPanel;
 
     private void Start() {
         ChoiceManager.Instance.RegisterChoiceEvent("choice_recordConversation", WarfRecordConversation);
@@ -40,6 +42,8 @@ public class ChoiceEventManager : MonoBehaviour {
         ChoiceManager.Instance.RegisterChoiceEvent("encrypted_success", EncryptedSuccess);
         ChoiceManager.Instance.RegisterChoiceEvent("encrypted_partial", EncryptedPartial);
         ChoiceManager.Instance.RegisterChoiceEvent("encrypted_fail", EncryptedFail);
+        ChoiceManager.Instance.RegisterChoiceEvent("game_success", GraveyardEnding);
+        ChoiceManager.Instance.RegisterChoiceEvent("game_fail", GraveyardEnding);
     }
 
     private void ChangeObjectives(string choiceId) {
@@ -208,10 +212,12 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void FinalSuccess() {
+        ChoiceManager.Instance.gameResult = "Success";
         StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 
     private void FinalFail() {
+        ChoiceManager.Instance.gameResult = "Fail";
         StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 
@@ -227,5 +233,16 @@ public class ChoiceEventManager : MonoBehaviour {
     
     private void EncryptedFail() {
         StartCoroutine(ChangeScene("Final Confrontation", 1f));
+    }
+
+    private void GraveyardEnding() {
+        gameOverPanel.SetActive(true);
+        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+        GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enabled = false;
+        GameObject.Find("PauseMenuController").GetComponent<PauseMenuController>().enabled = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        ChoiceManager.Instance.gameResult = null;
+        ChoiceManager.Instance.ResetCluesGathered();
     }
 }

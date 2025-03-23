@@ -2628,6 +2628,7 @@ MonoBehaviour:
   continueGameButton: {fileID: 1599857665}
   loadGameButton: {fileID: 0}
   asyncLoader: {fileID: 1908977958}
+  pauseMenuController: {fileID: 0}
 --- !u!4 &1043488871
 Transform:
   m_ObjectHideFlags: 0
@@ -4666,6 +4667,7 @@ MonoBehaviour:
   loadingScreen: {fileID: 1970015877080473}
   gameUI: {fileID: 1750575516543361}
   loadingSlider: {fileID: 114530543238179655}
+  transitionAnimator: {fileID: 0}
 --- !u!4 &1908977959
 Transform:
   m_ObjectHideFlags: 0

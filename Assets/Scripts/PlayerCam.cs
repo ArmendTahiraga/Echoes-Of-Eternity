@@ -50,7 +50,7 @@ public class PlayerCam : MonoBehaviour {
         }
     }
 
-    public void ConfigureShowCursor(bool showCursor) {
+    private void ConfigureShowCursor(bool showCursor) {
         if (showCursor) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;

@@ -11,7 +11,11 @@ public class AsyncLoader : MonoBehaviour {
 
     public void LoadLevel(string levelToLoad) {
         gameUI.SetActive(false);
-        transitionAnimator.SetTrigger("FadeIn");
+        
+        if (transitionAnimator != null) {
+            transitionAnimator.SetTrigger("FadeIn");
+        }
+        
         StartCoroutine(StartLoading(levelToLoad));
     }
 

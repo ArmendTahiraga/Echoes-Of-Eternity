@@ -1,6 +1,8 @@
 {
   "graveyard": [
-    "relatives_hint"
+    "relatives_hint",
+    "game_success",
+    "game_fail"
   ],
   "warf": [
     "choice_recordConversation",

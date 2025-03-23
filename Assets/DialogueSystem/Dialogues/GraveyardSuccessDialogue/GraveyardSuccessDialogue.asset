@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dec6bbbe839064b42b274b07db607aa1, type: 3}
+  m_Name: GraveyardSuccessDialogue
+  m_EditorClassIdentifier: 
+  fileName: GraveyardSuccessDialogue
+  dialogueGroups:
+    list:
+    - Key: {fileID: 11400000, guid: 811be061c3c5248d8ab4964ca7c339d1, type: 2}
+      Value:
+      - {fileID: 11400000, guid: e4a0cde24184d40e581f9aeb2dbf0741, type: 2}
+      - {fileID: 11400000, guid: f663c033540224f59ad457bc69e33939, type: 2}
+      - {fileID: 11400000, guid: edc3aefdd5caf4242acbe602f8afc847, type: 2}
+  ungroupedDialogues: []

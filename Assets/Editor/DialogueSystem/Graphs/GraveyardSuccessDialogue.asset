@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a22c2dc02db46119dcf4f381d139db, type: 3}
+  m_Name: GraveyardSuccessDialogue
+  m_EditorClassIdentifier: 
+  fileName: GraveyardSuccessDialogue
+  groups:
+  - id: 62ba8d5d-6124-4967-ac9f-711731ce5f13
+    name: Ghost
+    position: {x: 187.5, y: 129.5}
+  nodes:
+  - id: 75502760-6cbc-49ee-b407-fe3d8ca9c2d5
+    name: Dialogue1
+    text: "The city did not fall. The truth was dragged into the light, and those
+      who thrived in the dark paid the price. The story did not end in silence\u2014it
+      was rewritten."
+    choices:
+    - text: Next Dialogue
+      nodeId: e6a5b632-06de-4da7-be7d-195dfe35f312
+    groupId: 62ba8d5d-6124-4967-ac9f-711731ce5f13
+    dialogueType: 0
+    position: {x: 212.5, y: 188}
+  - id: e6a5b632-06de-4da7-be7d-195dfe35f312
+    name: Dialogue2
+    text: Margaret never stood here in mourning. No whispers of regret, no love lost
+      to corruption. Her world moved forward, untouched by grief.
+    choices:
+    - text: Next Dialogue
+      nodeId: 0a0fde87-2234-4472-8506-dd918572d01e
+    groupId: 62ba8d5d-6124-4967-ac9f-711731ce5f13
+    dialogueType: 0
+    position: {x: 952.5, y: 188}
+  - id: 0a0fde87-2234-4472-8506-dd918572d01e
+    name: Dialogue3
+    text: And the grave was never meant to be.
+    choices:
+    - text: Next Dialogue\graveyard\game_success
+      nodeId: 
+    groupId: 62ba8d5d-6124-4967-ac9f-711731ce5f13
+    dialogueType: 1
+    position: {x: 1681.5, y: 188}
+  oldGroupNames:
+  - Ghost
+  oldUngroupedNames: []
+  oldGroupedNames:
+    list:
+    - Key: Ghost
+      Value:
+      - Dialogue1
+      - Dialogue2
+      - Dialogue3
