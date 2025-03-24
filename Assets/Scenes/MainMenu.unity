@@ -3977,12 +3977,12 @@ GameObject:
   m_Component:
   - component: {fileID: 250342442}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Graveyard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &250342442
 Transform:
   m_ObjectHideFlags: 0
@@ -11420,37 +11420,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4187361873712528, guid: dc83d82e59754f34ea737a544b53fc9a, type: 3}
   m_PrefabInstance: {fileID: 559751631}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &760916607
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 760916608}
-  m_Layer: 0
-  m_Name: GameObject (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &760916608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760916607}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.100641, y: -42.791393, z: 159.1171}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &762229158 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4404044061006961943, guid: 9457c540b6342384d91108dff84eb905, type: 3}
@@ -35631,7 +35600,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750575516543361}
   m_LocalRotation: {x: 0.015954016, y: 0.11205829, z: -0.0053161094, w: -0.99355936}
-  m_LocalPosition: {x: 0, y: 0, z: 22.1}
+  m_LocalPosition: {x: 0, y: 0, z: 22.3}
   m_LocalScale: {x: 0.02, y: 0.019999996, z: 0.020000001}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35643,7 +35612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -1.748, y: -12.882001, z: 0.81100005}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.2, y: 7.4}
+  m_AnchoredPosition: {x: 0.8, y: 1.51}
   m_SizeDelta: {x: 1980, y: 1024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224909005222711929
@@ -37252,5 +37221,4 @@ SceneRoots:
   - {fileID: 1908977959}
   - {fileID: 1043488871}
   - {fileID: 1873255090}
-  - {fileID: 760916608}
   - {fileID: 250342442}
