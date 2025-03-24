@@ -8,7 +8,7 @@ public class LightingThunder : MonoBehaviour
     public ParticleSystem lightningParticles;
     public float minFlashDelay = 2f;
     public float maxFlashDelay = 5f;
-    public float flashDuration = 0.1f;
+    public float flashDuration = 0.5f;
 
     private void Start()
     {
@@ -21,16 +21,19 @@ public class LightingThunder : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(minFlashDelay, maxFlashDelay));
 
-            // Play the lightning effect
+            // Play particles
             if (lightningParticles != null)
             {
                 lightningParticles.Play();
             }
 
-            // Flash the light
-            lightningLight.intensity = 5f; // Adjust intensity
+            // Turn on the light
+            lightningLight.intensity = Random.Range(0.5f, 1f);
+
+            // Wait for flash duration
             yield return new WaitForSeconds(flashDuration);
-            lightningLight.intensity = 0f;
+
         }
     }
-}
+
+    }
