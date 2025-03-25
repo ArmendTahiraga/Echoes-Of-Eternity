@@ -12373,6 +12373,7 @@ MonoBehaviour:
   finalDialogueEndFail: {fileID: 0}
   dialogueUI: {fileID: 0}
   gameOverPanel: {fileID: 18619664}
+  audioSource: {fileID: 0}
 --- !u!4 &779014412
 Transform:
   m_ObjectHideFlags: 0
@@ -15650,6 +15651,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 980556497}
   m_CullTransparentMesh: 0
+--- !u!1 &983285677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983285679}
+  - component: {fileID: 983285678}
+  m_Layer: 0
+  m_Name: SettingsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &983285678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983285677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a3c3d50e4e464e2abe768039e49ae73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameVolumeAudioSources:
+  - {fileID: 525277743}
+  soundEffectsVolumeAudioSources:
+  - {fileID: 542890048}
+  playerCam: {fileID: 16113369}
+--- !u!4 &983285679
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983285677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 16, y: -1.6999998, z: 37.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &991527380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -970990725868085196, guid: 9457c540b6342384d91108dff84eb905, type: 3}
@@ -36490,3 +36540,4 @@ SceneRoots:
   - {fileID: 793504350}
   - {fileID: 1238595660}
   - {fileID: 525277744}
+  - {fileID: 983285679}

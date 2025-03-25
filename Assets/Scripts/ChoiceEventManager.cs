@@ -93,7 +93,7 @@ public class ChoiceEventManager : MonoBehaviour {
         ChangeObjectives("choice_listenFromDistance");
         DestroyChoiceSpecificObjects("choice_listenFromDistance");
     }
-
+    
     private void WarfConfrontDrakeAndCrowe() {
         for (int i = 0; i < lightColliders.Length; i++) {
             lightColliders[i].enabled = false;
@@ -106,6 +106,11 @@ public class ChoiceEventManager : MonoBehaviour {
     private IEnumerator ChangeScene(string scene, float delay) {
         yield return new WaitForSeconds(delay);
         asyncLoader.LoadLevel(scene);
+    }
+
+    private IEnumerator PlayGunshotSound() {
+        yield return new WaitForSeconds(0.9f);
+        audioSource.Play();
     }
 
     private void WarfRecordSuccess() {
@@ -132,11 +137,9 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void WarfConfrontDead() {
-        audioSource.Play();
-        gameUI.SetActive(false);
-        deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
         ChoiceManager.Instance.gameResult = "Fail";
         StartCoroutine(ChangeScene("DarkStorm", 1f));
+        StartCoroutine(PlayGunshotSound());
     }
 
     private void WarfLightDetected() {
@@ -220,11 +223,9 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void FinalFail() {
-        audioSource.Play();
-        gameUI.SetActive(false);
-        deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
         ChoiceManager.Instance.gameResult = "Fail";
-        StartCoroutine(ChangeScene("DarkStorm", 1f));
+        StartCoroutine(ChangeScene("DarkStorm", 1f));        
+        StartCoroutine(PlayGunshotSound());
     }
 
     private void EncryptedSuccess() {

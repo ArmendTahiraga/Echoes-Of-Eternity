@@ -17,15 +17,15 @@ public class PlayerCam : MonoBehaviour {
     void Update() {
         if (enableCursor) {
             ConfigureShowCursor(true);
-            
+
             if (!lockCamera) {
                 float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
                 float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
-        
+
                 xRotation -= mouseY;
                 yRotation += mouseX;
                 xRotation = Mathf.Clamp(xRotation, -90f, 45f);
-        
+
                 transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
                 orientation.rotation = Quaternion.Euler(0, yRotation, 0);
                 playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
@@ -38,11 +38,11 @@ public class PlayerCam : MonoBehaviour {
             if (!lockCamera) {
                 float mouseX = Input.GetAxis("Mouse X") * sensitivityX * Time.deltaTime;
                 float mouseY = Input.GetAxis("Mouse Y") * sensitivityY * Time.deltaTime;
-        
+
                 xRotation -= mouseY;
                 yRotation += mouseX;
                 xRotation = Mathf.Clamp(xRotation, -90f, 45f);
-        
+
                 transform.rotation = Quaternion.Euler(xRotation, yRotation, 0);
                 orientation.rotation = Quaternion.Euler(0, yRotation, 0);
                 playerObjectOrientation.rotation = Quaternion.Euler(0, yRotation, 0);
@@ -63,8 +63,21 @@ public class PlayerCam : MonoBehaviour {
     public void Save(ref PlayerCamSaveData playerCamSaveData) {
         playerCamSaveData.lockCamera = lockCamera;
     }
-    
+
     public void Load(PlayerCamSaveData playerCamSaveData) {
         lockCamera = playerCamSaveData.lockCamera;
+    }
+
+    public void SetSensitivity(float x, float y) {
+        sensitivityX = x;
+        sensitivityY = y;
+    }
+
+    public float GetSensitivityX() {
+        return sensitivityX;
+    }
+
+    public float GetSensitivityY() {
+        return sensitivityY;
     }
 }

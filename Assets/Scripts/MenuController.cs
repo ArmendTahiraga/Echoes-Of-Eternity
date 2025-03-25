@@ -4,45 +4,32 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour {
     private static readonly int Animate = Animator.StringToHash("Animate");
     private Animator cameraAnimator;
-
-    [Header("MENUS")] [Tooltip("THe first list of buttons")]
     public GameObject firstMenu;
-
-    [Tooltip("The Menu for when the PLAY button is clicked")]
     public GameObject playMenu;
-
-    [Tooltip("The Menu for when the EXIT button is clicked")]
     public GameObject exitMenu;
-
     public enum Theme {
         custom1,
         custom2,
         custom3
     };
-
-    [Header("THEME SETTINGS")] public Theme theme;
+    public Theme theme;
     public ThemedUIData themeController;
-
-    [Header("PANELS")] [Tooltip("The UI Panel that holds the CONTROLS window tab")]
     public GameObject controlsPanel;
-
-    [Tooltip("The UI Panel that holds the GAME window tab")]
     public GameObject audioPanel;
-
-    [Header("SETTINGS SCREEN")] [Tooltip("Highlight Image for when GAME Tab is selected in Settings")]
     public GameObject audioLine;
-
-    [Tooltip("Highlight Image for when CONTROLS Tab is selected in Settings")]
     public GameObject controlsLine;
-
-    [Header("CONTROLS SETTINGS")] public GameObject musicSlider;
-
-    [Header("SFX")] [Tooltip("The GameObject holding the Audio Source component for the HOVER SOUND")]
+    public GameObject gameVolumeSlider;
+    public GameObject soundEffectsVolumeSlider;
+    public GameObject cameraSensitivitySlider;
     public AudioSource hoverSound;
 
-    void Start() {
+    private void Awake() {
+        LoadThemeColor();
+    }
+
+    private void Start() {
         cameraAnimator = transform.GetComponent<Animator>();
-        musicSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("Volume");
+        gameVolumeSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("GameVolume", 1);
 
         playMenu.SetActive(false);
         exitMenu.SetActive(false);
@@ -51,27 +38,7 @@ public class MenuController : MonoBehaviour {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-        SetThemeColors();
-    }
-
-    private void SetThemeColors() {
-        switch (theme) {
-            case Theme.custom1:
-                themeController.currentColor = themeController.custom1.graphic1;
-                themeController.textColor = themeController.custom1.text1;
-                break;
-            case Theme.custom2:
-                themeController.currentColor = themeController.custom2.graphic2;
-                themeController.textColor = themeController.custom2.text2;
-                break;
-            case Theme.custom3:
-                themeController.currentColor = themeController.custom3.graphic3;
-                themeController.textColor = themeController.custom3.text3;
-                break;
-            default:
-                Debug.Log("Invalid theme selected.");
-                break;
-        }
+        themeController.textColor = themeController.custom1.text1;
     }
 
     public void PlayCampaign() {
@@ -130,7 +97,65 @@ public class MenuController : MonoBehaviour {
         #endif
     }
 
-    public void MusicSlider() {
-        PlayerPrefs.SetFloat("Volume", musicSlider.GetComponent<Slider>().value);
+    public void GameVolumeSlider() {
+        PlayerPrefs.SetFloat("GameVolume", gameVolumeSlider.GetComponent<Slider>().value);
+    }
+    
+    public void SoundEffectsSlider() {
+        PlayerPrefs.SetFloat("SoundEffectsVolume", soundEffectsVolumeSlider.GetComponent<Slider>().value);
+    }
+    
+    public void CameraSensitivitySlider() {
+        PlayerPrefs.SetFloat("CameraSensitivity", cameraSensitivitySlider.GetComponent<Slider>().value);
+    }
+
+    public void ThemeClickPurple() {
+        Color color = new Color(84f / 255f, 64f / 255f, 224f / 255f, 1f);
+        themeController.currentColor = color;
+        SaveThemeColor(color);
+    }
+
+    public void ThemeClickRed() {
+        Color color = new Color(255f / 255f, 52f / 255f, 52f / 255f, 1f);
+        themeController.currentColor = color;
+        SaveThemeColor(color);
+    }
+
+    public void ThemeClickGreen() {
+        Color color = new Color(68f / 255f, 255f / 255f, 0f / 255f, 1f);
+        themeController.currentColor = color;
+        SaveThemeColor(color);
+    }
+
+    public void ThemeClickBlue() {
+        Color color = new Color(0f / 255f, 143f / 255f, 255f / 255f, 1f);
+        themeController.currentColor = color;
+        SaveThemeColor(color);
+    }
+
+    public void ThemeClickYellow() {
+        Color color = new Color(255f / 255f, 175f / 255f, 0f / 255f, 1f);
+        themeController.currentColor = color;
+        SaveThemeColor(color);
+    }
+    
+    private void SaveThemeColor(Color color) {
+        PlayerPrefs.SetFloat("Theme-R", color.r);
+        PlayerPrefs.SetFloat("Theme-G", color.g);
+        PlayerPrefs.SetFloat("Theme-B", color.b);
+        PlayerPrefs.SetFloat("Theme-A", color.a);
+        PlayerPrefs.Save();
+    }
+
+    private void LoadThemeColor() {
+        if (PlayerPrefs.HasKey("Theme-R")) {
+            float r = PlayerPrefs.GetFloat("Theme-R");
+            float g = PlayerPrefs.GetFloat("Theme-G");
+            float b = PlayerPrefs.GetFloat("Theme-B");
+            float a = PlayerPrefs.GetFloat("Theme-A");
+
+            Color color = new Color(r, g, b, a);
+            themeController.currentColor = color;
+        }
     }
 }
