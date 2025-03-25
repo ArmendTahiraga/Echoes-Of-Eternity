@@ -85,10 +85,12 @@ public class ChoiceManager : MonoBehaviour {
     public void Save(ref ChoiceData choiceData) {
         choiceData.cluesGathered = cluesGathered;
         choiceData.cluePoints = cluePoints;
+        choiceData.gameResult = gameResult;
     }
 
     public void Load(ChoiceData choiceData) {
         cluesGathered = choiceData.cluesGathered;
         cluePoints = choiceData.cluePoints;
+        gameResult = choiceData.gameResult;
     }
 }

@@ -17,6 +17,7 @@ public class ChoiceEventManager : MonoBehaviour {
     [SerializeField] private DSDialogueContainerSO finalDialogueEndFail;
     [SerializeField] private DialogueUI dialogueUI;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private AudioSource audioSource;
 
     private void Start() {
         ChoiceManager.Instance.RegisterChoiceEvent("choice_recordConversation", WarfRecordConversation);
@@ -109,35 +110,37 @@ public class ChoiceEventManager : MonoBehaviour {
 
     private void WarfRecordSuccess() {
         ChoiceManager.Instance.AddClue("wharfRecord");
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void WarfRecordFail() {
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void WarfListenSuccess() {
         ChoiceManager.Instance.AddClue("wharfListen");
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void WarfConfrontSuccess() {
         ChoiceManager.Instance.AddClue("wharfConfront");
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void WarfConfrontEscape() {
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void WarfConfrontDead() {
+        audioSource.Play();
         gameUI.SetActive(false);
         deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
+        ChoiceManager.Instance.gameResult = "Fail";
         StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 
     private void WarfLightDetected() {
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void BridgeFlashSuccess() {
@@ -217,22 +220,25 @@ public class ChoiceEventManager : MonoBehaviour {
     }
 
     private void FinalFail() {
+        audioSource.Play();
+        gameUI.SetActive(false);
+        deathScreenCanvasAnimator.SetTrigger("ShowDeathScreen");
         ChoiceManager.Instance.gameResult = "Fail";
         StartCoroutine(ChangeScene("DarkStorm", 1f));
     }
 
     private void EncryptedSuccess() {
         ChoiceManager.Instance.AddClue("encryptedFull");
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
     
     private void EncryptedPartial() {
         ChoiceManager.Instance.AddClue("encryptedHalf");
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
     
     private void EncryptedFail() {
-        StartCoroutine(ChangeScene("Final Confrontation", 1f));
+        StartCoroutine(ChangeScene("Scene2", 1f));
     }
 
     private void GraveyardEnding() {

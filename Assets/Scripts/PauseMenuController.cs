@@ -6,6 +6,7 @@ public class PauseMenuController : MonoBehaviour {
     [SerializeField] private GameObject mainPausePanel;
     [SerializeField] private GameObject mainMenuConfirmationPanel;
     [SerializeField] private GameObject exitConfirmationPanel;
+    [SerializeField] private AudioSource hoverSound;
     public static bool isGamePaused;
 
     void Update() {
@@ -64,5 +65,9 @@ public class PauseMenuController : MonoBehaviour {
     public void NoExitConfirmation() {
         exitConfirmationPanel.SetActive(false);
         mainPausePanel.SetActive(true);
+    }
+
+    public void PlayHoverSound() {
+        hoverSound.Play();
     }
 }

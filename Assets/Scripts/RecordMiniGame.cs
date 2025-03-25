@@ -12,6 +12,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     [SerializeField] private NPCInteractable successInteractable;
     [SerializeField] private NPCInteractable failInteractable;
     [SerializeField] private GameObject miniGameStarter;
+    [SerializeField] private AudioSource audioSource;
     private List<KeyCode> possibleKeys = new List<KeyCode>();
     private Dictionary<KeyCode, Sprite> keySpriteMap = new Dictionary<KeyCode, Sprite>();
     private KeyCode currentKey;
@@ -31,7 +32,6 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     }
 
     private void Update() {
-
         if (isRecording) {
             if (changeTimerFill) {
                 currentTimer -= Time.deltaTime;
@@ -64,6 +64,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
         keyImage.gameObject.SetActive(true);
         timerImage.gameObject.SetActive(true);
         ShowNextKey();
+        audioSource.Play();
     }
     
     public bool GetHasMiniGameStarted() {
@@ -135,6 +136,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     }
 
     private void FailMiniGame() {
+        audioSource.Stop();
         hasMiniGameStarted = false;
         isRecording = false;
         
@@ -146,6 +148,7 @@ public class RecordMiniGame : MonoBehaviour, MiniGame {
     }
 
     private void SuccessMiniGame() {
+        audioSource.Stop();
         hasMiniGameStarted = false;
         isRecording = false;
         

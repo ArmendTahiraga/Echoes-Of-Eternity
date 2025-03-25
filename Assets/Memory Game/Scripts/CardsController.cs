@@ -16,6 +16,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     [SerializeField] private NPCInteractable successInteractable;
     [SerializeField] private NPCInteractable failInteractable;
     [SerializeField] private NPCInteractable partialInteractable;
+    [SerializeField] private AudioSource audioSource;
     private List<Sprite> spritePairs;
     private Card firstSelected;
     private Card secondSelected;
@@ -33,6 +34,7 @@ public class CardsController : MonoBehaviour, MiniGame {
         CreateCards();
         totalPairs = sprites.Length;
         StartCoroutine(TimerCountdown());
+        audioSource.Play();
     }
 
     public bool GetHasMiniGameStarted() {
@@ -132,6 +134,7 @@ public class CardsController : MonoBehaviour, MiniGame {
     }
 
     private void EndGame() {
+        audioSource.Stop();
         hasMiniGameStarted = false;
         memoryGameCanvas.SetActive(false);
         GameObject.Find("PlayerCam").GetComponent<PlayerCam>().enableCursor = false;

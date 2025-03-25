@@ -4,4 +4,5 @@ using System.Collections.Generic;
 public struct ChoiceData {
     public List<string> cluesGathered;
     public float cluePoints;
+    public string gameResult;
 }
