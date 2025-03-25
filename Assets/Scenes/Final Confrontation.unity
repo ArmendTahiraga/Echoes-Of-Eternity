@@ -9240,6 +9240,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -5301241609699099909, guid: 977a311c9abae2340b782c4b70b3b42a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -18.376
+      objectReference: {fileID: 0}
     - target: {fileID: -5043326616205581680, guid: 977a311c9abae2340b782c4b70b3b42a, type: 3}
       propertyPath: m_Range
       value: 1.29
