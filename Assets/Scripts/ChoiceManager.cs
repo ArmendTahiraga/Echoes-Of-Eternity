@@ -11,7 +11,7 @@ public class ChoiceManager : MonoBehaviour {
     private List<ClueData> clues = new List<ClueData>();
     private float cluePoints;
     public string gameResult;
-    
+
     private void Awake() {
         if (Instance != null && Instance != this) {
             Destroy(gameObject);
@@ -20,21 +20,28 @@ public class ChoiceManager : MonoBehaviour {
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        
-        string choicesFile = Path.Combine(Application.streamingAssetsPath, "Story/GameChoices.json");
-        string choicesJson = File.ReadAllText(choicesFile);
-        GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(choicesJson);
-        gameChoices.Add("graveyard", choicesData.graveyard);
-        gameChoices.Add("diner", choicesData.diner);
-        gameChoices.Add("warf", choicesData.warf);
-        gameChoices.Add("encrypted", choicesData.encrypted);
-        gameChoices.Add("bridge", choicesData.bridge);
-        gameChoices.Add("final", choicesData.final);
-        
-        string cluesFile = Path.Combine(Application.streamingAssetsPath, "Story/Clues.json");
-        string cluesJson = File.ReadAllText(cluesFile);
-        GameCluesData cluesData = JsonUtility.FromJson<GameCluesData>(cluesJson);
-        clues = cluesData.clues;
+
+        gameChoices.Add("graveyard", new List<string> { "relatives_hint", "game_success", "game_fail" });
+        gameChoices.Add("warf", new List<string> {
+            "choice_recordConversation", "choice_listenFromDistance", "choice_confrontDrakeAndCrowe",
+            "record_success", "record_fail", "listen_success", "confront_success", "confront_escape",
+            "confront_dead", "light_detected"
+        });
+        gameChoices.Add("bridge", new List<string> { "flash_success", "flash_fail", "da_hint" });
+        gameChoices.Add("diner", new List<string> { "wharf", "old_town", "bridge" });
+        gameChoices.Add("final", new List<string> { "nextEvidence", "success", "fail" });
+        gameChoices.Add("encrypted", new List<string> { "encrypted_success", "encrypted_partial", "encrypted_fail" });
+
+        clues = new List<ClueData> {
+            new ClueData { name = "graveyardRelatives", value = 0.25f },
+            new ClueData { name = "wharfRecord", value = 1f },
+            new ClueData { name = "wharfListen", value = 0.5f },
+            new ClueData { name = "wharfConfront", value = 0.75f },
+            new ClueData { name = "encryptedFull", value = 1f },
+            new ClueData { name = "encryptedHalf", value = 0.5f },
+            new ClueData { name = "bridgeFlash", value = 1f },
+            new ClueData { name = "bridgeDa", value = 0.5f }
+        };
     }
 
     public bool IsImportantChoice(string sceneName, string choiceId) {
@@ -56,12 +63,12 @@ public class ChoiceManager : MonoBehaviour {
 
     public void CalculateCluePoints() {
         cluePoints = 0;
-        
+
         foreach (ClueData clue in clues) {
             foreach (String clueGathered in cluesGathered) {
                 if (clue.name == clueGathered) {
                     cluePoints += clue.value;
-                }    
+                }
             }
         }
     }
