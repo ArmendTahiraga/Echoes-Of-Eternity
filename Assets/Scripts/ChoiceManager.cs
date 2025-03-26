@@ -21,7 +21,7 @@ public class ChoiceManager : MonoBehaviour {
         Instance = this;
         DontDestroyOnLoad(gameObject);
         
-        string choicesFile = Path.Combine(Application.dataPath, "Story/GameChoices.json");
+        string choicesFile = Path.Combine(Application.streamingAssetsPath, "Story/GameChoices.json");
         string choicesJson = File.ReadAllText(choicesFile);
         GameChoicesData choicesData = JsonUtility.FromJson<GameChoicesData>(choicesJson);
         gameChoices.Add("graveyard", choicesData.graveyard);
@@ -31,7 +31,7 @@ public class ChoiceManager : MonoBehaviour {
         gameChoices.Add("bridge", choicesData.bridge);
         gameChoices.Add("final", choicesData.final);
         
-        string cluesFile = Path.Combine(Application.dataPath, "Story/Clues.json");
+        string cluesFile = Path.Combine(Application.streamingAssetsPath, "Story/Clues.json");
         string cluesJson = File.ReadAllText(cluesFile);
         GameCluesData cluesData = JsonUtility.FromJson<GameCluesData>(cluesJson);
         clues = cluesData.clues;
