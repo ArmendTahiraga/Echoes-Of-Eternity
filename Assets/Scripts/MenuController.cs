@@ -30,6 +30,8 @@ public class MenuController : MonoBehaviour {
     private void Start() {
         cameraAnimator = transform.GetComponent<Animator>();
         gameVolumeSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("GameVolume", 1);
+        soundEffectsVolumeSlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("SoundEffectsVolume", 1);
+        cameraSensitivitySlider.GetComponent<Slider>().value = PlayerPrefs.GetFloat("CameraSensitivity", 0.5f);
 
         playMenu.SetActive(false);
         exitMenu.SetActive(false);
