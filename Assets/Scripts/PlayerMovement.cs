@@ -37,9 +37,9 @@ public class PlayerMovement : MonoBehaviour {
         }
 
         if (movementDirection == Vector3.zero) {
-            rigidbody.velocity = Vector3.zero;
+            rigidbody.velocity = new Vector3(0, rigidbody.velocity.y, 0);
         } else {
-            rigidbody.velocity = movementDirection * speed;
+            rigidbody.velocity = new Vector3(movementDirection.x * speed, rigidbody.velocity.y, movementDirection.z * speed);
         }
     }
 
