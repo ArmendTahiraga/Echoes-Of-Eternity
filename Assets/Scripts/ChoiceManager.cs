@@ -7,8 +7,8 @@ public class ChoiceManager : MonoBehaviour {
     public static ChoiceManager Instance { get; private set; }
     private Dictionary<string, List<string>> gameChoices = new Dictionary<string, List<string>>();
     private Dictionary<string, Action> choiceActions = new Dictionary<string, Action>();
-    private List<string> cluesGathered = new List<string>();
     private List<ClueData> clues = new List<ClueData>();
+    private List<string> cluesGathered = new List<string>();
     private float cluePoints;
     public string gameResult;
 

@@ -7,15 +7,9 @@ public class MenuController : MonoBehaviour {
     public GameObject firstMenu;
     public GameObject playMenu;
     public GameObject exitMenu;
-    public enum Theme {
-        custom1,
-        custom2,
-        custom3
-    };
-    public Theme theme;
     public ThemedUIData themeController;
     public GameObject controlsPanel;
-    public GameObject audioPanel;
+    public GameObject settingsPanel;
     public GameObject audioLine;
     public GameObject controlsLine;
     public GameObject gameVolumeSlider;
@@ -64,15 +58,15 @@ public class MenuController : MonoBehaviour {
 
     private void DisablePanels() {
         controlsPanel.SetActive(false);
-        audioPanel.SetActive(false);
+        settingsPanel.SetActive(false);
 
         audioLine.SetActive(false);
         controlsLine.SetActive(false);
     }
 
-    public void AudioPanel() {
+    public void SettingsPanel() {
         DisablePanels();
-        audioPanel.SetActive(true);
+        settingsPanel.SetActive(true);
         audioLine.SetActive(true);
     }
 

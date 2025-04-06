@@ -61,7 +61,7 @@ public class SaveManager : MonoBehaviour {
         SceneManager.sceneLoaded -= OnSceneLoaded;
         
         playerMovement = FindObjectOfType<PlayerMovement>();
-        objectiveManager = FindObjectOfType<ObjectiveManager>();
+        objectiveManager = FindObjectOfType<ObjectiveManager>(); 
         dialogueUI = FindObjectOfType<DialogueUI>();
         playerCam = FindObjectOfType<PlayerCam>();
         

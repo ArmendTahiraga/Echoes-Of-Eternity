@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using DS;
 using UnityEngine;
@@ -22,7 +21,7 @@ public class MonologueInteractable : MonoBehaviour {
         Interact();
     }
     
-    public void Interact() {
+    private void Interact() {
         playerMovement.isPlayerMoving = false;
         playerCam.lockCamera = true;
         dialogueUI.StartDialogue(characterName, gameObject.GetComponent<DSDialogue>());

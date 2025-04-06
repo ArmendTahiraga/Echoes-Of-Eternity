@@ -5,7 +5,7 @@ public class PlayerInteract : MonoBehaviour {
     [SerializeField] private GameObject miniGame;
     [SerializeField] private float interactRange = 2f;
     
-    public void Update() { // Made it late update to see if it fixes the animation teleport glitch
+    public void Update() {
         if (Input.GetKeyDown(KeyCode.E) && !PauseMenuController.isGamePaused) {
             Interactable interactable = GetInteractable();
             if (interactable != null) {

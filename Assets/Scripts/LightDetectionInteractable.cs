@@ -14,7 +14,7 @@ public class LightDetectionInteractable : MonoBehaviour {
         Interact();
     }
     
-    public void Interact() {
+    private void Interact() {
         playerMovement.isPlayerMoving = false;
         playerCam.lockCamera = true;
         

@@ -1571,18 +1571,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 114322424524768717}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: UpdateVolume
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &295637185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,18 +1625,6 @@ MonoBehaviour:
       - m_Target: {fileID: 114173851760721469}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: CameraSensitivitySlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114322424524768717}
-        m_TargetAssemblyTypeName: SlimUI.ModernMenu.CheckMusicVolume, Assembly-CSharp
-        m_MethodName: UpdateVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13293,7 +13269,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a3c3d50e4e464e2abe768039e49ae73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameVolumeAudioSources: []
+  gameVolumeAudioSources:
+  - {fileID: 1920303471}
   soundEffectsVolumeAudioSources:
   - {fileID: 82847318996031867}
   playerCam: {fileID: 0}
@@ -21593,18 +21570,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 114322424524768717}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: UpdateVolume
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &2088778649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21659,18 +21624,6 @@ MonoBehaviour:
       - m_Target: {fileID: 114173851760721469}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: SoundEffectsSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114322424524768717}
-        m_TargetAssemblyTypeName: SlimUI.ModernMenu.CheckMusicVolume, Assembly-CSharp
-        m_MethodName: UpdateVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -22044,7 +21997,6 @@ GameObject:
   - component: {fileID: 82361246909888841}
   - component: {fileID: 95154561628650657}
   - component: {fileID: 114173851760721469}
-  - component: {fileID: 114322424524768717}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -24460,10 +24412,9 @@ MonoBehaviour:
   firstMenu: {fileID: 1717642837066987}
   playMenu: {fileID: 1530400188075735}
   exitMenu: {fileID: 1163271682713181}
-  theme: 0
   themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   controlsPanel: {fileID: 187005641}
-  audioPanel: {fileID: 1480215326517511}
+  settingsPanel: {fileID: 1480215326517511}
   audioLine: {fileID: 1488527487832323}
   controlsLine: {fileID: 1531914204541795}
   gameVolumeSlider: {fileID: 1485894898892679}
@@ -24672,8 +24623,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114173851760721469}
-        m_TargetAssemblyTypeName: SlimUI.ModernMenu.UIMenuManager, Assembly-CSharp
-        m_MethodName: AudioPanel
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: SettingsPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24683,18 +24634,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &114322424524768717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1213614133249755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad149d53679afc04782ee02fa3e008d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114354617259965321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25398,18 +25337,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 114322424524768717}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: UpdateVolume
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &114645783371641281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25882,18 +25809,6 @@ MonoBehaviour:
       - m_Target: {fileID: 114173851760721469}
         m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
         m_MethodName: GameVolumeSlider
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 114322424524768717}
-        m_TargetAssemblyTypeName: SlimUI.ModernMenu.CheckMusicVolume, Assembly-CSharp
-        m_MethodName: UpdateVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

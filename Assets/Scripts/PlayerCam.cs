@@ -10,11 +10,11 @@ public class PlayerCam : MonoBehaviour {
     public bool lockCamera;
     public bool enableCursor;
 
-    void Start() {
+    private void Start() {
         ConfigureShowCursor(false);
     }
 
-    void Update() {
+    private void Update() {
         if (enableCursor) {
             ConfigureShowCursor(true);
 

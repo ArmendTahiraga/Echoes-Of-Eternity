@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,8 +23,6 @@ public class SettingsManager : MonoBehaviour {
 
         foreach (AudioSource audioSource in soundEffectsVolumeAudioSources) {
             if (audioSource != null) {
-                Debug.Log(soundEffectsVolumeSlider);
-                Debug.Log(audioSource.volume);
                 audioSource.volume *= soundEffectsVolumeSlider;
             }
         }
