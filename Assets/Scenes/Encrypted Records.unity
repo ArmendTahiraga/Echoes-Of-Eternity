@@ -6953,8 +6953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d006d167fa2c4e07901eb0f682e8e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensitivityX: 400
-  sensitivityY: 400
+  sensitivityX: 20
+  sensitivityY: 20
   orientation: {fileID: 1362818801}
   playerObjectOrientation: {fileID: 431040784}
   lockCamera: 0
